@@ -91,7 +91,7 @@ export default class AlexaNationalAnthemsSkill {
   }
 
   @Intent('PlayAnthemIntent')
-  playAnthemIntent({ country }, { session, request }) {
+  playAnthemIntent({ country }, { request }) {
     const data = countries.getAll().filter(val => val.name.toUpperCase() === (this._getSlotValue(request, 'country') || country).toUpperCase())[0];
     const reprompt = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
     if (data && data.anthem) {
@@ -101,7 +101,7 @@ export default class AlexaNationalAnthemsSkill {
             ${reprompt}
           </speak>`, 'SSML')
         .reprompt(reprompt)
-        .session({
+        .attributes({
           iso: data.iso3
         });
     }
@@ -114,6 +114,10 @@ export default class AlexaNationalAnthemsSkill {
   quizStartIntent({ continent }, { session }) {
     if (session && session.attributes && session.attributes.quizMode) {
       session.attributes.continent = continent;
+      if (!continent) {
+        return ask('Die Beschränkung der Länder wurde aufgehoben.')
+          .attributes(session.attributes);
+      }
       return ask(`Die Länder wurden auf ${continent} beschränkt.`)
         .attributes(session.attributes);
     }
@@ -136,7 +140,7 @@ export default class AlexaNationalAnthemsSkill {
   @Intent('CountryIntent')
   quizAnswerIntent({ country }, { session, request }) {
     if (!session || !session.attributes || !session.attributes.quizMode) {
-      return playAnthemIntent({ country }, { session, request });
+      return this.playAnthemIntent({ country }, { session, request });
     }
     return this._handleAnswer(this._getSlotValue(request, 'country') || country, session);
   }
@@ -154,11 +158,15 @@ export default class AlexaNationalAnthemsSkill {
         .attributes(data);
     }
 
-    return ask(`<speak>
-        <audio src="${this._getAudioUrl(country)}" />
-      </speak>`, 'SSML')
-    .reprompt(this.reprompt)
-    .attributes(data);
+    if (session && session.attributes && session.attributes.iso) {
+      return ask(`<speak>
+            <audio src="${this._getAudioUrl(countries.getByIso3(session.attributes.iso))}" />
+          </speak>`, 'SSML')
+        .reprompt(this.reprompt)
+        .attributes(session.attributes);
+    }
+
+    return say('Es gibt nichts zu wiederholen.');
   }
 
   @Intent('SkipIntent', 'AMAZON.NextIntent')
