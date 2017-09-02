@@ -75,55 +75,13 @@
       ]
     },
     {
-      "name": "HintIntent",
-      "samples": [
-        "gib mir ein Hinweis",
-        "ein Hinweis",
-        "gib mir einen Hinweis",
-        "einen Hinweis",
-        "Hinweis"
-      ],
-      "slots": []
-    },
-    {
       "name": "SkipIntent",
       "samples": [
         "ich weiss nicht",
         "weiss nicht",
         "keine Ahnung",
         "weiter",
-        "nächste Frage",
-        "überspringe diese Frage",
-        "überspringe Frage",
-        "überspringe diese",
-        "überspringe"
-      ],
-      "slots": []
-    },
-    {
-      "name": "StatisticsIntent",
-      "samples": [
-        "wie ist meine Statistik",
-        "was ist meine Statistik",
-        "meine Statistik",
-        "wie ist die Statistik",
-        "was ist die Statistik",
-        "ist die Statistik",
-        "die Statistik",
-        "wie ist Statistik",
-        "Statistik",
-        "wie viele Fragen habe ich richtig beantwortet",
-        "wie viele Fragen sind richtig beantwortet",
-        "wie viele Fragen waren richtig beantwortet",
-        "wie viele Fragen habe ich falsch beantwortet",
-        "wie viele Fragen sind falsch beantwortet",
-        "wie viele Fragen waren falsch beantwortet",
-        "wie viele Fragen habe ich richtig",
-        "wie viele Fragen sind richtig",
-        "wie viele Fragen waren richtig",
-        "wie viele Fragen habe ich falsch",
-        "wie viele Fragen sind falsch",
-        "wie viele Fragen waren falsch"
+        "nächste Hymne"
       ],
       "slots": []
     }

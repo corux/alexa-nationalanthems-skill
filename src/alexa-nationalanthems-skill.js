@@ -168,6 +168,11 @@ export default class AlexaNationalAnthemsSkill {
 
   @Intent('SkipIntent', 'AMAZON.NextIntent')
   skipIntent({}, { session }) {
+    if (!session || !session.attributes || !session.attributes.quizMode) {
+      return ask('Diese Funktion ist nur im Quiz Modus aktiv. Was möchtest du als nächstes tun?')
+        .reprompt('Was möchtest du als nächstes tun?');
+    }
+
     const data = this._getQuestion(session.attributes.continent);
     const country = countries.getByIso3(data.iso);
     return ask(`<speak>
