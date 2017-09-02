@@ -25,7 +25,6 @@ export default class AlexaNationalAnthemsSkill {
     const expectedAnswer = countries.getByIso3(session.attributes.iso).name;
     if (answer && answer.toUpperCase() === expectedAnswer.toUpperCase()) {
       const data = this._getQuestion(session.attributes.continent);
-      data.correctQuestions = session.attributes.correctQuestions + 1;
       return ask(`<speak>
             Das war richtig!
             Hier ist die nächste Hymne:
@@ -40,7 +39,6 @@ export default class AlexaNationalAnthemsSkill {
     session.attributes.try++;
     if (session.attributes.try >= 3) {
       const data = this._getQuestion(session.attributes.continent);
-      data.wrongQuestions = session.attributes.wrongQuestions + 1;
       return ask(`<speak>
             Das war nicht richtig. Die richtige Antwort war ${expectedAnswer}.
             Hier ist die nächste Hymne:
@@ -102,7 +100,8 @@ export default class AlexaNationalAnthemsSkill {
           </speak>`, 'SSML')
         .reprompt(reprompt)
         .attributes({
-          iso: data.iso3
+          iso: data.iso3,
+          quizMode: false
         });
     }
 
@@ -112,24 +111,22 @@ export default class AlexaNationalAnthemsSkill {
 
   @Intent('QuizIntent')
   quizStartIntent({ continent }, { session }) {
+    let text = `Willkommen beim Quiz. Versuche die Hymnen den richtigen Ländern zuzuordnen.
+                Hier ist die erste Nationalhymne:`;
+    let data = this._getQuestion(continent);
     if (session && session.attributes && session.attributes.quizMode) {
       session.attributes.continent = continent;
       if (!continent) {
-        return ask('Die Beschränkung der Länder wurde aufgehoben.')
-          .attributes(session.attributes);
+        text = 'Die Beschränkung der Länder wurde aufgehoben. Hier ist die nächste Nationalhymne:';
+      } else {
+        text = `Die Länder wurden auf ${continent} beschränkt. Hier ist die nächste Nationalhymne:`;
       }
-      return ask(`Die Länder wurden auf ${continent} beschränkt.`)
-        .attributes(session.attributes);
     }
-    const data = this._getQuestion(continent);
     data.quizMode = true;
     data.continent = continent;
-    data.wrongQuestions = 0;
-    data.correctQuestions = 0;
     const country = countries.getByIso3(data.iso);
     return ask(`<speak>
-          Willkommen beim Quiz. Versuche die Hymnen den richtigen Ländern zuzuordnen.
-          Hier ist die erste Nationalhymne:
+          ${text}
           <audio src="${this._getAudioUrl(country)}" />
           ${this.reprompt}
         </speak>`, 'SSML')
@@ -172,7 +169,6 @@ export default class AlexaNationalAnthemsSkill {
   @Intent('SkipIntent', 'AMAZON.NextIntent')
   skipIntent({}, { session }) {
     const data = this._getQuestion(session.attributes.continent);
-    data.wrongQuestions = session.attributes.wrongQuestions + 1;
     const country = countries.getByIso3(data.iso);
     return ask(`<speak>
           Die richtige Antwort war ${countries.getByIso3(session.attributes.iso).name}. Hier ist die nächste Hymne:
