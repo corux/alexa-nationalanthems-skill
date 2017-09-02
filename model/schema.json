@@ -26,7 +26,10 @@
         "spiel die Hymne von {country}",
         "spiel die Nationalhymne von {country}",
         "die Hymne von {country}",
-        "von {country}"
+        "von {country}",
+        "nach der Nationalhymne von {country}",
+        "nach der Hymne von {country}",
+        "nach {country}"
       ],
       "slots": [
         {
@@ -37,14 +40,15 @@
       ]
     },
     {
-      "name": "ContinentIntent",
+      "name": "QuizIntent",
       "samples": [
-        "das ist der Kontinent {continent}",
-        "der Kontinent {continent}",
-        "das ist {continent}",
-        "{continent}",
-        "auf {continent}",
-        "in {continent}"
+        "starte das Quiz mit Ländern aus {continent}",
+        "starte das Quiz mit Ländern von {continent}",
+        "starte das Quiz mit {continent}",
+        "Quiz mit {continent}",
+        "Quiz von {continent}",
+        "starte das Quiz",
+        "Quiz"
       ],
       "slots": [
         {
