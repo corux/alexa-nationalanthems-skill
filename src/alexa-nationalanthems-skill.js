@@ -110,20 +110,22 @@ export default class AlexaNationalAnthemsSkill {
   }
 
   @Intent('QuizIntent')
-  quizStartIntent({ continent }, { session }) {
+  quizStartIntent({ continent }, { session, request }) {
+    continent = this._getSlotValue(request, 'continent');
     let text = `Willkommen beim Quiz. Versuche die Hymnen den richtigen Ländern zuzuordnen.
                 Hier ist die erste Nationalhymne:`;
     let data = this._getQuestion(continent);
+    data.quizMode = true;
+    data.continent = continent;
+
     if (session && session.attributes && session.attributes.quizMode) {
-      session.attributes.continent = continent;
       if (!continent) {
         text = 'Die Beschränkung der Länder wurde aufgehoben. Hier ist die nächste Nationalhymne:';
       } else {
         text = `Die Länder wurden auf ${continent} beschränkt. Hier ist die nächste Nationalhymne:`;
       }
     }
-    data.quizMode = true;
-    data.continent = continent;
+
     const country = countries.getByIso3(data.iso);
     return ask(`<speak>
           ${text}
