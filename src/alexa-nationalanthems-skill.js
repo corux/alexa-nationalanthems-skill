@@ -89,7 +89,11 @@ export default class AlexaNationalAnthemsSkill {
   }
 
   @Intent('PlayAnthemIntent')
-  playAnthemIntent({ country }, { request }) {
+  playAnthemIntent({ country }, { session, request }) {
+    if (session && session.attributes && session.attributes.quizMode) {
+      return this.quizAnswerIntent({ country }, { session, request });
+    }
+
     const data = countries.getAll().filter(val => val.name.toUpperCase() === (this._getSlotValue(request, 'country') || country).toUpperCase())[0];
     const reprompt = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
     if (data && data.anthem) {
