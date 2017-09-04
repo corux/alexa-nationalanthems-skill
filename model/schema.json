@@ -24,7 +24,9 @@
       "name": "PlayAnthemIntent",
       "samples": [
         "spiel die Hymne von {country}",
+        "spiel die Hymne von {country} ab",
         "spiel die Nationalhymne von {country}",
+        "spiel die Nationalhymne von {country} ab",
         "die Hymne von {country}",
         "von {country}",
         "nach der Nationalhymne von {country}",

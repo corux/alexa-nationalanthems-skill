@@ -60,7 +60,7 @@ export default class AlexaNationalAnthemsSkill {
 
   _getNextCountry(continent) {
     const matchesContinent = (country) => {
-      return country.region && country.region.toUpperCase() === continent.toUpperCase();
+      return continent && country.region && country.region.toUpperCase() === continent.toUpperCase();
     };
     return this._getRandomEntry(countries.getAll()
       .filter(val => val.anthem && (!continent || matchesContinent(val))));
@@ -94,7 +94,7 @@ export default class AlexaNationalAnthemsSkill {
       return this.quizAnswerIntent({ country }, { session, request });
     }
 
-    const data = countries.getAll().filter(val => val.name.toUpperCase() === (this._getSlotValue(request, 'country') || country).toUpperCase())[0];
+    const data = countries.getAll().find(val => val.name.toUpperCase() === (this._getSlotValue(request, 'country') || country).toUpperCase());
     const reprompt = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
     if (data && data.anthem) {
       return ask(`<speak>
@@ -109,7 +109,7 @@ export default class AlexaNationalAnthemsSkill {
         });
     }
 
-    return ask(`Ich kenne die Nationalhymne von ${data.name || country} leider nicht. Bitte wähle ein anderes Land.`)
+    return ask(`Ich kenne die Nationalhymne von ${data ? data.name : country} leider nicht. Bitte wähle ein anderes Land.`)
       .reprompt(reprompt);
   }
 
@@ -192,13 +192,14 @@ export default class AlexaNationalAnthemsSkill {
 
   @Intent('AMAZON.HelpIntent')
   help({}, { session }) {
-    const data = session.attributes;
     const country = this._getNextCountry('europa');
-    let returnValue = ask(`Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage zum Beispiel "Spiel die Nationalhymne von ${country.name}. Um das Quiz zu starten, sage "Starte das Quiz".`);
-    if (data.question) {
+    let returnValue = ask(`Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen.
+      Sage zum Beispiel "Spiel die Nationalhymne von ${country.name}.
+      Um das Quiz zu starten, sage "Starte das Quiz".
+      Was möchtest du als nächstes tun?`);
+    if (session && session.attributes && session.attributes.quizMode) {
       returnValue = returnValue
-        .reprompt(data.question)
-        .attributes(data);
+        .attributes(session.attributes);
     }
 
     return returnValue;

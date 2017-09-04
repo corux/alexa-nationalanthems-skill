@@ -44,6 +44,13 @@ test('AMAZON.CancelIntent', async () => {
   });
 });
 
+test('AMAZON.HelpIntent', async () => {
+  const event = Request.intent('AMAZON.HelpIntent').build();
+
+  const response = await Skill(event);
+  expect(response.response.outputSpeech.text).to.contain('Was möchtest du als nächstes tun?');
+});
+
 test('Play anthem for country with anthem', async () => {
   const event = Request.intent('PlayAnthemIntent', { country: 'deutschland' }).build();
   const response = await Skill(event);
