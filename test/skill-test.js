@@ -64,6 +64,12 @@ test('Play anthem for country without anthem', async () => {
   expect(response.response.outputSpeech.text).to.contain('Ich kenne die Nationalhymne von Afghanistan leider nicht. Bitte wähle ein anderes Land.');
 });
 
+test('Play anthem without given country', async () => {
+  const event = Request.intent('PlayAnthemIntent', {}).build();
+  const response = await Skill(event);
+  expect(response.response.outputSpeech.text).to.contain('Welche Nationalhymne möchtest du abspielen?');
+});
+
 test('Start quiz', async () => {
   const event = Request.intent('QuizIntent', { continent: 'europa' }).session({}).build();
 

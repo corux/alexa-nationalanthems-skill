@@ -93,8 +93,12 @@ export default class AlexaNationalAnthemsSkill {
     if (session && session.attributes && session.attributes.quizMode) {
       return this.quizAnswerIntent({ country }, { session, request });
     }
+    country = this._getSlotValue(request, 'country') || country;
+    if (!country) {
+      return this.launch();
+    }
 
-    const data = countries.getAll().find(val => val.name.toUpperCase() === (this._getSlotValue(request, 'country') || country).toUpperCase());
+    const data = countries.getAll().find(val => val.name.toUpperCase() === country.toUpperCase());
     const reprompt = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
     if (data && data.anthem) {
       return ask(`<speak>
