@@ -43,7 +43,7 @@ continent.values = [...new Set(all.map(country => country.region))]
     }
   }));
 
-schema.types = [continent, country];
+schema.interactionModel.languageModel.types = [continent, country];
 
 const schemaFile = path.join(process.cwd(), file);
 fs.writeFile(schemaFile, JSON.stringify(schema, null, 2), 'utf8', (err) => {
