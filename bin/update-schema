@@ -1,11 +1,9 @@
 #!/usr/bin/env babel-node
 
 import fs from 'fs';
-import request from 'request';
 import path from 'path';
 import nomnom from 'nomnom';
 import process from 'process';
-import cheerio from 'cheerio';
 import countries from '../src/countries';
 
 const exists = (filename) => fs.existsSync(filename)
@@ -19,19 +17,6 @@ let { file } = nomnom
 
 const schema = JSON.parse(fs.readFileSync(file));
 const all = countries.getAll();
-
-function createValue(country) {
-  if (!country.iso3 || !country.name) {
-    return;
-  }
-  return {
-    id: country.iso3,
-    name: {
-      value: country.name,
-      synonyms: country.synonyms || []
-    }
-  };
-}
 
 const country = {
   name: 'COUNTRY'
