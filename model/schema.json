@@ -31,7 +31,11 @@
         "von {country}",
         "nach der Nationalhymne von {country}",
         "nach der Hymne von {country}",
-        "nach {country}"
+        "nach {country}",
+        "spiel die {country} Nationalhymne",
+        "spiel die {country} Hymne",
+        "die {country} Hymne",
+        "die {country}"
       ],
       "slots": [
         {
@@ -61,6 +65,17 @@
       ]
     },
     {
+      "name": "SkipIntent",
+      "samples": [
+        "ich weiss nicht",
+        "weiss nicht",
+        "keine Ahnung",
+        "weiter",
+        "nächste Hymne"
+      ],
+      "slots": []
+    },
+    {
       "name": "CountryIntent",
       "samples": [
         "das ist das Land {country}",
@@ -75,17 +90,6 @@
           "samples": []
         }
       ]
-    },
-    {
-      "name": "SkipIntent",
-      "samples": [
-        "ich weiss nicht",
-        "weiss nicht",
-        "keine Ahnung",
-        "weiter",
-        "nächste Hymne"
-      ],
-      "slots": []
     }
   ],
   "types": [
