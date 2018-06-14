@@ -59,9 +59,9 @@ test('Play anthem for country with anthem', async () => {
 });
 
 test('Play anthem for country without anthem', async () => {
-  const event = Request.intent('PlayAnthemIntent', { country: 'afghanistan' }).build();
+  const event = Request.intent('PlayAnthemIntent', { country: 'südossetien' }).build();
   const response = await Skill(event);
-  expect(response.response.outputSpeech.text).to.contain('Ich kenne die Nationalhymne von Afghanistan leider nicht. Bitte wähle ein anderes Land.');
+  expect(response.response.outputSpeech.text).to.contain('Ich kenne die Nationalhymne von Südossetien leider nicht. Bitte wähle ein anderes Land.');
 });
 
 test('Play anthem without given country', async () => {
