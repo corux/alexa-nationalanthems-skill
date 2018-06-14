@@ -51,6 +51,18 @@ test('AMAZON.HelpIntent', async () => {
   expect(response.response.outputSpeech.text).to.contain('Was möchtest du als nächstes tun?');
 });
 
+test('SkipIntent should ask for next anthem when not in quiz mode', async () => {
+  const event = Request.intent('SkipIntent').build();
+  const response = await Skill(event);
+  expect(response.response.outputSpeech.text).to.contain('Welche Nationalhymne möchtest du als nächstes abspielen?');
+});
+
+test('RepeatIntent should not fail if there is nothing to repeat', async () => {
+  const event = Request.intent('AMAZON.RepeatIntent').build();
+  const response = await Skill(event);
+  expect(response.response.outputSpeech.text).to.contain('Es gibt nichts zu wiederholen.');
+});
+
 test('Play anthem for country with anthem', async () => {
   const event = Request.intent('PlayAnthemIntent', { country: 'deutschland' }).build();
   const response = await Skill(event);

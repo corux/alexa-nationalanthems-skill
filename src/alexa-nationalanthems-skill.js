@@ -8,6 +8,7 @@ import countries from './countries';
 export default class AlexaNationalAnthemsSkill {
 
   reprompt = 'Zu welchem Land gehörte die gespielte Hymne?';
+  repromptNextAnthem = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
 
   _getQuestion(continent) {
     const country = this._getNextCountry(continent);
@@ -99,14 +100,13 @@ export default class AlexaNationalAnthemsSkill {
     }
 
     const data = countries.getAll().find(val => val.name.toUpperCase() === country.toUpperCase());
-    const reprompt = 'Welche Nationalhymne möchtest du als nächstes abspielen?';
     if (data && data.anthem) {
       return ask(`<speak>
             Hier ist die Nationalhymne von ${data.name}.
             <audio src="${this._getAudioUrl(data)}" />
-            ${reprompt}
+            ${this.repromptNextAnthem}
           </speak>`, 'SSML')
-        .reprompt(reprompt)
+        .reprompt(this.repromptNextAnthem)
         .attributes({
           iso: data.iso3,
           quizMode: false
@@ -114,7 +114,7 @@ export default class AlexaNationalAnthemsSkill {
     }
 
     return ask(`Ich kenne die Nationalhymne von ${data ? data.name : country} leider nicht. Bitte wähle ein anderes Land.`)
-      .reprompt(reprompt);
+      .reprompt(this.repromptNextAnthem);
   }
 
   @Intent('QuizIntent')
@@ -153,7 +153,7 @@ export default class AlexaNationalAnthemsSkill {
   }
 
   @Intent('AMAZON.RepeatIntent')
-  repeatIntent({}, { session }) {
+  repeatIntent({ }, { session }) {
     if (session && session.attributes && session.attributes.quizMode) {
       const data = session.attributes;
       const country = countries.getByIso3(data.iso);
@@ -168,19 +168,21 @@ export default class AlexaNationalAnthemsSkill {
     if (session && session.attributes && session.attributes.iso) {
       return ask(`<speak>
             <audio src="${this._getAudioUrl(countries.getByIso3(session.attributes.iso))}" />
+            ${this.repromptNextAnthem}
           </speak>`, 'SSML')
-        .reprompt(this.reprompt)
+        .reprompt(this.repromptNextAnthem)
         .attributes(session.attributes);
     }
 
-    return say('Es gibt nichts zu wiederholen.');
+    return ask(`Es gibt nichts zu wiederholen. ${this.repromptNextAnthem}`)
+      .reprompt(this.repromptNextAnthem);
   }
 
   @Intent('SkipIntent', 'AMAZON.NextIntent')
-  skipIntent({}, { session }) {
+  skipIntent({ }, { session }) {
     if (!session || !session.attributes || !session.attributes.quizMode) {
-      return ask('Diese Funktion ist nur im Quiz Modus aktiv. Was möchtest du als nächstes tun?')
-        .reprompt('Was möchtest du als nächstes tun?');
+      return ask(this.repromptNextAnthem)
+        .reprompt(this.repromptNextAnthem);
     }
 
     const data = this._getQuestion(session.attributes.continent);
@@ -195,13 +197,14 @@ export default class AlexaNationalAnthemsSkill {
   }
 
   @Intent('AMAZON.HelpIntent')
-  help({}, { session }) {
+  help({ }, { session }) {
     const country = this._getNextCountry('europa');
     let returnValue = ask(`Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen.
-      Sage zum Beispiel "Spiel die Nationalhymne von ${country.name}.
-      Um das Quiz zu starten, sage "Starte das Quiz".
-      Was möchtest du als nächstes tun?`);
-    if (session && session.attributes && session.attributes.quizMode) {
+        Sage zum Beispiel "Spiel die Nationalhymne von ${country.name}.
+        Um das Quiz zu starten, sage "Starte das Quiz".
+        Was möchtest du als nächstes tun?`)
+      .reprompt('Was möchtest du als nächstes tun?');
+    if (session && session.attributes) {
       returnValue = returnValue
         .attributes(session.attributes);
     }
