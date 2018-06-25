@@ -22,11 +22,19 @@ const country = {
   name: 'COUNTRY'
 };
 country.values = all.filter(country => !!country && !!country.iso3 && !!country.name)
+  .map(country => {
+    country.synonyms = [].concat(
+      country.altNames || [],
+      (country.adjectives || []).map(adj => `${adj}e`)
+    ).filter(n => !!n);
+    country.synonyms = [...new Set(country.synonyms)];
+    return country;
+  })
   .map(country => ({
     id: country.iso3,
     name: {
       value: country.name,
-      synonyms: (country.altNames || []).concat(country.adjectives || [])
+      synonyms: country.synonyms
     }
   }));
 
