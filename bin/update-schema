@@ -24,6 +24,7 @@ const country = {
 country.values = all.filter(country => !!country && !!country.iso3 && !!country.name)
   .map(country => {
     country.synonyms = [].concat(
+      country.longName !== country.name ? [country.longName] : [],
       country.altNames || [],
       (country.adjectives || []).map(adj => `${adj}e`)
     ).filter(n => !!n);

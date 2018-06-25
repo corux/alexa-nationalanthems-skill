@@ -143,7 +143,9 @@
               "id": "ABC",
               "name": {
                 "value": "Abchasien",
-                "synonyms": []
+                "synonyms": [
+                  "Republik Abchasien"
+                ]
               }
             },
             {
@@ -151,7 +153,8 @@
               "name": {
                 "value": "Afghanistan",
                 "synonyms": [
-                  "afghanisch"
+                  "Islamische Republik Afghanistan",
+                  "afghanische"
                 ]
               }
             },
@@ -159,7 +162,9 @@
               "id": "EGY",
               "name": {
                 "value": "Ägypten",
-                "synonyms": []
+                "synonyms": [
+                  "Arabische Republik Ägypten"
+                ]
               }
             },
             {
@@ -167,7 +172,8 @@
               "name": {
                 "value": "Albanien",
                 "synonyms": [
-                  "albanisch"
+                  "Republik Albanien",
+                  "albanische"
                 ]
               }
             },
@@ -176,7 +182,8 @@
               "name": {
                 "value": "Algerien",
                 "synonyms": [
-                  "algerisch"
+                  "Demokratische Volksrepublik Algerien",
+                  "algerische"
                 ]
               }
             },
@@ -185,7 +192,8 @@
               "name": {
                 "value": "Andorra",
                 "synonyms": [
-                  "andorranisch"
+                  "Fürstentum Andorra",
+                  "andorranische"
                 ]
               }
             },
@@ -194,7 +202,8 @@
               "name": {
                 "value": "Angola",
                 "synonyms": [
-                  "angolanisch"
+                  "Republik Angola",
+                  "angolanische"
                 ]
               }
             },
@@ -203,7 +212,7 @@
               "name": {
                 "value": "Antigua und Barbuda",
                 "synonyms": [
-                  "antiguanisch"
+                  "antiguanische"
                 ]
               }
             },
@@ -211,7 +220,9 @@
               "id": "GNQ",
               "name": {
                 "value": "Äquatorialguinea",
-                "synonyms": []
+                "synonyms": [
+                  "Republik Äquatorial­guinea"
+                ]
               }
             },
             {
@@ -219,7 +230,8 @@
               "name": {
                 "value": "Argentinien",
                 "synonyms": [
-                  "argentinisch"
+                  "Argentinische Republik",
+                  "argentinische"
                 ]
               }
             },
@@ -228,7 +240,8 @@
               "name": {
                 "value": "Armenien",
                 "synonyms": [
-                  "armenisch"
+                  "Republik Armenien",
+                  "armenische"
                 ]
               }
             },
@@ -237,7 +250,8 @@
               "name": {
                 "value": "Aserbaidschan",
                 "synonyms": [
-                  "aserbaidschanisch"
+                  "Republik Aserbaidschan",
+                  "aserbaidschanische"
                 ]
               }
             },
@@ -245,7 +259,9 @@
               "id": "ETH",
               "name": {
                 "value": "Äthiopien",
-                "synonyms": []
+                "synonyms": [
+                  "Demokratische Bundesrepublik Äthiopien"
+                ]
               }
             },
             {
@@ -253,7 +269,7 @@
               "name": {
                 "value": "Australien",
                 "synonyms": [
-                  "australisch"
+                  "australische"
                 ]
               }
             },
@@ -262,7 +278,8 @@
               "name": {
                 "value": "Bahamas",
                 "synonyms": [
-                  "bahamaisch"
+                  "Commonwealth der Bahamas",
+                  "bahamaische"
                 ]
               }
             },
@@ -271,7 +288,8 @@
               "name": {
                 "value": "Bahrain",
                 "synonyms": [
-                  "bahrainisch"
+                  "Königreich Bahrain",
+                  "bahrainische"
                 ]
               }
             },
@@ -280,7 +298,8 @@
               "name": {
                 "value": "Bangladesch",
                 "synonyms": [
-                  "bangladeschisch"
+                  "Volksrepublik Bangladesch",
+                  "bangladeschische"
                 ]
               }
             },
@@ -289,7 +308,7 @@
               "name": {
                 "value": "Barbados",
                 "synonyms": [
-                  "barbadisch"
+                  "barbadische"
                 ]
               }
             },
@@ -298,7 +317,8 @@
               "name": {
                 "value": "Belgien",
                 "synonyms": [
-                  "belgisch"
+                  "Königreich Belgien",
+                  "belgische"
                 ]
               }
             },
@@ -307,7 +327,7 @@
               "name": {
                 "value": "Belize",
                 "synonyms": [
-                  "belizisch"
+                  "belizische"
                 ]
               }
             },
@@ -316,7 +336,8 @@
               "name": {
                 "value": "Benin",
                 "synonyms": [
-                  "beninisch"
+                  "Republik Benin",
+                  "beninische"
                 ]
               }
             },
@@ -325,7 +346,8 @@
               "name": {
                 "value": "Bhutan",
                 "synonyms": [
-                  "bhutanisch"
+                  "Königreich Bhutan",
+                  "bhutanische"
                 ]
               }
             },
@@ -334,7 +356,8 @@
               "name": {
                 "value": "Bolivien",
                 "synonyms": [
-                  "bolivianisch"
+                  "Plurinationaler Staat Bolivien",
+                  "bolivianische"
                 ]
               }
             },
@@ -343,7 +366,7 @@
               "name": {
                 "value": "Bosnien und Herzegowina",
                 "synonyms": [
-                  "bosnisch-herzegowinisch"
+                  "bosnisch-herzegowinische"
                 ]
               }
             },
@@ -352,8 +375,9 @@
               "name": {
                 "value": "Botswana",
                 "synonyms": [
-                  "botswanisch",
-                  "botsuanisch"
+                  "Republik Botsuana",
+                  "botswanische",
+                  "botsuanische"
                 ]
               }
             },
@@ -362,7 +386,8 @@
               "name": {
                 "value": "Brasilien",
                 "synonyms": [
-                  "brasilianisch"
+                  "Föderative Republik Brasilien",
+                  "brasilianische"
                 ]
               }
             },
@@ -371,7 +396,8 @@
               "name": {
                 "value": "Brunei",
                 "synonyms": [
-                  "bruneiisch"
+                  "Brunei Darussalam",
+                  "bruneiische"
                 ]
               }
             },
@@ -380,7 +406,8 @@
               "name": {
                 "value": "Bulgarien",
                 "synonyms": [
-                  "bulgarisch"
+                  "Republik Bulgarien",
+                  "bulgarische"
                 ]
               }
             },
@@ -389,7 +416,7 @@
               "name": {
                 "value": "Burkina Faso",
                 "synonyms": [
-                  "burkinisch"
+                  "burkinische"
                 ]
               }
             },
@@ -398,7 +425,8 @@
               "name": {
                 "value": "Burundi",
                 "synonyms": [
-                  "burundisch"
+                  "Republik Burundi",
+                  "burundische"
                 ]
               }
             },
@@ -407,7 +435,8 @@
               "name": {
                 "value": "Chile",
                 "synonyms": [
-                  "chilenisch"
+                  "Republik Chile",
+                  "chilenische"
                 ]
               }
             },
@@ -416,8 +445,9 @@
               "name": {
                 "value": "Republik China",
                 "synonyms": [
+                  "Republik China (Taiwan)",
                   "Taiwan",
-                  "taiwanisch"
+                  "taiwanische"
                 ]
               }
             },
@@ -427,7 +457,7 @@
                 "value": "Volksrepublik China",
                 "synonyms": [
                   "China",
-                  "chinesisch"
+                  "chinesische"
                 ]
               }
             },
@@ -443,7 +473,8 @@
               "name": {
                 "value": "Costa Rica",
                 "synonyms": [
-                  "costa-ricanisch"
+                  "Republik Costa Rica",
+                  "costa-ricanische"
                 ]
               }
             },
@@ -452,7 +483,8 @@
               "name": {
                 "value": "Dänemark",
                 "synonyms": [
-                  "dänisch"
+                  "Königreich Dänemark",
+                  "dänische"
                 ]
               }
             },
@@ -461,7 +493,8 @@
               "name": {
                 "value": "Deutschland",
                 "synonyms": [
-                  "deutsch"
+                  "Bundesrepublik Deutschland",
+                  "deutsche"
                 ]
               }
             },
@@ -470,7 +503,8 @@
               "name": {
                 "value": "Dominica",
                 "synonyms": [
-                  "dominicanisch"
+                  "Commonwealth Dominica",
+                  "dominicanische"
                 ]
               }
             },
@@ -479,7 +513,7 @@
               "name": {
                 "value": "Dominikanische Republik",
                 "synonyms": [
-                  "dominikanisch"
+                  "dominikanische"
                 ]
               }
             },
@@ -488,7 +522,8 @@
               "name": {
                 "value": "Dschibuti",
                 "synonyms": [
-                  "dschibutisch"
+                  "Republik Dschibuti",
+                  "dschibutische"
                 ]
               }
             },
@@ -497,7 +532,8 @@
               "name": {
                 "value": "Ecuador",
                 "synonyms": [
-                  "ecuadorianisch"
+                  "Republik Ecuador",
+                  "ecuadorianische"
                 ]
               }
             },
@@ -506,7 +542,8 @@
               "name": {
                 "value": "El Salvador",
                 "synonyms": [
-                  "salvadorianisch"
+                  "Republik El Salvador",
+                  "salvadorianische"
                 ]
               }
             },
@@ -515,7 +552,8 @@
               "name": {
                 "value": "Elfenbeinküste",
                 "synonyms": [
-                  "ivorisch"
+                  "Republik Côte d’Ivoire",
+                  "ivorische"
                 ]
               }
             },
@@ -524,7 +562,8 @@
               "name": {
                 "value": "Eritrea",
                 "synonyms": [
-                  "eritreisch"
+                  "Staat Eritrea",
+                  "eritreische"
                 ]
               }
             },
@@ -533,7 +572,8 @@
               "name": {
                 "value": "Estland",
                 "synonyms": [
-                  "estnisch"
+                  "Republik Estland",
+                  "estnische"
                 ]
               }
             },
@@ -542,7 +582,8 @@
               "name": {
                 "value": "Fidschi",
                 "synonyms": [
-                  "fidschianisch"
+                  "Republik Fidschi",
+                  "fidschianische"
                 ]
               }
             },
@@ -551,7 +592,8 @@
               "name": {
                 "value": "Finnland",
                 "synonyms": [
-                  "finnisch"
+                  "Republik Finnland",
+                  "finnische"
                 ]
               }
             },
@@ -560,7 +602,8 @@
               "name": {
                 "value": "Frankreich",
                 "synonyms": [
-                  "französisch"
+                  "Französische Republik",
+                  "französische"
                 ]
               }
             },
@@ -569,7 +612,8 @@
               "name": {
                 "value": "Gabun",
                 "synonyms": [
-                  "gabunisch"
+                  "Gabunische Republik",
+                  "gabunische"
                 ]
               }
             },
@@ -578,7 +622,8 @@
               "name": {
                 "value": "Gambia",
                 "synonyms": [
-                  "gambisch"
+                  "Republik Gambia",
+                  "gambische"
                 ]
               }
             },
@@ -587,7 +632,7 @@
               "name": {
                 "value": "Georgien",
                 "synonyms": [
-                  "georgisch"
+                  "georgische"
                 ]
               }
             },
@@ -596,7 +641,8 @@
               "name": {
                 "value": "Ghana",
                 "synonyms": [
-                  "ghanaisch"
+                  "Republik Ghana",
+                  "ghanaische"
                 ]
               }
             },
@@ -605,7 +651,7 @@
               "name": {
                 "value": "Grenada",
                 "synonyms": [
-                  "grenadisch"
+                  "grenadische"
                 ]
               }
             },
@@ -614,7 +660,8 @@
               "name": {
                 "value": "Griechenland",
                 "synonyms": [
-                  "griechisch"
+                  "Hellenische Republik",
+                  "griechische"
                 ]
               }
             },
@@ -623,7 +670,8 @@
               "name": {
                 "value": "Guatemala",
                 "synonyms": [
-                  "guatemaltekisch"
+                  "Republik Guatemala",
+                  "guatemaltekische"
                 ]
               }
             },
@@ -632,7 +680,8 @@
               "name": {
                 "value": "Guinea",
                 "synonyms": [
-                  "guineisch"
+                  "Republik Guinea",
+                  "guineische"
                 ]
               }
             },
@@ -641,7 +690,8 @@
               "name": {
                 "value": "Guinea-Bissau",
                 "synonyms": [
-                  "guinea-bissauisch"
+                  "Republik Guinea-Bissau",
+                  "guinea-bissauische"
                 ]
               }
             },
@@ -650,7 +700,8 @@
               "name": {
                 "value": "Guyana",
                 "synonyms": [
-                  "guyanisch"
+                  "Kooperative Republik Guyana",
+                  "guyanische"
                 ]
               }
             },
@@ -659,7 +710,8 @@
               "name": {
                 "value": "Haiti",
                 "synonyms": [
-                  "haitianisch"
+                  "Republik Haiti",
+                  "haitianische"
                 ]
               }
             },
@@ -668,7 +720,8 @@
               "name": {
                 "value": "Honduras",
                 "synonyms": [
-                  "honduranisch"
+                  "Republik Honduras",
+                  "honduranische"
                 ]
               }
             },
@@ -677,7 +730,8 @@
               "name": {
                 "value": "Indien",
                 "synonyms": [
-                  "indisch"
+                  "Republik Indien",
+                  "indische"
                 ]
               }
             },
@@ -686,7 +740,8 @@
               "name": {
                 "value": "Indonesien",
                 "synonyms": [
-                  "indonesisch"
+                  "Republik Indonesien",
+                  "indonesische"
                 ]
               }
             },
@@ -695,7 +750,8 @@
               "name": {
                 "value": "Irak",
                 "synonyms": [
-                  "irakisch"
+                  "Republik Irak",
+                  "irakische"
                 ]
               }
             },
@@ -704,7 +760,8 @@
               "name": {
                 "value": "Iran",
                 "synonyms": [
-                  "iranisch"
+                  "Islamische Republik Iran",
+                  "iranische"
                 ]
               }
             },
@@ -713,7 +770,7 @@
               "name": {
                 "value": "Irland",
                 "synonyms": [
-                  "irisch"
+                  "irische"
                 ]
               }
             },
@@ -722,7 +779,8 @@
               "name": {
                 "value": "Island",
                 "synonyms": [
-                  "isländisch"
+                  "Republik Island",
+                  "isländische"
                 ]
               }
             },
@@ -731,7 +789,8 @@
               "name": {
                 "value": "Israel",
                 "synonyms": [
-                  "israelisch"
+                  "Staat Israel",
+                  "israelische"
                 ]
               }
             },
@@ -740,7 +799,8 @@
               "name": {
                 "value": "Italien",
                 "synonyms": [
-                  "italienisch"
+                  "Italienische Republik",
+                  "italienische"
                 ]
               }
             },
@@ -749,7 +809,7 @@
               "name": {
                 "value": "Jamaika",
                 "synonyms": [
-                  "jamaikanisch"
+                  "jamaikanische"
                 ]
               }
             },
@@ -758,7 +818,7 @@
               "name": {
                 "value": "Japan",
                 "synonyms": [
-                  "japanisch"
+                  "japanische"
                 ]
               }
             },
@@ -767,7 +827,8 @@
               "name": {
                 "value": "Jemen",
                 "synonyms": [
-                  "jemenitisch"
+                  "Republik Jemen",
+                  "jemenitische"
                 ]
               }
             },
@@ -776,7 +837,8 @@
               "name": {
                 "value": "Jordanien",
                 "synonyms": [
-                  "jordanisch"
+                  "Haschemitisches Königreich Jordanien",
+                  "jordanische"
                 ]
               }
             },
@@ -785,7 +847,8 @@
               "name": {
                 "value": "Kambodscha",
                 "synonyms": [
-                  "kambodschanisch"
+                  "Königreich Kambodscha",
+                  "kambodschanische"
                 ]
               }
             },
@@ -794,7 +857,8 @@
               "name": {
                 "value": "Kamerun",
                 "synonyms": [
-                  "kamerunisch"
+                  "Republik Kamerun",
+                  "kamerunische"
                 ]
               }
             },
@@ -803,7 +867,7 @@
               "name": {
                 "value": "Kanada",
                 "synonyms": [
-                  "kanadisch"
+                  "kanadische"
                 ]
               }
             },
@@ -812,8 +876,9 @@
               "name": {
                 "value": "Kap Verde",
                 "synonyms": [
-                  "kapverdisch",
-                  "kap-verdisch"
+                  "Republik Cabo Verde",
+                  "kapverdische",
+                  "kap-verdische"
                 ]
               }
             },
@@ -822,7 +887,8 @@
               "name": {
                 "value": "Kasachstan",
                 "synonyms": [
-                  "kasachisch"
+                  "Republik Kasachstan",
+                  "kasachische"
                 ]
               }
             },
@@ -831,7 +897,8 @@
               "name": {
                 "value": "Katar",
                 "synonyms": [
-                  "katarisch"
+                  "Staat Katar",
+                  "katarische"
                 ]
               }
             },
@@ -840,7 +907,8 @@
               "name": {
                 "value": "Kenia",
                 "synonyms": [
-                  "kenianisch"
+                  "Republik Kenia",
+                  "kenianische"
                 ]
               }
             },
@@ -849,7 +917,8 @@
               "name": {
                 "value": "Kirgisistan",
                 "synonyms": [
-                  "kirgisisch"
+                  "Kirgisische Republik",
+                  "kirgisische"
                 ]
               }
             },
@@ -858,7 +927,8 @@
               "name": {
                 "value": "Kiribati",
                 "synonyms": [
-                  "kiribatisch"
+                  "Republik Kiribati",
+                  "kiribatische"
                 ]
               }
             },
@@ -867,7 +937,8 @@
               "name": {
                 "value": "Kolumbien",
                 "synonyms": [
-                  "kolumbianisch"
+                  "Republik Kolumbien",
+                  "kolumbianische"
                 ]
               }
             },
@@ -876,7 +947,8 @@
               "name": {
                 "value": "Komoren",
                 "synonyms": [
-                  "komorisch"
+                  "Union der Komoren",
+                  "komorische"
                 ]
               }
             },
@@ -885,7 +957,7 @@
               "name": {
                 "value": "Demokratische Republik Kongo",
                 "synonyms": [
-                  "kongolesisch"
+                  "kongolesische"
                 ]
               }
             },
@@ -894,7 +966,7 @@
               "name": {
                 "value": "Republik Kongo",
                 "synonyms": [
-                  "kongolesisch"
+                  "kongolesische"
                 ]
               }
             },
@@ -903,7 +975,8 @@
               "name": {
                 "value": "Nordkorea",
                 "synonyms": [
-                  "koreanisch"
+                  "Demokratische Volksrepublik Korea",
+                  "koreanische"
                 ]
               }
             },
@@ -912,7 +985,8 @@
               "name": {
                 "value": "Südkorea",
                 "synonyms": [
-                  "koreanisch"
+                  "Republik Korea",
+                  "koreanische"
                 ]
               }
             },
@@ -920,7 +994,9 @@
               "id": "RKS",
               "name": {
                 "value": "Kosovo",
-                "synonyms": []
+                "synonyms": [
+                  "Republik Kosovo"
+                ]
               }
             },
             {
@@ -928,7 +1004,8 @@
               "name": {
                 "value": "Kroatien",
                 "synonyms": [
-                  "kroatisch"
+                  "Republik Kroatien",
+                  "kroatische"
                 ]
               }
             },
@@ -937,7 +1014,8 @@
               "name": {
                 "value": "Kuba",
                 "synonyms": [
-                  "kubanisch"
+                  "Republik Kuba",
+                  "kubanische"
                 ]
               }
             },
@@ -946,7 +1024,8 @@
               "name": {
                 "value": "Kuwait",
                 "synonyms": [
-                  "kuwaitisch"
+                  "Staat Kuwait",
+                  "kuwaitische"
                 ]
               }
             },
@@ -955,7 +1034,8 @@
               "name": {
                 "value": "Laos",
                 "synonyms": [
-                  "laotisch"
+                  "Demokratische Volksrepublik Laos",
+                  "laotische"
                 ]
               }
             },
@@ -964,7 +1044,8 @@
               "name": {
                 "value": "Lesotho",
                 "synonyms": [
-                  "lesothisch"
+                  "Königreich Lesotho",
+                  "lesothische"
                 ]
               }
             },
@@ -973,7 +1054,8 @@
               "name": {
                 "value": "Lettland",
                 "synonyms": [
-                  "lettisch"
+                  "Republik Lettland",
+                  "lettische"
                 ]
               }
             },
@@ -982,7 +1064,8 @@
               "name": {
                 "value": "Libanon",
                 "synonyms": [
-                  "libanesisch"
+                  "Libanesische Republik",
+                  "libanesische"
                 ]
               }
             },
@@ -991,7 +1074,8 @@
               "name": {
                 "value": "Liberia",
                 "synonyms": [
-                  "liberianisch"
+                  "Republik Liberia",
+                  "liberianische"
                 ]
               }
             },
@@ -1000,7 +1084,7 @@
               "name": {
                 "value": "Libyen",
                 "synonyms": [
-                  "libysch"
+                  "libysche"
                 ]
               }
             },
@@ -1009,7 +1093,8 @@
               "name": {
                 "value": "Liechtenstein",
                 "synonyms": [
-                  "liechtensteinisch"
+                  "Fürstentum Liechtenstein",
+                  "liechtensteinische"
                 ]
               }
             },
@@ -1018,7 +1103,8 @@
               "name": {
                 "value": "Litauen",
                 "synonyms": [
-                  "litauisch"
+                  "Republik Litauen",
+                  "litauische"
                 ]
               }
             },
@@ -1027,7 +1113,8 @@
               "name": {
                 "value": "Luxemburg",
                 "synonyms": [
-                  "luxemburgisch"
+                  "Großherzogtum Luxemburg",
+                  "luxemburgische"
                 ]
               }
             },
@@ -1036,7 +1123,8 @@
               "name": {
                 "value": "Madagaskar",
                 "synonyms": [
-                  "madagassisch"
+                  "Republik Madagaskar",
+                  "madagassische"
                 ]
               }
             },
@@ -1045,7 +1133,8 @@
               "name": {
                 "value": "Malawi",
                 "synonyms": [
-                  "malawisch"
+                  "Republik Malawi",
+                  "malawische"
                 ]
               }
             },
@@ -1054,7 +1143,7 @@
               "name": {
                 "value": "Malaysia",
                 "synonyms": [
-                  "malaysisch"
+                  "malaysische"
                 ]
               }
             },
@@ -1063,7 +1152,8 @@
               "name": {
                 "value": "Malediven",
                 "synonyms": [
-                  "maledivisch"
+                  "Republik Malediven",
+                  "maledivische"
                 ]
               }
             },
@@ -1072,7 +1162,8 @@
               "name": {
                 "value": "Mali",
                 "synonyms": [
-                  "malisch"
+                  "Republik Mali",
+                  "malische"
                 ]
               }
             },
@@ -1081,7 +1172,8 @@
               "name": {
                 "value": "Malta",
                 "synonyms": [
-                  "maltesisch"
+                  "Republik Malta",
+                  "maltesische"
                 ]
               }
             },
@@ -1090,7 +1182,8 @@
               "name": {
                 "value": "Marokko",
                 "synonyms": [
-                  "marokkanisch"
+                  "Königreich Marokko",
+                  "marokkanische"
                 ]
               }
             },
@@ -1099,7 +1192,8 @@
               "name": {
                 "value": "Marshallinseln",
                 "synonyms": [
-                  "marshallisch"
+                  "Republik Marshallinseln",
+                  "marshallische"
                 ]
               }
             },
@@ -1108,7 +1202,8 @@
               "name": {
                 "value": "Mauretanien",
                 "synonyms": [
-                  "mauretanisch"
+                  "Islamische Republik Mauretanien",
+                  "mauretanische"
                 ]
               }
             },
@@ -1117,7 +1212,8 @@
               "name": {
                 "value": "Mauritius",
                 "synonyms": [
-                  "mauritisch"
+                  "Republik Mauritius",
+                  "mauritische"
                 ]
               }
             },
@@ -1126,7 +1222,8 @@
               "name": {
                 "value": "Mazedonien",
                 "synonyms": [
-                  "mazedonisch"
+                  "Ehemalige jugoslawische Republik Mazedonien",
+                  "mazedonische"
                 ]
               }
             },
@@ -1135,7 +1232,8 @@
               "name": {
                 "value": "Mexiko",
                 "synonyms": [
-                  "mexikanisch"
+                  "Vereinigte Mexikanische Staaten",
+                  "mexikanische"
                 ]
               }
             },
@@ -1144,7 +1242,8 @@
               "name": {
                 "value": "Mikronesien",
                 "synonyms": [
-                  "mikronesisch"
+                  "Föderierte Staaten von Mikronesien",
+                  "mikronesische"
                 ]
               }
             },
@@ -1153,8 +1252,9 @@
               "name": {
                 "value": "Moldau",
                 "synonyms": [
-                  "moldauisch",
-                  "moldavisch"
+                  "Republik Moldau",
+                  "moldauische",
+                  "moldavische"
                 ]
               }
             },
@@ -1163,7 +1263,8 @@
               "name": {
                 "value": "Monaco",
                 "synonyms": [
-                  "monegassisch"
+                  "Fürstentum Monaco",
+                  "monegassische"
                 ]
               }
             },
@@ -1172,8 +1273,8 @@
               "name": {
                 "value": "Mongolei",
                 "synonyms": [
-                  "mongolisch",
-                  "montenegrinisch"
+                  "mongolische",
+                  "montenegrinische"
                 ]
               }
             },
@@ -1189,7 +1290,8 @@
               "name": {
                 "value": "Mosambik",
                 "synonyms": [
-                  "mosambikanisch"
+                  "Republik Mosambik",
+                  "mosambikanische"
                 ]
               }
             },
@@ -1198,9 +1300,10 @@
               "name": {
                 "value": "Myanmar",
                 "synonyms": [
-                  "myanmarisch",
-                  "birmanisch",
-                  "burmesisch"
+                  "Republik der Union Myanmar",
+                  "myanmarische",
+                  "birmanische",
+                  "burmesische"
                 ]
               }
             },
@@ -1209,7 +1312,8 @@
               "name": {
                 "value": "Namibia",
                 "synonyms": [
-                  "namibisch"
+                  "Republik Namibia",
+                  "namibische"
                 ]
               }
             },
@@ -1218,7 +1322,8 @@
               "name": {
                 "value": "Nauru",
                 "synonyms": [
-                  "nauruisch"
+                  "Republik Nauru",
+                  "nauruische"
                 ]
               }
             },
@@ -1227,7 +1332,8 @@
               "name": {
                 "value": "Nepal",
                 "synonyms": [
-                  "nepalesisch"
+                  "Demokratische Bundesrepublik Nepal",
+                  "nepalesische"
                 ]
               }
             },
@@ -1236,7 +1342,7 @@
               "name": {
                 "value": "Neuseeland",
                 "synonyms": [
-                  "neuseeländisch"
+                  "neuseeländische"
                 ]
               }
             },
@@ -1245,7 +1351,8 @@
               "name": {
                 "value": "Nicaragua",
                 "synonyms": [
-                  "nicaraguanisch"
+                  "Republik Nicaragua",
+                  "nicaraguanische"
                 ]
               }
             },
@@ -1254,7 +1361,8 @@
               "name": {
                 "value": "Niederlande",
                 "synonyms": [
-                  "niederländisch"
+                  "Königreich der Niederlande",
+                  "niederländische"
                 ]
               }
             },
@@ -1263,7 +1371,8 @@
               "name": {
                 "value": "Niger",
                 "synonyms": [
-                  "nigrisch"
+                  "Republik Niger",
+                  "nigrische"
                 ]
               }
             },
@@ -1272,7 +1381,8 @@
               "name": {
                 "value": "Nigeria",
                 "synonyms": [
-                  "nigerianisch"
+                  "Bundesrepublik Nigeria",
+                  "nigerianische"
                 ]
               }
             },
@@ -1281,7 +1391,7 @@
               "name": {
                 "value": "Niue",
                 "synonyms": [
-                  "niueanisch"
+                  "niueanische"
                 ]
               }
             },
@@ -1290,7 +1400,8 @@
               "name": {
                 "value": "Norwegen",
                 "synonyms": [
-                  "norwegisch"
+                  "Königreich Norwegen",
+                  "norwegische"
                 ]
               }
             },
@@ -1299,7 +1410,8 @@
               "name": {
                 "value": "Oman",
                 "synonyms": [
-                  "omanisch"
+                  "Sultanat Oman",
+                  "omanische"
                 ]
               }
             },
@@ -1307,7 +1419,9 @@
               "id": "AUT",
               "name": {
                 "value": "Österreich",
-                "synonyms": []
+                "synonyms": [
+                  "Republik Österreich"
+                ]
               }
             },
             {
@@ -1315,8 +1429,9 @@
               "name": {
                 "value": "Osttimor / Timor-Leste",
                 "synonyms": [
-                  "osttimoresisch",
-                  "osttimorisch"
+                  "Demokratische Republik Timor-Leste",
+                  "osttimoresische",
+                  "osttimorische"
                 ]
               }
             },
@@ -1325,7 +1440,8 @@
               "name": {
                 "value": "Pakistan",
                 "synonyms": [
-                  "pakistanisch"
+                  "Islamische Republik Pakistan",
+                  "pakistanische"
                 ]
               }
             },
@@ -1333,7 +1449,9 @@
               "id": "PSE",
               "name": {
                 "value": "Palästina",
-                "synonyms": []
+                "synonyms": [
+                  "–"
+                ]
               }
             },
             {
@@ -1341,7 +1459,8 @@
               "name": {
                 "value": "Palau",
                 "synonyms": [
-                  "palauisch"
+                  "Republik Palau",
+                  "palauische"
                 ]
               }
             },
@@ -1350,7 +1469,8 @@
               "name": {
                 "value": "Panama",
                 "synonyms": [
-                  "panamaisch"
+                  "Republik Panama",
+                  "panamaische"
                 ]
               }
             },
@@ -1359,7 +1479,8 @@
               "name": {
                 "value": "Papua-Neuguinea",
                 "synonyms": [
-                  "papua-neuguineisch"
+                  "Unabhängiger Staat Papua-Neuguinea",
+                  "papua-neuguineische"
                 ]
               }
             },
@@ -1368,7 +1489,8 @@
               "name": {
                 "value": "Paraguay",
                 "synonyms": [
-                  "paraguayisch"
+                  "Republik Paraguay",
+                  "paraguayische"
                 ]
               }
             },
@@ -1377,7 +1499,8 @@
               "name": {
                 "value": "Peru",
                 "synonyms": [
-                  "peruanisch"
+                  "Republik Peru",
+                  "peruanische"
                 ]
               }
             },
@@ -1386,7 +1509,8 @@
               "name": {
                 "value": "Philippinen",
                 "synonyms": [
-                  "philippinisch"
+                  "Republik der Philippinen",
+                  "philippinische"
                 ]
               }
             },
@@ -1395,7 +1519,8 @@
               "name": {
                 "value": "Polen",
                 "synonyms": [
-                  "polnisch"
+                  "Republik Polen",
+                  "polnische"
                 ]
               }
             },
@@ -1404,7 +1529,8 @@
               "name": {
                 "value": "Portugal",
                 "synonyms": [
-                  "portugiesisch"
+                  "Portugiesische Republik",
+                  "portugiesische"
                 ]
               }
             },
@@ -1413,7 +1539,8 @@
               "name": {
                 "value": "Ruanda",
                 "synonyms": [
-                  "ruandisch"
+                  "Republik Ruanda",
+                  "ruandische"
                 ]
               }
             },
@@ -1422,7 +1549,8 @@
               "name": {
                 "value": "Rumänien",
                 "synonyms": [
-                  "rumänisch"
+                  "Republik Rumänien",
+                  "rumänische"
                 ]
               }
             },
@@ -1431,7 +1559,8 @@
               "name": {
                 "value": "Russland",
                 "synonyms": [
-                  "russisch"
+                  "Russische Föderation",
+                  "russische"
                 ]
               }
             },
@@ -1440,7 +1569,7 @@
               "name": {
                 "value": "Salomonen",
                 "synonyms": [
-                  "salomonisch"
+                  "salomonische"
                 ]
               }
             },
@@ -1449,7 +1578,8 @@
               "name": {
                 "value": "Sambia",
                 "synonyms": [
-                  "sambisch"
+                  "Republik Sambia",
+                  "sambische"
                 ]
               }
             },
@@ -1458,7 +1588,8 @@
               "name": {
                 "value": "Samoa",
                 "synonyms": [
-                  "samoanisch"
+                  "Unabhängiger Staat Samoa",
+                  "samoanische"
                 ]
               }
             },
@@ -1467,7 +1598,8 @@
               "name": {
                 "value": "San Marino",
                 "synonyms": [
-                  "san-marinesisch"
+                  "Republik San Marino",
+                  "san-marinesische"
                 ]
               }
             },
@@ -1476,7 +1608,8 @@
               "name": {
                 "value": "São Tomé und Príncipe",
                 "synonyms": [
-                  "são-toméisch"
+                  "Demokratische Republik São Tomé und Príncipe",
+                  "são-toméische"
                 ]
               }
             },
@@ -1485,7 +1618,8 @@
               "name": {
                 "value": "Saudi-Arabien",
                 "synonyms": [
-                  "saudi-arabisch"
+                  "Königreich Saudi-Arabien",
+                  "saudi-arabische"
                 ]
               }
             },
@@ -1494,7 +1628,8 @@
               "name": {
                 "value": "Schweden",
                 "synonyms": [
-                  "schwedisch"
+                  "Königreich Schweden",
+                  "schwedische"
                 ]
               }
             },
@@ -1503,8 +1638,9 @@
               "name": {
                 "value": "Schweiz",
                 "synonyms": [
-                  "Schweizer",
-                  "schweizerisch"
+                  "Schweizerische Eid­genossen­schaft",
+                  "Schweizere",
+                  "schweizerische"
                 ]
               }
             },
@@ -1513,7 +1649,8 @@
               "name": {
                 "value": "Senegal",
                 "synonyms": [
-                  "senegalesisch"
+                  "Republik Senegal",
+                  "senegalesische"
                 ]
               }
             },
@@ -1522,7 +1659,8 @@
               "name": {
                 "value": "Serbien",
                 "synonyms": [
-                  "serbisch"
+                  "Republik Serbien",
+                  "serbische"
                 ]
               }
             },
@@ -1531,7 +1669,8 @@
               "name": {
                 "value": "Seychellen",
                 "synonyms": [
-                  "seychellisch"
+                  "Republik Seychellen",
+                  "seychellische"
                 ]
               }
             },
@@ -1540,7 +1679,8 @@
               "name": {
                 "value": "Sierra Leone",
                 "synonyms": [
-                  "sierra-leonisch"
+                  "Republik Sierra Leone",
+                  "sierra-leonische"
                 ]
               }
             },
@@ -1549,7 +1689,8 @@
               "name": {
                 "value": "Simbabwe",
                 "synonyms": [
-                  "simbabwisch"
+                  "Republik Simbabwe",
+                  "simbabwische"
                 ]
               }
             },
@@ -1558,7 +1699,8 @@
               "name": {
                 "value": "Singapur",
                 "synonyms": [
-                  "singapurisch"
+                  "Republik Singapur",
+                  "singapurische"
                 ]
               }
             },
@@ -1567,7 +1709,8 @@
               "name": {
                 "value": "Slowakei",
                 "synonyms": [
-                  "slowakisch"
+                  "Slowakische Republik",
+                  "slowakische"
                 ]
               }
             },
@@ -1576,7 +1719,8 @@
               "name": {
                 "value": "Slowenien",
                 "synonyms": [
-                  "slowenisch"
+                  "Republik Slowenien",
+                  "slowenische"
                 ]
               }
             },
@@ -1585,7 +1729,8 @@
               "name": {
                 "value": "Somalia",
                 "synonyms": [
-                  "somalisch"
+                  "Bundesrepublik Somalia",
+                  "somalische"
                 ]
               }
             },
@@ -1594,7 +1739,8 @@
               "name": {
                 "value": "Spanien",
                 "synonyms": [
-                  "spanisch"
+                  "Königreich Spanien",
+                  "spanische"
                 ]
               }
             },
@@ -1603,7 +1749,8 @@
               "name": {
                 "value": "Sri Lanka",
                 "synonyms": [
-                  "sri-lankisch"
+                  "Demokratische Sozialistische Republik Sri Lanka",
+                  "sri-lankische"
                 ]
               }
             },
@@ -1611,7 +1758,9 @@
               "id": "KNA",
               "name": {
                 "value": "St. Kitts und Nevis",
-                "synonyms": []
+                "synonyms": [
+                  "Föderation St. Kitts und Nevis"
+                ]
               }
             },
             {
@@ -1619,7 +1768,7 @@
               "name": {
                 "value": "St. Lucia",
                 "synonyms": [
-                  "lucianisch"
+                  "lucianische"
                 ]
               }
             },
@@ -1628,7 +1777,7 @@
               "name": {
                 "value": "St. Vincent und die Grenadinen",
                 "synonyms": [
-                  "vincentisch"
+                  "vincentische"
                 ]
               }
             },
@@ -1637,7 +1786,8 @@
               "name": {
                 "value": "Südafrika",
                 "synonyms": [
-                  "südafrikanisch"
+                  "Republik Südafrika",
+                  "südafrikanische"
                 ]
               }
             },
@@ -1646,7 +1796,8 @@
               "name": {
                 "value": "Sudan",
                 "synonyms": [
-                  "sudanesisch"
+                  "Republik Sudan",
+                  "sudanesische"
                 ]
               }
             },
@@ -1662,7 +1813,8 @@
               "name": {
                 "value": "Südsudan",
                 "synonyms": [
-                  "südsudanesisch"
+                  "Republik Südsudan",
+                  "südsudanesische"
                 ]
               }
             },
@@ -1671,7 +1823,8 @@
               "name": {
                 "value": "Suriname",
                 "synonyms": [
-                  "surinamisch"
+                  "Republik Suriname",
+                  "surinamische"
                 ]
               }
             },
@@ -1680,7 +1833,8 @@
               "name": {
                 "value": "Swasiland",
                 "synonyms": [
-                  "swasiländisch"
+                  "Königreich Swasiland",
+                  "swasiländische"
                 ]
               }
             },
@@ -1689,7 +1843,8 @@
               "name": {
                 "value": "Syrien",
                 "synonyms": [
-                  "syrisch"
+                  "Arabische Republik Syrien",
+                  "syrische"
                 ]
               }
             },
@@ -1698,7 +1853,8 @@
               "name": {
                 "value": "Tadschikistan",
                 "synonyms": [
-                  "tadschikisch"
+                  "Republik Tadschikistan",
+                  "tadschikische"
                 ]
               }
             },
@@ -1707,7 +1863,8 @@
               "name": {
                 "value": "Tansania",
                 "synonyms": [
-                  "tansanisch"
+                  "Vereinigte Republik Tansania",
+                  "tansanische"
                 ]
               }
             },
@@ -1716,7 +1873,8 @@
               "name": {
                 "value": "Thailand",
                 "synonyms": [
-                  "thailändisch"
+                  "Königreich Thailand",
+                  "thailändische"
                 ]
               }
             },
@@ -1725,7 +1883,8 @@
               "name": {
                 "value": "Togo",
                 "synonyms": [
-                  "togoisch"
+                  "Republik Togo",
+                  "togoische"
                 ]
               }
             },
@@ -1734,7 +1893,8 @@
               "name": {
                 "value": "Tonga",
                 "synonyms": [
-                  "tongaisch"
+                  "Königreich Tonga",
+                  "tongaische"
                 ]
               }
             },
@@ -1742,7 +1902,9 @@
               "id": "TTO",
               "name": {
                 "value": "Trinidad und Tobago",
-                "synonyms": []
+                "synonyms": [
+                  "Republik Trinidad und Tobago"
+                ]
               }
             },
             {
@@ -1750,7 +1912,8 @@
               "name": {
                 "value": "Tschad",
                 "synonyms": [
-                  "tschadisch"
+                  "Republik Tschad",
+                  "tschadische"
                 ]
               }
             },
@@ -1759,7 +1922,8 @@
               "name": {
                 "value": "Tschechien",
                 "synonyms": [
-                  "tschechisch"
+                  "Tschechische Republik",
+                  "tschechische"
                 ]
               }
             },
@@ -1768,7 +1932,8 @@
               "name": {
                 "value": "Tunesien",
                 "synonyms": [
-                  "tunesisch"
+                  "Tunesische Republik",
+                  "tunesische"
                 ]
               }
             },
@@ -1777,7 +1942,8 @@
               "name": {
                 "value": "Türkei",
                 "synonyms": [
-                  "türkisch"
+                  "Republik Türkei",
+                  "türkische"
                 ]
               }
             },
@@ -1786,7 +1952,7 @@
               "name": {
                 "value": "Turkmenistan",
                 "synonyms": [
-                  "turkmenisch"
+                  "turkmenische"
                 ]
               }
             },
@@ -1795,7 +1961,7 @@
               "name": {
                 "value": "Tuvalu",
                 "synonyms": [
-                  "tuvaluisch"
+                  "tuvaluische"
                 ]
               }
             },
@@ -1804,7 +1970,8 @@
               "name": {
                 "value": "Uganda",
                 "synonyms": [
-                  "ugandisch"
+                  "Republik Uganda",
+                  "ugandische"
                 ]
               }
             },
@@ -1813,7 +1980,7 @@
               "name": {
                 "value": "Ukraine",
                 "synonyms": [
-                  "ukrainisch"
+                  "ukrainische"
                 ]
               }
             },
@@ -1822,7 +1989,7 @@
               "name": {
                 "value": "Ungarn",
                 "synonyms": [
-                  "ungarisch"
+                  "ungarische"
                 ]
               }
             },
@@ -1831,7 +1998,8 @@
               "name": {
                 "value": "Uruguay",
                 "synonyms": [
-                  "uruguayisch"
+                  "Republik Östlich des Uruguay",
+                  "uruguayische"
                 ]
               }
             },
@@ -1840,7 +2008,8 @@
               "name": {
                 "value": "Usbekistan",
                 "synonyms": [
-                  "usbekisch"
+                  "Republik Usbekistan",
+                  "usbekische"
                 ]
               }
             },
@@ -1849,7 +2018,8 @@
               "name": {
                 "value": "Vanuatu",
                 "synonyms": [
-                  "vanuatuisch"
+                  "Republik Vanuatu",
+                  "vanuatuische"
                 ]
               }
             },
@@ -1858,7 +2028,8 @@
               "name": {
                 "value": "Vatikanstadt",
                 "synonyms": [
-                  "vatikanisch"
+                  "Staat Vatikanstadt",
+                  "vatikanische"
                 ]
               }
             },
@@ -1867,7 +2038,8 @@
               "name": {
                 "value": "Venezuela",
                 "synonyms": [
-                  "venezolanisch"
+                  "Bolivarische Republik Venezuela",
+                  "venezolanische"
                 ]
               }
             },
@@ -1883,9 +2055,10 @@
               "name": {
                 "value": "Vereinigte Staaten",
                 "synonyms": [
+                  "Vereinigte Staaten von Amerika",
                   "USA",
-                  "amerikanisch",
-                  "US-amerikanisch"
+                  "amerikanische",
+                  "US-amerikanische"
                 ]
               }
             },
@@ -1894,9 +2067,10 @@
               "name": {
                 "value": "Vereinigtes Königreich",
                 "synonyms": [
+                  "Vereinigtes Königreich Großbritannien und Nordirland",
                   "England",
                   "Großbritannien",
-                  "britisch"
+                  "britische"
                 ]
               }
             },
@@ -1905,7 +2079,8 @@
               "name": {
                 "value": "Vietnam",
                 "synonyms": [
-                  "vietnamesisch"
+                  "Sozialistische Republik Vietnam",
+                  "vietnamesische"
                 ]
               }
             },
@@ -1914,8 +2089,9 @@
               "name": {
                 "value": "Weißrussland",
                 "synonyms": [
-                  "belarussisch",
-                  "weißrussisch"
+                  "Republik Belarus",
+                  "belarussische",
+                  "weißrussische"
                 ]
               }
             },
@@ -1924,7 +2100,8 @@
               "name": {
                 "value": "Westsahara",
                 "synonyms": [
-                  "saharauisch"
+                  "Demokratische Arabische Republik Sahara",
+                  "saharauische"
                 ]
               }
             },
@@ -1933,7 +2110,7 @@
               "name": {
                 "value": "Zentral­afrikanische Republik",
                 "synonyms": [
-                  "zentralafrikanisch"
+                  "zentralafrikanische"
                 ]
               }
             },
@@ -1942,7 +2119,8 @@
               "name": {
                 "value": "Zypern",
                 "synonyms": [
-                  "zyprisch"
+                  "Republik Zypern",
+                  "zyprische"
                 ]
               }
             }
