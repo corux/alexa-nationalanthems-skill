@@ -37,6 +37,7 @@
             "nach {country}",
             "spiel die {country} Nationalhymne",
             "spiel die {country} Hymne",
+            "die {country} Nationalhymne",
             "die {country} Hymne",
             "die {country}"
           ],
@@ -72,9 +73,7 @@
           "samples": [
             "ich weiss nicht",
             "weiss nicht",
-            "keine Ahnung",
-            "weiter",
-            "nächste Hymne"
+            "keine Ahnung"
           ],
           "slots": []
         },
