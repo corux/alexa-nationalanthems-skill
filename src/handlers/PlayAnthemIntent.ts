@@ -4,8 +4,6 @@ import countries from "../countries";
 import { getAnthemUrl, getSlotValue } from "../utils";
 
 export class PlayAnthemHandler implements RequestHandler {
-  private repromptNextAnthem = "Welche Nationalhymne möchtest du als nächstes abspielen?";
-
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
     const session = handlerInput.attributesManager.getSessionAttributes();
@@ -16,13 +14,13 @@ export class PlayAnthemHandler implements RequestHandler {
 
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const country = getSlotValue(intent.slots.country);
     if (!country) {
-      const text = "Welche Nationalhymne möchtest du abspielen?";
       return responseBuilder
-        .speak(text)
-        .reprompt(text)
+        .speak(t("launch"))
+        .reprompt(t("launch"))
         .getResponse();
     }
 
@@ -32,17 +30,16 @@ export class PlayAnthemHandler implements RequestHandler {
       session.iso = data.iso3;
       session.quizMode = false;
 
-      return responseBuilder.speak(`Hier ist die Nationalhymne von ${data.name}.
+      return responseBuilder.speak(`${t("play.text", data.name)}
             <audio src="${getAnthemUrl(data)}" />
-            ${this.repromptNextAnthem}`)
-        .reprompt(this.repromptNextAnthem)
+            ${t("play.reprompt")}`)
+        .reprompt(t("play.reprompt"))
         .getResponse();
     }
 
     return responseBuilder
-      .speak(`Ich kenne die Nationalhymne von ${data ? data.name : country} leider nicht.
-        Bitte wähle ein anderes Land.`)
-      .reprompt(this.repromptNextAnthem)
+      .speak(t("play.unknown-country", data ? data.name : country))
+      .reprompt(t("play.reprompt"))
       .getResponse();
   }
 }

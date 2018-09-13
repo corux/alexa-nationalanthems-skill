@@ -9,10 +9,11 @@ export class LaunchRequestHandler implements RequestHandler {
 
   public async handle(handlerInput: HandlerInput): Promise<Response> {
     const responseBuilder = handlerInput.responseBuilder;
-    const text = "Welche Nationalhymne möchtest du abspielen?";
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
+
     return responseBuilder
-      .speak(text)
-      .reprompt(text)
+      .speak(t("launch"))
+      .reprompt(t("launch"))
       .getResponse();
   }
 }

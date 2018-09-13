@@ -4,8 +4,6 @@ import countries from "../countries";
 import { getAnthemUrl, getRandomCountry } from "../utils";
 
 export class SkipHandler implements RequestHandler {
-  private reprompt = "Zu welchem Land gehörte die gespielte Hymne?";
-
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
     const session = handlerInput.attributesManager.getSessionAttributes();
@@ -17,6 +15,7 @@ export class SkipHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     const country = getRandomCountry(session.continent);
     const expectedAnswer = countries.getByIso3(session.iso);
@@ -24,10 +23,10 @@ export class SkipHandler implements RequestHandler {
     session.iso = country.iso3;
     session.try = 0;
     return responseBuilder
-      .speak(`Die richtige Antwort war ${expectedAnswer.name}. Hier ist die nächste Hymne:
+      .speak(`${t("quiz.answer.skip", expectedAnswer.name)}
         <audio src="${getAnthemUrl(country)}" />
-        ${this.reprompt}`)
-      .reprompt(this.reprompt)
+        ${t("quiz.reprompt")}`)
+      .reprompt(t("quiz.reprompt"))
       .getResponse();
   }
 }

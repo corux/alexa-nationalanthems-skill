@@ -11,7 +11,7 @@ import {
   SessionEndedHandler,
   SkipHandler,
 } from "./handlers";
-import { LogInterceptor } from "./interceptors";
+import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
 
 export const handler = SkillBuilders.custom()
   .addRequestHandlers(
@@ -30,6 +30,7 @@ export const handler = SkillBuilders.custom()
   )
   .addRequestInterceptors(
     new LogInterceptor(),
+    new LocalizationInterceptor(),
   )
   .addResponseInterceptors(
     new LogInterceptor(),

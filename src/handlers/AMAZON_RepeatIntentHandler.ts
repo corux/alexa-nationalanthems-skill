@@ -4,9 +4,6 @@ import countries from "../countries";
 import { getAnthemUrl } from "../utils";
 
 export class AmazonRepeatIntentHandler implements RequestHandler {
-  private reprompt = "Zu welchem Land gehörte die gespielte Hymne?";
-  private repromptNextAnthem = "Welche Nationalhymne möchtest du als nächstes abspielen?";
-
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
     return request.type === "IntentRequest" && request.intent.name === "AMAZON.RepeatIntent";
@@ -15,26 +12,27 @@ export class AmazonRepeatIntentHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     if (session.quizMode && session.iso) {
       const country = countries.getByIso3(session.iso);
       return responseBuilder
-        .speak(`<audio src="${getAnthemUrl(country)}" /> ${this.reprompt}`)
-        .reprompt(this.reprompt)
+        .speak(`<audio src="${getAnthemUrl(country)}" /> ${t("quiz.reprompt")}`)
+        .reprompt(t("quiz.reprompt"))
         .getResponse();
     }
 
     if (session.iso) {
       const country = countries.getByIso3(session.iso);
       return responseBuilder
-        .speak(`<audio src="${getAnthemUrl(country)}" /> ${this.repromptNextAnthem}`)
-        .reprompt(this.repromptNextAnthem)
+        .speak(`<audio src="${getAnthemUrl(country)}" /> ${t("play.reprompt")}`)
+        .reprompt(t("play.reprompt"))
         .getResponse();
     }
 
     return responseBuilder
-      .speak(`Es gibt nichts zu wiederholen. ${this.repromptNextAnthem}`)
-      .reprompt(this.repromptNextAnthem)
+      .speak(`${t("play.no-repeat")} ${t("play.reprompt")}`)
+      .reprompt(t("play.reprompt"))
       .getResponse();
   }
 }

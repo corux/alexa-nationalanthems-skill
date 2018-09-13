@@ -9,8 +9,9 @@ export class AmazonCancelAndStopIntentHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
     return handlerInput.responseBuilder
-      .speak("Bis bald!")
+      .speak(t("stop"))
       .withShouldEndSession(true)
       .getResponse();
   }

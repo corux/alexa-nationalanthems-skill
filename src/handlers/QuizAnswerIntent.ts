@@ -4,8 +4,6 @@ import countries from "../countries";
 import { getAnthemUrl, getRandomCountry, getSlotValue } from "../utils";
 
 export class QuizAnswerHandler implements RequestHandler {
-  private reprompt = "Zu welchem Land gehörte die gespielte Hymne?";
-
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
     const session = handlerInput.attributesManager.getSessionAttributes();
@@ -18,6 +16,7 @@ export class QuizAnswerHandler implements RequestHandler {
     const responseBuilder = handlerInput.responseBuilder;
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const session = handlerInput.attributesManager.getSessionAttributes();
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     const answer = getSlotValue(intent.slots.country);
     const expectedAnswer = countries.getByIso3(session.iso).name;
@@ -26,11 +25,10 @@ export class QuizAnswerHandler implements RequestHandler {
       session.iso = nextCountry.iso3;
       session.try = 0;
       return responseBuilder
-        .speak(`Das war richtig!
-            Hier ist die nächste Hymne:
+        .speak(`${t("quiz.answer.correct")}
             <audio src="${getAnthemUrl(nextCountry)}" />
-            ${this.reprompt}`)
-        .reprompt(this.reprompt)
+            ${t("quiz.reprompt")}`)
+        .reprompt(t("quiz.reprompt"))
         .getResponse();
     }
 
@@ -40,17 +38,16 @@ export class QuizAnswerHandler implements RequestHandler {
       session.iso = nextCountry.iso3;
       session.try = 0;
       return responseBuilder
-        .speak(`Das war nicht richtig. Die richtige Antwort war ${expectedAnswer}.
-            Hier ist die nächste Hymne:
+        .speak(`${t("quiz.answer.incorrect-with-solution", expectedAnswer)}
             <audio src="${getAnthemUrl(nextCountry)}" />
-            ${this.reprompt}`)
-        .reprompt(this.reprompt)
+            ${t("quiz.reprompt")}`)
+        .reprompt(t("quiz.reprompt"))
         .getResponse();
     }
 
     return responseBuilder
-      .speak("Das war nicht richtig. Versuche es noch einmal.")
-      .reprompt(this.reprompt)
+      .speak(t("quiz.answer.incorrect"))
+      .reprompt(t("quiz.reprompt"))
       .getResponse();
   }
 }

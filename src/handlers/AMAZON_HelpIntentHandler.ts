@@ -9,14 +9,12 @@ export class AmazonHelpIntentHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
     const country = getRandomCountry("europa");
 
     return handlerInput.responseBuilder
-      .speak(`Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen.
-        Sage zum Beispiel "Spiel die Nationalhymne von ${country.name}.
-        Um das Quiz zu starten, sage "Starte das Quiz".
-        Was möchtest du als nächstes tun?`)
-      .reprompt("Was möchtest du als nächstes tun?")
+      .speak(t("help.text", country.name))
+      .reprompt(t("help.reprompt"))
       .withShouldEndSession(false)
       .getResponse();
   }
