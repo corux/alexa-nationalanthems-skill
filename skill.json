@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "name": "Nationalhymnen",
+          "summary": "Lasse dir die Nationalhymnen aller Staaten vorspielen und prüfe deine Kenntnis beim Quiz der Nationalhymnen.",
+          "description": "Dieser Skill erlaubt es dir, die Nationalhymnen verschiedener Staaten abzuspielen. Frage einfach nach dem gewünschten Land und Alexa spielt die passende Nationalhymne ab. Dieser Skill kennt die Hymnen von 199 Ländern.\n\nKennst du bereits die verschiedenen Hymnen? Dann prüfe deine Kenntnis beim Quiz der Nationalhymnen. Alexa spielt eine zufällige Hymne ab und du musst das passende Land dazu nennen. Starte das Quiz indem du \"Starte das Quiz\" sagst. Optional kannst du das Quiz auf einen Kontinenten einschränken. Sage dazu einfach \"Starte das Quiz mit Europa\".\n\nDieser Skill verwendet die Nationalhymnen, welche auf Wikipedia bereitgestellt werden. Die vollständige Liste findest du hier: https://de.wikipedia.org/wiki/Liste_der_Nationalhymnen",
+          "examplePhrases": [
+            "Alexa, frage Nationalhymnen nach Deutschland",
+            "Spiel die französische Nationalhymne",
+            "Starte das Quiz mit Ländern aus Europa"
+          ],
+          "keywords": [
+            "hymne",
+            "nationalhymne",
+            "länder",
+            "quiz"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special testing required.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "./dist"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

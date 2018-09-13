@@ -25,6 +25,12 @@
         },
         {
           "name": "PlayAnthemIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "COUNTRY"
+            }
+          ],
           "samples": [
             "spiel die Hymne von {country}",
             "spiel die Hymne von {country} ab",
@@ -40,17 +46,16 @@
             "die {country} Nationalhymne",
             "die {country} Hymne",
             "die {country}"
-          ],
-          "slots": [
-            {
-              "name": "country",
-              "type": "COUNTRY",
-              "samples": []
-            }
           ]
         },
         {
           "name": "QuizIntent",
+          "slots": [
+            {
+              "name": "continent",
+              "type": "CONTINENT"
+            }
+          ],
           "samples": [
             "starte das Quiz mit Ländern aus {continent}",
             "starte das Quiz mit Ländern von {continent}",
@@ -59,13 +64,6 @@
             "Quiz von {continent}",
             "starte das Quiz",
             "Quiz"
-          ],
-          "slots": [
-            {
-              "name": "continent",
-              "type": "CONTINENT",
-              "samples": []
-            }
           ]
         },
         {
@@ -74,69 +72,61 @@
             "ich weiss nicht",
             "weiss nicht",
             "keine Ahnung"
-          ],
-          "slots": []
+          ]
         },
         {
           "name": "CountryIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "COUNTRY"
+            }
+          ],
           "samples": [
             "das ist das Land {country}",
             "das Land {country}",
             "das ist {country}",
             "{country}"
-          ],
-          "slots": [
-            {
-              "name": "country",
-              "type": "COUNTRY",
-              "samples": []
-            }
           ]
         }
       ],
       "types": [
         {
-          "name": "CONTINENT",
           "values": [
             {
               "id": "Asien",
               "name": {
-                "value": "Asien",
-                "synonyms": []
+                "value": "Asien"
               }
             },
             {
               "id": "Afrika",
               "name": {
-                "value": "Afrika",
-                "synonyms": []
+                "value": "Afrika"
               }
             },
             {
               "id": "Europa",
               "name": {
-                "value": "Europa",
-                "synonyms": []
+                "value": "Europa"
               }
             },
             {
               "id": "Amerika",
               "name": {
-                "value": "Amerika",
-                "synonyms": []
+                "value": "Amerika"
               }
             },
             {
               "id": "Ozeanien",
               "name": {
-                "value": "Ozeanien",
-                "synonyms": []
+                "value": "Ozeanien"
               }
             }
-          ]
+          ],
+          "name": "CONTINENT"
         },
         {
-          "name": "COUNTRY",
           "values": [
             {
               "id": "ABC",
@@ -463,8 +453,7 @@
             {
               "id": "COK",
               "name": {
-                "value": "Cookinseln",
-                "synonyms": []
+                "value": "Cookinseln"
               }
             },
             {
@@ -1280,8 +1269,7 @@
             {
               "id": "MNE",
               "name": {
-                "value": "Montenegro",
-                "synonyms": []
+                "value": "Montenegro"
               }
             },
             {
@@ -1803,8 +1791,7 @@
             {
               "id": "SOS",
               "name": {
-                "value": "Südossetien",
-                "synonyms": []
+                "value": "Südossetien"
               }
             },
             {
@@ -2045,8 +2032,7 @@
             {
               "id": "ARE",
               "name": {
-                "value": "Vereinigte Arabische Emirate",
-                "synonyms": []
+                "value": "Vereinigte Arabische Emirate"
               }
             },
             {
@@ -2123,7 +2109,8 @@
                 ]
               }
             }
-          ]
+          ],
+          "name": "COUNTRY"
         }
       ]
     }
