@@ -14,11 +14,13 @@ export class QuizStartHandler implements RequestHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
-    const continent = getSlotValue(intent.slots.continent);
+    const continent = getSlotValue(intent.slots.continent, false);
     const country = getRandomCountry(continent);
 
     let text = t("quiz.start.text");
-    if (continent) {
+    if (!session.quizMode && continent) {
+      text = t("quiz.start.text-with-continent", continent);
+    } else if (continent) {
       text = t("quiz.start.with-continent", continent);
     } else if (session.continent) {
       text = t("quiz.start.reset-continent");

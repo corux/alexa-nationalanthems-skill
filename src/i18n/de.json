@@ -15,6 +15,7 @@
     "reprompt": "Zu welchem Land gehörte die gespielte Hymne?",
     "start": {
       "text": "Willkommen beim Quiz. Versuche die Hymnen den richtigen Ländern zuzuordnen. Hier ist die erste Nationalhymne:",
+      "text-with-continent": "Willkommen beim Quiz mit Ländern aus %s. Versuche die Hymnen den richtigen Ländern zuzuordnen. Hier ist die erste Nationalhymne:",
       "with-continent": "Die Länder wurden auf %s beschränkt. Hier ist die nächste Nationalhymne:",
       "reset-continent": "Die Beschränkung der Länder wurde aufgehoben. Hier ist die nächste Nationalhymne:"
     },
