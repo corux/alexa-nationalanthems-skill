@@ -12,10 +12,11 @@ export class QuizStartHandler implements RequestHandler {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
+    const locale = handlerInput.requestEnvelope.request.locale;
 
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const continent = getSlotValue(intent.slots.continent, false);
-    const country = getRandomCountry(continent);
+    const country = getRandomCountry(continent, locale);
 
     let text = t("quiz.start.text");
     if (!session.quizMode && continent) {

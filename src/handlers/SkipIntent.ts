@@ -16,9 +16,10 @@ export class SkipHandler implements RequestHandler {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
+    const locale = handlerInput.requestEnvelope.request.locale;
 
-    const country = getRandomCountry(session.continent);
-    const expectedAnswer = countries.getByIso3(session.iso);
+    const country = getRandomCountry(session.continent, locale);
+    const expectedAnswer = countries.getByIso3(session.iso, locale);
 
     session.iso = country.iso3;
     session.try = 0;

@@ -10,7 +10,8 @@ export class AmazonHelpIntentHandler implements RequestHandler {
 
   public handle(handlerInput: HandlerInput): Response {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const country = getRandomCountry("Europa");
+    const locale = handlerInput.requestEnvelope.request.locale;
+    const country = getRandomCountry("Europa", locale);
 
     return handlerInput.responseBuilder
       .speak(t("help.text", country.name))

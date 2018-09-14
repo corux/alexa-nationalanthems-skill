@@ -17,11 +17,12 @@ export class QuizAnswerHandler implements RequestHandler {
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
+    const locale = handlerInput.requestEnvelope.request.locale;
 
     const answer = getSlotValue(intent.slots.country);
-    const expectedAnswer = countries.getByIso3(session.iso).name;
+    const expectedAnswer = countries.getByIso3(session.iso, locale).name;
     if (answer && answer.toUpperCase() === expectedAnswer.toUpperCase()) {
-      const nextCountry = getRandomCountry(session.continent);
+      const nextCountry = getRandomCountry(session.continent, locale);
       session.iso = nextCountry.iso3;
       session.try = 0;
       return responseBuilder
@@ -34,7 +35,7 @@ export class QuizAnswerHandler implements RequestHandler {
 
     session.try++;
     if (session.try >= 3) {
-      const nextCountry = getRandomCountry(session.continent);
+      const nextCountry = getRandomCountry(session.continent, locale);
       session.iso = nextCountry.iso3;
       session.try = 0;
       return responseBuilder

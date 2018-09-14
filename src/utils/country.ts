@@ -31,12 +31,12 @@ function getRegionFromString(continent: string): Region[] {
   }
 }
 
-export function getRandomCountry(continent: string): ICountry {
+export function getRandomCountry(continent: string, lang: string): ICountry {
   const regions = getRegionFromString(continent);
   const matchesContinent = (country: ICountry) => {
     return country.region && regions.indexOf(country.region) !== -1;
   };
-  return getRandomEntry(countries.getAll()
+  return getRandomEntry(countries.getAll(lang)
     .filter((val) => val.anthem && (regions.length === 0 || matchesContinent(val))));
 }
 

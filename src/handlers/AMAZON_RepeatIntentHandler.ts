@@ -13,9 +13,10 @@ export class AmazonRepeatIntentHandler implements RequestHandler {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
+    const locale = handlerInput.requestEnvelope.request.locale;
 
     if (session.quizMode && session.iso) {
-      const country = countries.getByIso3(session.iso);
+      const country = countries.getByIso3(session.iso, locale);
       return responseBuilder
         .speak(`<audio src="${getAnthemUrl(country)}" /> ${t("quiz.reprompt")}`)
         .reprompt(t("quiz.reprompt"))
@@ -23,7 +24,7 @@ export class AmazonRepeatIntentHandler implements RequestHandler {
     }
 
     if (session.iso) {
-      const country = countries.getByIso3(session.iso);
+      const country = countries.getByIso3(session.iso, locale);
       return responseBuilder
         .speak(`<audio src="${getAnthemUrl(country)}" /> ${t("play.reprompt")}`)
         .reprompt(t("play.reprompt"))

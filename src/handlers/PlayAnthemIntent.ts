@@ -15,6 +15,7 @@ export class PlayAnthemHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;
     const t = handlerInput.attributesManager.getRequestAttributes().t;
+    const locale = handlerInput.requestEnvelope.request.locale;
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const country = getSlotValue(intent.slots.country);
     if (!country) {
@@ -24,7 +25,7 @@ export class PlayAnthemHandler implements RequestHandler {
         .getResponse();
     }
 
-    const data = countries.getAll().find((val) => val.name.toUpperCase() === country.toUpperCase());
+    const data = countries.getAll(locale).find((val) => val.name.toUpperCase() === country.toUpperCase());
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
