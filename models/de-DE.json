@@ -119,41 +119,54 @@
       ],
       "types": [
         {
+          "name": "CONTINENT",
           "values": [
             {
-              "id": "Asien",
-              "name": {
-                "value": "Asien"
-              }
-            },
-            {
-              "id": "Afrika",
+              "id": "AF",
               "name": {
                 "value": "Afrika"
               }
             },
             {
-              "id": "Europa",
-              "name": {
-                "value": "Europa"
-              }
-            },
-            {
-              "id": "Amerika",
+              "id": "AM",
               "name": {
                 "value": "Amerika"
               }
             },
             {
-              "id": "Ozeanien",
+              "id": "AS",
+              "name": {
+                "value": "Asien"
+              }
+            },
+            {
+              "id": "EU",
+              "name": {
+                "value": "Europa"
+              }
+            },
+            {
+              "id": "NA",
+              "name": {
+                "value": "Nordamerika"
+              }
+            },
+            {
+              "id": "OC",
               "name": {
                 "value": "Ozeanien"
               }
+            },
+            {
+              "id": "SA",
+              "name": {
+                "value": "Südamerika"
+              }
             }
-          ],
-          "name": "CONTINENT"
+          ]
         },
         {
+          "name": "COUNTRY",
           "values": [
             {
               "id": "ABC",
@@ -237,7 +250,7 @@
               "name": {
                 "value": "Äquatorialguinea",
                 "synonyms": [
-                  "Republik Äquatorial­guinea"
+                  "Republik Äquatorialguinea"
                 ]
               }
             },
@@ -1006,11 +1019,12 @@
               }
             },
             {
-              "id": "RKS",
+              "id": "XXK",
               "name": {
                 "value": "Kosovo",
                 "synonyms": [
-                  "Republik Kosovo"
+                  "Republik Kosovo",
+                  "kosovarische"
                 ]
               }
             },
@@ -1288,15 +1302,17 @@
               "name": {
                 "value": "Mongolei",
                 "synonyms": [
-                  "mongolische",
-                  "montenegrinische"
+                  "mongolische"
                 ]
               }
             },
             {
               "id": "MNE",
               "name": {
-                "value": "Montenegro"
+                "value": "Montenegro",
+                "synonyms": [
+                  "montenegrinische"
+                ]
               }
             },
             {
@@ -1441,9 +1457,10 @@
             {
               "id": "TLS",
               "name": {
-                "value": "Osttimor / Timor-Leste",
+                "value": "Osttimor",
                 "synonyms": [
                   "Demokratische Republik Timor-Leste",
+                  "Timor-Leste",
                   "osttimoresische",
                   "osttimorische"
                 ]
@@ -1652,7 +1669,7 @@
               "name": {
                 "value": "Schweiz",
                 "synonyms": [
-                  "Schweizerische Eid­genossen­schaft",
+                  "Schweizerische Eidgenossenschaft",
                   "Schweizere",
                   "schweizerische"
                 ]
@@ -2120,7 +2137,7 @@
             {
               "id": "CAF",
               "name": {
-                "value": "Zentral­afrikanische Republik",
+                "value": "Zentralafrikanische Republik",
                 "synonyms": [
                   "zentralafrikanische"
                 ]
@@ -2136,8 +2153,7 @@
                 ]
               }
             }
-          ],
-          "name": "COUNTRY"
+          ]
         }
       ]
     }
