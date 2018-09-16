@@ -1,6 +1,7 @@
 {
   "launch": "Welche Nationalhymne möchtest du abspielen?",
   "stop": "Bis Bald!",
+  "unsupported": "Entschuldigung, diesen Befehl verstehe ich nicht.",
   "help": {
     "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von %s\". Um das Quiz zu starten, sage \"Starte das Quiz\". Was möchtest du als nächstes tun?",
     "reprompt": "Was möchtest du als nächstes tun?"

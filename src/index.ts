@@ -10,6 +10,7 @@ import {
   QuizStartHandler,
   SessionEndedHandler,
   SkipHandler,
+  UnsupportedHandler,
 } from "./handlers";
 import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
 
@@ -24,6 +25,7 @@ export const handler = SkillBuilders.custom()
     new QuizStartHandler(),
     new LaunchRequestHandler(),
     new SessionEndedHandler(),
+    new UnsupportedHandler(),
   )
   .addErrorHandlers(
     new CustomErrorHandler(),

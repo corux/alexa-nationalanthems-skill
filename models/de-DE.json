@@ -21,7 +21,34 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "keine",
+            "gute nacht",
+            "hör auf"
+          ]
+        },
+        {
+          "name": "UnsupportedIntent",
+          "slots": [
+            {
+              "name": "value",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "ja",
+            "nein",
+            "lautstärke {value}",
+            "leiser",
+            "lauter",
+            "pause",
+            "zurück",
+            "spiel",
+            "spiele",
+            "nationalhymne",
+            "danke",
+            "okay"
+          ]
         },
         {
           "name": "PlayAnthemIntent",
