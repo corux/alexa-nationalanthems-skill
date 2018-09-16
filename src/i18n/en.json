@@ -1,0 +1,15 @@
+{
+  "launch": "Which national anthem do you want to play?",
+  "stop": "Goodbye!",
+  "unsupported": "Sorry, I don't understand this command.",
+  "help": {
+    "text": "This skill allows you to play the national anthem for diferent countries. Just say \"Play the national anthem of %s\". Which anthem do you want to play next?",
+    "reprompt": "Which anthem do you want to play next?"
+  },
+  "play": {
+    "text": "Here's the national anthem of %s.",
+    "reprompt": "Which anthem do you want to play next?",
+    "no-repeat": "There is nothing to repeat.",
+    "unknown-country": "I don't know the national anthem of %s. Please choose another country."
+  }
+}

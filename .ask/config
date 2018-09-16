@@ -9,7 +9,22 @@
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "0214e122ca7e369986bb6413e1c54b95"
+            "eTag": "e23d48260e47269e390f2a0a1a8d7f00"
+          },
+          "en-AU": {
+            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+          },
+          "en-GB": {
+            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+          },
+          "en-IN": {
+            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+          },
+          "en-CA": {
+            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+          },
+          "en-US": {
+            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
           }
         },
         "lambda": [

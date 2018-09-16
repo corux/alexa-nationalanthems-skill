@@ -19,6 +19,86 @@
           ],
           "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
           "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "en-US": {
+          "name": "National anthems",
+          "summary": "Play the national anthem from countries all over the world.",
+          "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, ask national anthems for United States",
+            "Play the Canadian national anthem."
+          ],
+          "keywords": [
+            "anthem",
+            "national anthem",
+            "countries"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "en-GB": {
+          "name": "National anthems",
+          "summary": "Play the national anthem from countries all over the world.",
+          "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, ask national anthems for United Kingdom.",
+            "Play the French national anthem."
+          ],
+          "keywords": [
+            "anthem",
+            "national anthem",
+            "countries"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "en-AU": {
+          "name": "National anthems",
+          "summary": "Play the national anthem from countries all over the world.",
+          "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, ask national anthems for Australia.",
+            "Play the New Zealand national anthem."
+          ],
+          "keywords": [
+            "anthem",
+            "national anthem",
+            "countries"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "en-CA": {
+          "name": "National anthems",
+          "summary": "Play the national anthem from countries all over the world.",
+          "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, ask national anthems for Canada.",
+            "Play the French national anthem."
+          ],
+          "keywords": [
+            "anthem",
+            "national anthem",
+            "countries"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "en-IN": {
+          "name": "National anthems",
+          "summary": "Play the national anthem from countries all over the world.",
+          "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, ask national anthems for India.",
+            "Play the British national anthem."
+          ],
+          "keywords": [
+            "anthem",
+            "national anthem",
+            "countries"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
         }
       },
       "isAvailableWorldwide": true,

@@ -25,7 +25,7 @@ export class PlayAnthemHandler implements RequestHandler {
         .getResponse();
     }
 
-    const data = countries.getAll(locale).find((val) => val.name.toUpperCase() === country.toUpperCase());
+    const data = countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === country.toUpperCase());
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
