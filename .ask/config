@@ -5,37 +5,40 @@
       "was_cloned": false,
       "resources": {
         "manifest": {
-          "eTag": "65437a7e17bb6f3eb0cb9d57f69b5771"
+          "eTag": "598e2a34add0c962f8e6c83258e4a456"
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "e23d48260e47269e390f2a0a1a8d7f00"
+            "eTag": "186fc0f781894526e2f674166ca49ffe"
           },
           "en-AU": {
-            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+            "eTag": "ba0527633deadd74a3665396e6281ec0"
           },
           "en-GB": {
-            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+            "eTag": "ba0527633deadd74a3665396e6281ec0"
           },
           "en-IN": {
-            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+            "eTag": "ba0527633deadd74a3665396e6281ec0"
           },
           "en-CA": {
-            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+            "eTag": "ba0527633deadd74a3665396e6281ec0"
           },
           "en-US": {
-            "eTag": "6e3309f1f692dda14ea6da135c2436ed"
+            "eTag": "ba0527633deadd74a3665396e6281ec0"
+          },
+          "fr-FR": {
+            "eTag": "c98d2b61b56f67066b1c8c29a9890ab9"
           }
         },
         "lambda": [
           {
             "arn": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-nationalanthems-skill-production-skill",
-            "awsRegion": "eu-west-1",
+            "awsRegion": "us-east-1",
             "functionName": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-nationalanthems-skill-production-skill",
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "2f95d155-8179-4b4b-af4e-a2eb258eb2dd"
+            "revisionId": "d4c21802-74db-4da5-85b6-4e85fd290d9a"
           }
         ]
       },
