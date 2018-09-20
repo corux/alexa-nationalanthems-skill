@@ -18,8 +18,8 @@
     "deploy:assets": "aws s3 sync ./assets s3://alexa-nationalanthems-skill/ --acl public-read"
   },
   "devDependencies": {
-    "@types/i18next": "^8.4.5",
-    "@types/node": "^10.9.4",
+    "@types/i18next": "^11.9.0",
+    "@types/node": "^10.10.1",
     "ask-cli": "^1.4.3",
     "ask-sdk-core": "^2.0.9",
     "ask-sdk-model": "^1.5.0",
@@ -27,12 +27,12 @@
     "i18next": "^11.9.0",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "nomnom": "^1.8.1",
-    "ts-loader": "^5.1.0",
+    "ts-loader": "^5.1.1",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3",
     "underscore": "^1.9.1",
-    "webpack": "^4.18.1",
+    "webpack": "^4.19.1",
     "webpack-command": "^0.4.1"
   }
 }
