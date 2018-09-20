@@ -1,0 +1,15 @@
+{
+  "launch": "¿Qué himno nacional quieres tocar?",
+  "stop": "Adiós",
+  "unsupported": "Lo siento, no entiendo este comando.",
+  "help": {
+    "text": "Esta habilidad te permite tocar el himno nacional para diferentes países. Solo di \"Toca el himno nacional de %s\". ¿Qué himno quieres tocar después?",
+    "reprompt": "¿Qué himno quieres tocar después?"
+  },
+  "play": {
+    "text": "Aquí está el himno nacional de %s.",
+    "reprompt": "¿Qué himno quieres tocar después?",
+    "no-repeat": "No hay nada que repetir.",
+    "unknown-country": "No conozco el himno nacional de %s. Por favor elige otro país."
+  }
+}

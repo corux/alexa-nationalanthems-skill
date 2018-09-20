@@ -4,6 +4,7 @@ import * as sprintf from "i18next-sprintf-postprocessor";
 
 import * as locale_de from "../i18n/de.json";
 import * as locale_en from "../i18n/en.json";
+import * as locale_es from "../i18n/es.json";
 import * as locale_fr from "../i18n/fr.json";
 
 export class LocalizationInterceptor implements RequestInterceptor {
@@ -20,6 +21,9 @@ export class LocalizationInterceptor implements RequestInterceptor {
           },
           en: {
             translation: locale_en,
+          },
+          es: {
+            translation: locale_es,
           },
           fr: {
             translation: locale_fr,

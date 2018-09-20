@@ -115,6 +115,38 @@
           ],
           "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
           "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "es-ES": {
+          "name": "Himnos nacionales",
+          "summary": "Toca el himno nacional de países de todo el mundo.",
+          "description": "Este skill le permite a Alexa tocar los himnos nacionales de países de todo el mundo. Solo pide un país y Alexa tocará el himno nacional. Este skill conoce los himnos de 199 países.\n\nEste skill usa los himnos nacionales proporcionados por Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, pregúntale a himnos nacionales para España.",
+            "Toca el himno nacional francés."
+          ],
+          "keywords": [
+            "himno",
+            "himnos nacionales",
+            "países"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "es-MX": {
+          "name": "Himnos nacionales",
+          "summary": "Toca el himno nacional de países de todo el mundo.",
+          "description": "Este skill le permite a Alexa tocar los himnos nacionales de países de todo el mundo. Solo pide un país y Alexa tocará el himno nacional. Este skill conoce los himnos de 199 países.\n\nEste skill usa los himnos nacionales proporcionados por Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, pregúntale a himnos nacionales para México.",
+            "Toca el himno nacional estadounidense."
+          ],
+          "keywords": [
+            "himno",
+            "himnos nacionales",
+            "países"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
         }
       },
       "isAvailableWorldwide": true,
