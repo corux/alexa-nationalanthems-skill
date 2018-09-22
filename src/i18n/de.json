@@ -10,7 +10,8 @@
     "text": "Hier ist die Nationalhymne von %s.",
     "reprompt": "Welche Nationalhymne möchtest du als nächstes abspielen?",
     "no-repeat": "Es gibt nichts zu wiederholen.",
-    "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land."
+    "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land.",
+    "random": "Ich habe ein zufälliges Land ausgewählt."
   },
   "quiz": {
     "reprompt": "Zu welchem Land gehörte die gespielte Hymne?",

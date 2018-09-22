@@ -5,6 +5,7 @@ export * from "./CustomErrorHandler";
 export * from "./LaunchRequestHandler";
 export * from "./SessionEndedHandler";
 export * from "./PlayAnthemIntent";
+export * from "./RandomIntent";
 export * from "./SkipIntent";
 export * from "./QuizAnswerIntent";
 export * from "./QuizStartIntent";

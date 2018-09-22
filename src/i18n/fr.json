@@ -10,6 +10,7 @@
     "text": "Voici l'hymne national de %s.",
     "reprompt": "Quel hymne voulez-vous jouer ensuite?",
     "no-repeat": "Il n'y a rien à répéter.",
-    "unknown-country": "Je ne connais pas l'hymne national de %s. Veuillez choisir un autre pays."
+    "unknown-country": "Je ne connais pas l'hymne national de %s. Veuillez choisir un autre pays.",
+    "random": "J'ai sélectionné un pays au hasard."
   }
 }
