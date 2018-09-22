@@ -12,13 +12,9 @@ export class UnsupportedHandler implements RequestHandler {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
-    let reprompt = t("play.reprompt");
-    if (session.quizMode) {
-      reprompt = t("quiz.reprompt");
-    }
+    const reprompt = session.quizMode ? t("quiz.reprompt") : t("play.reprompt");
     return handlerInput.responseBuilder
-      .speak(`${t("unsupported")}
-        ${reprompt}`)
+      .speak(`${t("unsupported")} ${reprompt}`)
       .reprompt(reprompt)
       .getResponse();
   }
