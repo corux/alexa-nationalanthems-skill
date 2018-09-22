@@ -3,7 +3,7 @@
   "stop": "Goodbye!",
   "unsupported": "Sorry, I don't understand this command.",
   "help": {
-    "text": "This skill allows you to play the national anthem for diferent countries. Just say \"Play the national anthem of %s\". Which anthem do you want to play next?",
+    "text": "This skill allows you to play the national anthem for different countries. Just say \"Play the national anthem of %s\".",
     "reprompt": "Which anthem do you want to play next?"
   },
   "play": {

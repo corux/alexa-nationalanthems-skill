@@ -3,7 +3,7 @@
   "stop": "Adieu!",
   "unsupported": "Désolé, je ne comprends pas cette commande.",
   "help": {
-    "text": "La skill vous permet de jouer l'hymne national pour différents pays. Dites simplement \"Jouer l'hymne national de %s\". Quel hymne voulez-vous jouer ensuite?",
+    "text": "La skill vous permet de jouer l'hymne national pour différents pays. Dites simplement \"Jouer l'hymne national de %s\".",
     "reprompt": "Quel hymne voulez-vous jouer ensuite?"
   },
   "play": {

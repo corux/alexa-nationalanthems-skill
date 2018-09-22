@@ -3,7 +3,7 @@
   "stop": "Adiós",
   "unsupported": "Lo siento, no entiendo este comando.",
   "help": {
-    "text": "Esta habilidad te permite tocar el himno nacional para diferentes países. Solo di \"Toca el himno nacional de %s\". ¿Qué himno quieres tocar después?",
+    "text": "Esta habilidad te permite tocar el himno nacional para diferentes países. Solo di \"Toca el himno nacional de %s\".",
     "reprompt": "¿Qué himno quieres tocar después?"
   },
   "play": {

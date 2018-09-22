@@ -14,7 +14,7 @@ export class AmazonHelpIntentHandler implements RequestHandler {
     const country = getRandomCountry("Europa", locale);
 
     return handlerInput.responseBuilder
-      .speak(t("help.text", country.name))
+      .speak(`${t("help.text", country.name)} ${t("help.reprompt")}`)
       .reprompt(t("help.reprompt"))
       .withShouldEndSession(false)
       .getResponse();
