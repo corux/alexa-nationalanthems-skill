@@ -12,7 +12,6 @@ export class RandomHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = handlerInput.requestEnvelope.request.locale;
@@ -20,7 +19,7 @@ export class RandomHandler implements RequestHandler {
     const country = getRandomCountry(null, locale);
 
     session.iso = country.iso3;
-    return responseBuilder
+    return handlerInput.responseBuilder
       .speak(`${t("play.random")}
         ${t("play.text", country.name)}
         <audio src="${getAnthemUrl(country)}" />

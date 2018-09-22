@@ -40,8 +40,8 @@ export class QuizAnswerHandler implements RequestHandler {
       session.try = 0;
       return responseBuilder
         .speak(`${t("quiz.answer.incorrect-with-solution", expectedAnswer)}
-            <audio src="${getAnthemUrl(nextCountry)}" />
-            ${t("quiz.reprompt")}`)
+          <audio src="${getAnthemUrl(nextCountry)}" />
+          ${t("quiz.reprompt")}`)
         .reprompt(t("quiz.reprompt"))
         .getResponse();
     }

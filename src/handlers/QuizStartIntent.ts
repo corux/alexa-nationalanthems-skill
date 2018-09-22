@@ -9,7 +9,6 @@ export class QuizStartHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = handlerInput.requestEnvelope.request.locale;
@@ -32,7 +31,7 @@ export class QuizStartHandler implements RequestHandler {
     session.try = 0;
     session.iso = country.iso3;
 
-    return responseBuilder
+    return handlerInput.responseBuilder
       .speak(`${text}
         <audio src="${getAnthemUrl(country)}" />
         ${t("quiz.reprompt")}`)

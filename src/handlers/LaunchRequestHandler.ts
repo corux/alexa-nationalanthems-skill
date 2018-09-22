@@ -8,10 +8,9 @@ export class LaunchRequestHandler implements RequestHandler {
   }
 
   public async handle(handlerInput: HandlerInput): Promise<Response> {
-    const responseBuilder = handlerInput.responseBuilder;
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
-    return responseBuilder
+    return handlerInput.responseBuilder
       .speak(t("launch"))
       .reprompt(t("launch"))
       .getResponse();

@@ -13,7 +13,6 @@ export class SkipHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = handlerInput.requestEnvelope.request.locale;
@@ -23,7 +22,7 @@ export class SkipHandler implements RequestHandler {
 
     session.iso = country.iso3;
     session.try = 0;
-    return responseBuilder
+    return handlerInput.responseBuilder
       .speak(`${t("quiz.answer.skip", expectedAnswer.name)}
         <audio src="${getAnthemUrl(country)}" />
         ${t("quiz.reprompt")}`)

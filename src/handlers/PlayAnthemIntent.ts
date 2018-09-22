@@ -31,9 +31,10 @@ export class PlayAnthemHandler implements RequestHandler {
       session.iso = data.iso3;
       session.quizMode = false;
 
-      return responseBuilder.speak(`${t("play.text", data.name)}
-            <audio src="${getAnthemUrl(data)}" />
-            ${t("play.reprompt")}`)
+      return responseBuilder
+        .speak(`${t("play.text", data.name)}
+          <audio src="${getAnthemUrl(data)}" />
+          ${t("play.reprompt")}`)
         .reprompt(t("play.reprompt"))
         .getResponse();
     }

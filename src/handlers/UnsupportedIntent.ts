@@ -9,7 +9,6 @@ export class UnsupportedHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
@@ -17,7 +16,7 @@ export class UnsupportedHandler implements RequestHandler {
     if (session.quizMode) {
       reprompt = t("quiz.reprompt");
     }
-    return responseBuilder
+    return handlerInput.responseBuilder
       .speak(`${t("unsupported")}
         ${reprompt}`)
       .reprompt(reprompt)
