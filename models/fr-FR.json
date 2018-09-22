@@ -17,7 +17,13 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "nuit",
+            "stop",
+            "rien",
+            "aucun",
+            "pas"
+          ]
         },
         {
           "name": "AMAZON.MoreIntent",
@@ -96,6 +102,7 @@
             "jouer hymne de {country}",
             "hymne national de {country}",
             "hymne de {country}",
+            "celle du {country}",
             "de {country}",
             "{country}"
           ]
@@ -1912,7 +1919,10 @@
               "name": {
                 "value": "Royaume-Uni",
                 "synonyms": [
-                  "britannique"
+                  "Angleterre",
+                  "Grande Bretagne",
+                  "britannique",
+                  "anglaise"
                 ]
               }
             },
