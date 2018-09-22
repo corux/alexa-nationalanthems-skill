@@ -147,6 +147,22 @@
           ],
           "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
           "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
+        "it-IT": {
+          "name": "Inni nazionali",
+          "summary": "Suona l'inno nazionale dai paesi di tutto il mondo.",
+          "description": "Questo skill permette ad Alexa di suonare gli inni nazionali dei paesi di tutto il mondo. Basta chiedere un paese e Alexa suonerà l'inno nazionale. Questo skill conosce gli inni di 199 paesi.\n\nQuesto skill usa gli inni nazionali forniti da Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "examplePhrases": [
+            "Alexa, chiedi a inni nazionali per l'Italia.",
+            "Suona l'inno nazionale austriaco."
+          ],
+          "keywords": [
+            "inno",
+            "inno nazionale",
+            "paese"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
         }
       },
       "isAvailableWorldwide": true,

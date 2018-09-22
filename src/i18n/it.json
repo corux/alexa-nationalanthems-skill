@@ -1,0 +1,16 @@
+{
+  "launch": "In quale inno nazionale vuoi suonare?",
+  "stop": "Ciao!",
+  "unsupported": "Scusa, non capisco questo comando.",
+  "help": {
+    "text": "Questo skill ti permette di suonare l'inno nazionale per diversi paesi. Dì solo \"Suona l'inno nazionale per la %s\".",
+    "reprompt": "Quale inno vuoi suonare dopo?"
+  },
+  "play": {
+    "text": "Ecco l'inno nazionale per la %s.",
+    "reprompt": "Quale inno vuoi suonare dopo?",
+    "no-repeat": "Non c'è nulla da ripetere.",
+    "unknown-country": "Non conosco l'inno nazionale per la %s. Si prega di scegliere un altro paese.",
+    "random": "Ho selezionato un paese a caso."
+  }
+}
