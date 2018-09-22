@@ -21,7 +21,11 @@
         },
         {
           "name": "AMAZON.RepeatIntent",
-          "samples": []
+          "samples": [
+            "das noch mal",
+            "nochmal",
+            "wiederhole das Lied"
+          ]
         },
         {
           "name": "AMAZON.MoreIntent",
@@ -66,7 +70,24 @@
             "gar keine",
             "keine mehr",
             "gute nacht",
-            "hör auf"
+            "hör auf",
+            "klappe",
+            "mach das aus",
+            "beende das quiz",
+            "stoppe das quiz",
+            "quiz stoppen",
+            "quiz beenden",
+            "quiz ende",
+            "danke das reicht",
+            "das war alles",
+            "das war's",
+            "musik aus",
+            "nationalhymne aus",
+            "keine stop",
+            "stop aus",
+            "stop",
+            "danke aus",
+            "skill aus"
           ]
         },
         {
@@ -88,6 +109,7 @@
             "spiel",
             "spiele",
             "nationalhymne",
+            "hymne",
             "danke",
             "okay"
           ]
@@ -114,7 +136,11 @@
             "spiel die {country} Hymne",
             "die {country} Nationalhymne",
             "die {country} Hymne",
-            "die {country}"
+            "die {country}",
+            "{country} Bundeshymne",
+            "{country} immer noch",
+            "{country} Musik",
+            "{country} Lieder"
           ]
         },
         {
@@ -437,6 +463,8 @@
               "name": {
                 "value": "Bosnien und Herzegowina",
                 "synonyms": [
+                  "bosnische",
+                  "herzegowinische",
                   "bosnisch-herzegowinische"
                 ]
               }
@@ -2142,6 +2170,7 @@
                   "Vereinigtes Königreich Großbritannien und Nordirland",
                   "England",
                   "Großbritannien",
+                  "englische",
                   "britische"
                 ]
               }

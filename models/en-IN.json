@@ -17,7 +17,10 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "shut up",
+            "shut down"
+          ]
         },
         {
           "name": "AMAZON.MoreIntent",
@@ -100,6 +103,7 @@
             "of {country}",
             "for {country}",
             "the {country}",
+            "{country} anthem",
             "{country}"
           ]
         }
