@@ -176,7 +176,11 @@
         "endpoint": {
           "sourceDir": "./dist"
         },
-        "interfaces": []
+        "interfaces": [
+          {
+            "type": "RENDER_TEMPLATE"
+          }
+        ]
       }
     },
     "manifestVersion": "1.0",

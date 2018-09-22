@@ -1,6 +1,7 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { getAnthemUrl, getRandomCountry, getSlotValue } from "../utils";
+import { getAnthemUrl, getRandomCountry, getResponseBuilder, getSlotValue } from "../utils";
+import { getLaunchTemplate } from "./LaunchRequestHandler";
 
 export class QuizStartHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -31,7 +32,8 @@ export class QuizStartHandler implements RequestHandler {
     session.try = 0;
     session.iso = country.iso3;
 
-    return handlerInput.responseBuilder
+    return getResponseBuilder(handlerInput)
+      .addRenderTemplateDirectiveIfSupported(getLaunchTemplate(t("quiz.start.text")))
       .speak(`${text}
         <audio src="${getAnthemUrl(country)}" />
         ${t("quiz.reprompt")}`)

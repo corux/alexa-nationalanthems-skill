@@ -1,6 +1,7 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { getAnthemUrl, getRandomCountry } from "../utils";
+import { getAnthemUrl, getRandomCountry, getResponseBuilder } from "../utils";
+import { getPlayRenderTemplate } from "./PlayAnthemIntent";
 
 export class RandomHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -19,7 +20,8 @@ export class RandomHandler implements RequestHandler {
     const country = getRandomCountry(null, locale);
 
     session.iso = country.iso3;
-    return handlerInput.responseBuilder
+    return getResponseBuilder(handlerInput)
+      .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(country))
       .speak(`${t("play.random")}
         ${t("play.text", country.name)}
         <audio src="${getAnthemUrl(country)}" />

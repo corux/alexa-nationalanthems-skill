@@ -5,29 +5,38 @@
       "was_cloned": false,
       "resources": {
         "manifest": {
-          "eTag": "598e2a34add0c962f8e6c83258e4a456"
+          "eTag": "e580d47e97bf91742e5cd494a7cf3a48"
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "186fc0f781894526e2f674166ca49ffe"
+            "eTag": "3bef1b4f3f18018dadbf2ce22a8261a0"
           },
           "en-AU": {
-            "eTag": "ba0527633deadd74a3665396e6281ec0"
+            "eTag": "7e921419b7d0418ad55d1237d75c1ab7"
           },
           "en-GB": {
-            "eTag": "ba0527633deadd74a3665396e6281ec0"
+            "eTag": "7e921419b7d0418ad55d1237d75c1ab7"
           },
           "en-IN": {
-            "eTag": "ba0527633deadd74a3665396e6281ec0"
+            "eTag": "7e921419b7d0418ad55d1237d75c1ab7"
           },
           "en-CA": {
-            "eTag": "ba0527633deadd74a3665396e6281ec0"
+            "eTag": "7e921419b7d0418ad55d1237d75c1ab7"
           },
           "en-US": {
-            "eTag": "ba0527633deadd74a3665396e6281ec0"
+            "eTag": "7e921419b7d0418ad55d1237d75c1ab7"
           },
           "fr-FR": {
-            "eTag": "c98d2b61b56f67066b1c8c29a9890ab9"
+            "eTag": "7dff7fdd33b94937c3947d22ed61e694"
+          },
+          "es-ES": {
+            "eTag": "d12bc489774cb7c393f19421e72b2b41"
+          },
+          "es-MX": {
+            "eTag": "d12bc489774cb7c393f19421e72b2b41"
+          },
+          "it-IT": {
+            "eTag": "db0be8dfa551d32329aaadaa4ae5f15d"
           }
         },
         "lambda": [
@@ -38,7 +47,7 @@
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "d4c21802-74db-4da5-85b6-4e85fd290d9a"
+            "revisionId": "ce0b25c5-6ac0-4369-b3c5-cf6d73a60743"
           }
         ]
       },

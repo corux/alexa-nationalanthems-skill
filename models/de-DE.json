@@ -12,6 +12,10 @@
           "samples": []
         },
         {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
           "name": "AMAZON.NextIntent",
           "samples": []
         },
@@ -20,9 +24,47 @@
           "samples": []
         },
         {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
           "name": "AMAZON.StopIntent",
           "samples": [
             "keine",
+            "gar keine",
+            "keine mehr",
             "gute nacht",
             "hör auf"
           ]

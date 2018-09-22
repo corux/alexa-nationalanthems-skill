@@ -1,7 +1,40 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
-import { IntentRequest, Response } from "ask-sdk-model";
+import { IntentRequest, interfaces, Response } from "ask-sdk-model";
+import { ICountry } from "country-data";
 import countries from "../countries";
-import { getAnthemUrl, getSlotValue } from "../utils";
+import { getAnthemUrl, getResponseBuilder, getSlotValue } from "../utils";
+
+export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
+  let title = data.name;
+  if (data.anthemName) {
+    title = `${title}: ${data.anthemName}`;
+  }
+  return {
+    backButton: "HIDDEN",
+    backgroundImage: {
+      sources: [
+        {
+          size: "X_LARGE",
+          url: "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/background.jpg",
+        },
+      ],
+    },
+    image: {
+      sources: [
+        {
+          size: "LARGE",
+          url: data.flag.largeImageUrl,
+        },
+        {
+          size: "SMALL",
+          url: data.flag.smallImageUrl,
+        },
+      ],
+    },
+    title,
+    type: "BodyTemplate7",
+  };
+}
 
 export class PlayAnthemHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -13,7 +46,7 @@ export class PlayAnthemHandler implements RequestHandler {
   }
 
   public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
+    const responseBuilder = getResponseBuilder(handlerInput);
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = handlerInput.requestEnvelope.request.locale;
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
@@ -32,6 +65,7 @@ export class PlayAnthemHandler implements RequestHandler {
       session.quizMode = false;
 
       return responseBuilder
+        .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(data))
         .speak(`${t("play.text", data.name)}
           <audio src="${getAnthemUrl(data)}" />
           ${t("play.reprompt")}`)
