@@ -1,7 +1,7 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import countries from "../countries";
-import { getAnthemUrl, getRandomCountry } from "../utils";
+import { getAnthemUrl, getLocale, getRandomCountry } from "../utils";
 
 export class SkipHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -15,7 +15,7 @@ export class SkipHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
 
     const country = getRandomCountry(session.continent, locale);
     const expectedAnswer = countries.getByIso3(session.iso, locale);

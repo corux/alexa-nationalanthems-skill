@@ -7,6 +7,7 @@ import * as locale_en from "../i18n/en.json";
 import * as locale_es from "../i18n/es.json";
 import * as locale_fr from "../i18n/fr.json";
 import * as locale_it from "../i18n/it.json";
+import { getLocale } from "../utils";
 
 export class LocalizationInterceptor implements RequestInterceptor {
   public process(handlerInput: HandlerInput) {
@@ -14,7 +15,7 @@ export class LocalizationInterceptor implements RequestInterceptor {
       .use(sprintf)
       .init({
         defaultNS: "translation",
-        lng: handlerInput.requestEnvelope.request.locale,
+        lng: getLocale(handlerInput),
         overloadTranslationOptionHandler: sprintf.overloadTranslationOptionHandler,
         resources: {
           de: {

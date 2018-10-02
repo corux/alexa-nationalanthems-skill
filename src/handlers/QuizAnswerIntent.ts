@@ -1,7 +1,7 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { IntentRequest, Response } from "ask-sdk-model";
 import countries from "../countries";
-import { getAnthemUrl, getRandomCountry, getSlotValue } from "../utils";
+import { getAnthemUrl, getLocale, getRandomCountry, getSlotValue } from "../utils";
 
 export class QuizAnswerHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -17,7 +17,7 @@ export class QuizAnswerHandler implements RequestHandler {
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
 
     const answer = getSlotValue(intent.slots.country);
     const expectedAnswer = countries.getByIso3(session.iso, locale).name;

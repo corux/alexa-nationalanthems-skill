@@ -1,7 +1,7 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import countries from "../countries";
-import { getAnthemUrl } from "../utils";
+import { getAnthemUrl, getLocale } from "../utils";
 
 export class AmazonRepeatIntentHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -13,7 +13,7 @@ export class AmazonRepeatIntentHandler implements RequestHandler {
     const responseBuilder = handlerInput.responseBuilder;
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
 
     if (session.quizMode && session.iso) {
       const country = countries.getByIso3(session.iso, locale);

@@ -1,7 +1,7 @@
 import { Region } from "@corux/country-data";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { getRandomCountry } from "../utils";
+import { getLocale, getRandomCountry } from "../utils";
 
 export class AmazonHelpIntentHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
@@ -11,7 +11,7 @@ export class AmazonHelpIntentHandler implements RequestHandler {
 
   public handle(handlerInput: HandlerInput): Response {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale as Locale;
+    const locale = getLocale(handlerInput);
     const country = getRandomCountry(this.getRegion(locale), locale);
 
     return handlerInput.responseBuilder

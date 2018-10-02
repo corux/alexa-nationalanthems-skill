@@ -2,7 +2,7 @@ import { ICountry } from "@corux/country-data";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../countries";
-import { getAnthemUrl, getResponseBuilder, getSlotValue } from "../utils";
+import { getAnthemUrl, getLocale, getResponseBuilder, getSlotValue } from "../utils";
 
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
   let title = data.name;
@@ -48,7 +48,7 @@ export class PlayAnthemHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = getResponseBuilder(handlerInput);
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const country = getSlotValue(intent.slots.country);
     if (!country) {

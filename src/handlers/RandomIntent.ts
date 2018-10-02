@@ -1,6 +1,6 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { getAnthemUrl, getRandomCountry, getResponseBuilder } from "../utils";
+import { getAnthemUrl, getLocale, getRandomCountry, getResponseBuilder } from "../utils";
 import { getPlayRenderTemplate } from "./PlayAnthemIntent";
 
 export class RandomHandler implements RequestHandler {
@@ -15,7 +15,7 @@ export class RandomHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
 
     const country = getRandomCountry(null, locale);
 

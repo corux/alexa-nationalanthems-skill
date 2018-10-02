@@ -1,6 +1,6 @@
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { getAnthemUrl, getRandomCountry, getResponseBuilder, getSlotValue } from "../utils";
+import { getAnthemUrl, getLocale, getRandomCountry, getResponseBuilder, getSlotValue } from "../utils";
 import { getLaunchTemplate } from "./LaunchRequestHandler";
 
 export class QuizStartHandler implements RequestHandler {
@@ -12,7 +12,7 @@ export class QuizStartHandler implements RequestHandler {
   public handle(handlerInput: HandlerInput): Response {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = handlerInput.requestEnvelope.request.locale;
+    const locale = getLocale(handlerInput);
 
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const continent = getSlotValue(intent.slots.continent, false);
