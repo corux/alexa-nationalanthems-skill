@@ -1,10 +1,10 @@
-sudo: false
 language: node_js
 node_js:
-  - 'stable'
+  - "node"
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: npm run deploy:prod
-  on: master
+#deploy:
+#  provider: script
+#  skip_cleanup: true
+#  script: npm run deploy:prod
+#  on: master
+
