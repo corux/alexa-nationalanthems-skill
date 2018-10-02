@@ -1,4 +1,4 @@
-import { getRegions } from "country-data/dist/regions";
+import { getRegions } from "@corux/country-data/dist/regions";
 import * as fs from "fs";
 import * as nomnom from "nomnom";
 import * as path from "path";

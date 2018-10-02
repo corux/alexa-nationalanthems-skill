@@ -1,6 +1,6 @@
+import { Region } from "@corux/country-data";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { Region } from "country-data";
 import { getRandomCountry } from "../utils";
 
 export class AmazonHelpIntentHandler implements RequestHandler {

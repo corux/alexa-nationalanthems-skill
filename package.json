@@ -18,6 +18,7 @@
     "deploy:assets": "aws s3 sync ./assets s3://alexa-nationalanthems-skill/ --acl public-read"
   },
   "devDependencies": {
+    "@corux/country-data": "^1.0.0",
     "@types/i18next": "^11.9.0",
     "@types/node": "^10.10.3",
     "ask-cli": "^1.4.3",

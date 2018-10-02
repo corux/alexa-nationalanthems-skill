@@ -1,4 +1,4 @@
-import { CountryData, ICountry } from "country-data";
+import { CountryData, ICountry } from "@corux/country-data";
 
 const cache = {};
 

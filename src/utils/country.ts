@@ -1,4 +1,4 @@
-import { ICountry, Region } from "country-data";
+import { ICountry, Region } from "@corux/country-data";
 import countries from "../countries";
 
 function getRandomEntry(array) {

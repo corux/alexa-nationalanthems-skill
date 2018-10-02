@@ -1,6 +1,6 @@
+import { ICountry } from "@corux/country-data";
 import { HandlerInput, RequestHandler } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
-import { ICountry } from "country-data";
 import countries from "../countries";
 import { getAnthemUrl, getResponseBuilder, getSlotValue } from "../utils";
 
