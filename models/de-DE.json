@@ -87,7 +87,10 @@
             "stop aus",
             "stop",
             "danke aus",
-            "skill aus"
+            "skill aus",
+            "keine nationalhymne mehr",
+            "nichts",
+            "beende nationalhymne"
           ]
         },
         {
@@ -260,7 +263,8 @@
               "name": {
                 "value": "Ägypten",
                 "synonyms": [
-                  "Arabische Republik Ägypten"
+                  "Arabische Republik Ägypten",
+                  "ägyptische"
                 ]
               }
             },
@@ -318,7 +322,8 @@
               "name": {
                 "value": "Äquatorialguinea",
                 "synonyms": [
-                  "Republik Äquatorialguinea"
+                  "Republik Äquatorialguinea",
+                  "äquatorialguineische"
                 ]
               }
             },
@@ -357,7 +362,8 @@
               "name": {
                 "value": "Äthiopien",
                 "synonyms": [
-                  "Demokratische Bundesrepublik Äthiopien"
+                  "Demokratische Bundesrepublik Äthiopien",
+                  "äthiopische"
                 ]
               }
             },
@@ -1055,6 +1061,7 @@
               "name": {
                 "value": "Demokratische Republik Kongo",
                 "synonyms": [
+                  "Kongo",
                   "kongolesische"
                 ]
               }
@@ -1183,6 +1190,7 @@
               "name": {
                 "value": "Libyen",
                 "synonyms": [
+                  "Staat Libyen",
                   "libysche"
                 ]
               }
@@ -1463,6 +1471,7 @@
                 "value": "Niederlande",
                 "synonyms": [
                   "Königreich der Niederlande",
+                  "Holland",
                   "niederländische"
                 ]
               }
@@ -1521,7 +1530,8 @@
               "name": {
                 "value": "Österreich",
                 "synonyms": [
-                  "Republik Österreich"
+                  "Republik Österreich",
+                  "österreichische"
                 ]
               }
             },
@@ -1550,10 +1560,7 @@
             {
               "id": "PSE",
               "name": {
-                "value": "Palästina",
-                "synonyms": [
-                  "–"
-                ]
+                "value": "Palästina"
               }
             },
             {
@@ -1651,7 +1658,6 @@
               "name": {
                 "value": "Rumänien",
                 "synonyms": [
-                  "Republik Rumänien",
                   "rumänische"
                 ]
               }
@@ -1934,7 +1940,7 @@
               "name": {
                 "value": "Swasiland",
                 "synonyms": [
-                  "Königreich Swasiland",
+                  "Königreich Eswatini",
                   "swasiländische"
                 ]
               }
@@ -2130,6 +2136,7 @@
                 "value": "Vatikanstadt",
                 "synonyms": [
                   "Staat Vatikanstadt",
+                  "Vatikan",
                   "vatikanische"
                 ]
               }

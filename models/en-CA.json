@@ -328,7 +328,7 @@
                 "value": "Bangladesh",
                 "synonyms": [
                   "People's Republic of Bangladesh",
-                  "Bengali"
+                  "Bangladeshi"
                 ]
               }
             },
@@ -427,7 +427,7 @@
               "name": {
                 "value": "Brunei",
                 "synonyms": [
-                  "Nation of Brunei, Abode of Peace",
+                  "Nation of Brunei, the Abode of Peace",
                   "Bruneian"
                 ]
               }
@@ -851,7 +851,6 @@
               "name": {
                 "value": "Japan",
                 "synonyms": [
-                  "State of Japan",
                   "Japanese"
                 ]
               }
