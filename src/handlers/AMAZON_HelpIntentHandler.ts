@@ -25,7 +25,6 @@ export class AmazonHelpIntentHandler implements RequestHandler {
     switch (locale) {
       case "en-US":
       case "en-CA":
-        return Region.NORTH_AMERICA;
       case "es-MX":
         return Region.AMERICAS;
       case "en-IN":
