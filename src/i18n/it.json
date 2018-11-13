@@ -3,7 +3,7 @@
   "stop": "Ciao!",
   "unsupported": "Scusa, non capisco questo comando.",
   "help": {
-    "text": "Questo skill ti permette di suonare l'inno nazionale per diversi paesi. Dì solo \"Suona l'inno nazionale per la %s\".",
+    "text": "Questa skill ti permette di suonare l'inno nazionale per diversi paesi. Dì solo \"Suona l'inno nazionale per la %s\".",
     "reprompt": "Quale inno vuoi suonare dopo?"
   },
   "play": {
