@@ -64,22 +64,6 @@
           "samples": []
         },
         {
-          "name": "UnsupportedIntent",
-          "slots": [
-            {
-              "name": "value",
-              "type": "AMAZON.NUMBER"
-            }
-          ],
-          "samples": [
-            "sí",
-            "no",
-            "volumen {value}",
-            "más fuerte",
-            "inferior"
-          ]
-        },
-        {
           "name": "PlayAnthemIntent",
           "slots": [
             {
