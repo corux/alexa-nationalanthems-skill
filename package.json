@@ -21,7 +21,7 @@
     "@corux/country-data": "1.0.0",
     "@types/i18next": "11.9.3",
     "@types/node": "10.12.10",
-    "ask-cli": "1.5.0",
+    "ask-cli": "1.5.1",
     "ask-sdk-core": "2.3.0",
     "ask-sdk-model": "1.9.0",
     "class.extend": "0.9.2",
