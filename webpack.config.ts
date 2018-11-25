@@ -28,6 +28,7 @@ const config = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  target: "node",
 };
 
 export default config;
