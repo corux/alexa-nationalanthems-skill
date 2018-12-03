@@ -20,7 +20,7 @@
   "devDependencies": {
     "@corux/country-data": "1.0.1",
     "@types/i18next": "12.1.0",
-    "@types/node": "10.12.11",
+    "@types/node": "10.12.12",
     "ask-cli": "1.5.1",
     "ask-sdk-core": "2.3.0",
     "ask-sdk-model": "1.9.0",
