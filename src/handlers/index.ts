@@ -10,3 +10,4 @@ export * from "./SkipIntent";
 export * from "./QuizAnswerIntent";
 export * from "./QuizStartIntent";
 export * from "./UnsupportedIntent";
+export * from "./CanFulfillIntentRequestHandler";
