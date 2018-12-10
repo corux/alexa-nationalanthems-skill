@@ -1,18 +1,16 @@
+import * as program from "commander";
 import * as fs from "fs";
-import * as nomnom from "nomnom";
 import * as path from "path";
 import * as process from "process";
 import countries from "../src/countries";
 
-const exists = (filename) => fs.existsSync(filename)
-  ? undefined
-  : `${filename} does not exist`;
+program
+  .option("--file <path>", "Schema file to update.")
+  .option("--lang <code>", "Language code to use")
+  .parse(process.argv);
 
-const { file, lang } = nomnom
-  .script("update-schema")
-  .option("file", { required: true, callback: exists })
-  .option("lang", { required: true })
-  .parse();
+const file = program.file;
+const lang = program.lang;
 
 const schema = JSON.parse(fs.readFileSync(file).toString());
 const all = countries.getAll(lang);
