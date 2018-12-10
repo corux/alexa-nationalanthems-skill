@@ -95,53 +95,6 @@
       ],
       "types": [
         {
-          "name": "CONTINENT",
-          "values": [
-            {
-              "id": "AF",
-              "name": {
-                "value": "Africa"
-              }
-            },
-            {
-              "id": "AM",
-              "name": {
-                "value": "Americas"
-              }
-            },
-            {
-              "id": "AS",
-              "name": {
-                "value": "Asia"
-              }
-            },
-            {
-              "id": "EU",
-              "name": {
-                "value": "Europe"
-              }
-            },
-            {
-              "id": "NA",
-              "name": {
-                "value": "North America"
-              }
-            },
-            {
-              "id": "OC",
-              "name": {
-                "value": "Oceania"
-              }
-            },
-            {
-              "id": "SA",
-              "name": {
-                "value": "South America"
-              }
-            }
-          ]
-        },
-        {
           "name": "COUNTRY",
           "values": [
             {
@@ -1039,7 +992,8 @@
                 "value": "Cuba",
                 "synonyms": [
                   "Republic of Cuba",
-                  "Cuban"
+                  "Cuban",
+                  "Cube"
                 ]
               }
             },
@@ -1875,7 +1829,8 @@
                 "synonyms": [
                   "Kingdom of Eswatini",
                   "Swaziland",
-                  "Swazi"
+                  "Swazi",
+                  "Swati"
                 ]
               }
             },

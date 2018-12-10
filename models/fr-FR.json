@@ -94,53 +94,6 @@
       ],
       "types": [
         {
-          "name": "CONTINENT",
-          "values": [
-            {
-              "id": "AF",
-              "name": {
-                "value": "Afrique"
-              }
-            },
-            {
-              "id": "AM",
-              "name": {
-                "value": "Amérique"
-              }
-            },
-            {
-              "id": "AS",
-              "name": {
-                "value": "Asie"
-              }
-            },
-            {
-              "id": "EU",
-              "name": {
-                "value": "Europe"
-              }
-            },
-            {
-              "id": "NA",
-              "name": {
-                "value": "Amérique du Nord"
-              }
-            },
-            {
-              "id": "OC",
-              "name": {
-                "value": "Océanie"
-              }
-            },
-            {
-              "id": "SA",
-              "name": {
-                "value": "Amérique du Sud"
-              }
-            }
-          ]
-        },
-        {
           "name": "COUNTRY",
           "values": [
             {

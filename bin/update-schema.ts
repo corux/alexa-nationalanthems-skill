@@ -1,4 +1,3 @@
-import { getRegions } from "@corux/country-data/dist/regions";
 import * as fs from "fs";
 import * as nomnom from "nomnom";
 import * as path from "path";
@@ -55,18 +54,7 @@ countryOutput.values = all.filter((country) => country && country.iso3 && countr
     },
   }));
 
-const continentOutput: any = {
-  name: "CONTINENT",
-};
-continentOutput.values = getRegions(lang)
-  .map((region) => ({
-    id: region.code,
-    name: {
-      value: region.name,
-    },
-  }));
-
-schema.interactionModel.languageModel.types = [continentOutput, countryOutput];
+schema.interactionModel.languageModel.types = [countryOutput];
 
 const schemaFile = path.join(process.cwd(), file);
 fs.writeFile(schemaFile, JSON.stringify(schema, null, 2), "utf8", (err) => {

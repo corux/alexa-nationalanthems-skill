@@ -73,11 +73,6 @@
             "hör auf",
             "klappe",
             "mach das aus",
-            "beende das quiz",
-            "stoppe das quiz",
-            "quiz stoppen",
-            "quiz beenden",
-            "quiz ende",
             "danke das reicht",
             "das war alles",
             "das war's",
@@ -119,99 +114,12 @@
             "{country} Bundeshymne",
             "{country} immer noch",
             "{country} Musik",
-            "{country} Lieder"
-          ]
-        },
-        {
-          "name": "QuizIntent",
-          "slots": [
-            {
-              "name": "continent",
-              "type": "CONTINENT"
-            }
-          ],
-          "samples": [
-            "starte das Quiz mit Ländern aus {continent}",
-            "starte das Quiz mit Ländern von {continent}",
-            "starte das Quiz mit {continent}",
-            "Quiz mit {continent}",
-            "Quiz von {continent}",
-            "starte das Quiz",
-            "Quiz"
-          ]
-        },
-        {
-          "name": "SkipIntent",
-          "samples": [
-            "ich weiss nicht",
-            "weiss nicht",
-            "keine Ahnung"
-          ]
-        },
-        {
-          "name": "CountryIntent",
-          "slots": [
-            {
-              "name": "country",
-              "type": "COUNTRY"
-            }
-          ],
-          "samples": [
-            "das ist das Land {country}",
-            "das Land {country}",
-            "das ist {country}",
+            "{country} Lieder",
             "{country}"
           ]
         }
       ],
       "types": [
-        {
-          "name": "CONTINENT",
-          "values": [
-            {
-              "id": "AF",
-              "name": {
-                "value": "Afrika"
-              }
-            },
-            {
-              "id": "AM",
-              "name": {
-                "value": "Amerika"
-              }
-            },
-            {
-              "id": "AS",
-              "name": {
-                "value": "Asien"
-              }
-            },
-            {
-              "id": "EU",
-              "name": {
-                "value": "Europa"
-              }
-            },
-            {
-              "id": "NA",
-              "name": {
-                "value": "Nordamerika"
-              }
-            },
-            {
-              "id": "OC",
-              "name": {
-                "value": "Ozeanien"
-              }
-            },
-            {
-              "id": "SA",
-              "name": {
-                "value": "Südamerika"
-              }
-            }
-          ]
-        },
         {
           "name": "COUNTRY",
           "values": [
