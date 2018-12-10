@@ -27,9 +27,14 @@ export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
 
     // Compare slot value, if entity resolution did not provide a value
     if (!isSlotSupported) {
+      const allPossibleNames: string[] = [].concat(...countries.getAll("en-US")
+          .map((item) => [].concat(...[item.adjectives, item.altNames, [item.name, item.longName]])))
+          .filter((item) => !!item)
+          .map((item) => item.toLowerCase());
       isSlotSupported = request.intent.slots.country
-        && countries.getAll("en-US")
-          .filter((item) => [].concat(...[item.adjectives, item.altNames, [item.name, item.longName]])).length > 0;
+        && allPossibleNames
+          .filter((item) => item.indexOf(request.intent.slots.country.value.toLowerCase()) !== -1)
+          .length > 0;
     }
 
     return isSlotSupported;
