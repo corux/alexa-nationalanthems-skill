@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "private": true,
   "scripts": {
-    "test": "npm run build:prod",
+    "pretest": "npm run build:prod",
+    "test": "jest",
     "lint": "tslint --project tsconfig.json",
     "lint:fix": "npm run lint -- --fix",
     "build": "webpack --config webpack.config.ts --require ts-node/register",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@corux/country-data": "1.0.1",
     "@types/i18next": "12.1.0",
+    "@types/jest": "23.3.10",
     "@types/node": "10.12.12",
     "ask-cli": "1.5.1",
     "ask-sdk-core": "2.3.0",
@@ -28,11 +30,14 @@
     "commander": "2.19.0",
     "i18next": "12.1.0",
     "i18next-sprintf-postprocessor": "0.2.2",
+    "jest": "23.6.0",
+    "ts-jest": "23.10.5",
     "ts-loader": "5.3.1",
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "typescript": "3.2.2",
     "underscore": "1.9.1",
+    "virtual-alexa": "0.6.14",
     "webpack": "4.27.1",
     "webpack-command": "0.4.2"
   }
