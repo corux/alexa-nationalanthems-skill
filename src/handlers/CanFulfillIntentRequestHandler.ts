@@ -1,13 +1,10 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { canfulfill, Response } from "ask-sdk-model";
 import countries from "../countries";
+import { BaseIntentHandler, Request } from "../utils";
 
-export class CanFulfillIntentRequestHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "CanFulfillIntentRequest";
-  }
-
+@Request("CanFulfillIntentRequest")
+export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
   public async handle(handlerInput: HandlerInput): Promise<Response> {
     return handlerInput.responseBuilder
       .withCanFulfillIntent({

@@ -1,13 +1,9 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
+import { BaseIntentHandler, Intents } from "../utils";
 
-export class UnsupportedHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "IntentRequest"
-      && ["AMAZON.NoIntent", "AMAZON.YesIntent", "UnsupportedIntent"].indexOf(request.intent.name) !== -1;
-  }
-
+@Intents("AMAZON.NoIntent", "AMAZON.YesIntent", "UnsupportedIntent")
+export class UnsupportedHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;

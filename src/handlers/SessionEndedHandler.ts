@@ -1,12 +1,9 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
+import { BaseIntentHandler, Request } from "../utils";
 
-export class SessionEndedHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "SessionEndedRequest";
-  }
-
+@Request("SessionEndedRequest")
+export class SessionEndedHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     return handlerInput.responseBuilder
       .getResponse();

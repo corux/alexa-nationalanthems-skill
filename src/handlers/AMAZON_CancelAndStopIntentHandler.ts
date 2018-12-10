@@ -1,13 +1,9 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
+import { BaseIntentHandler, Intents } from "../utils";
 
-export class AmazonCancelAndStopIntentHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "IntentRequest" &&
-      ["AMAZON.CancelIntent", "AMAZON.StopIntent"].indexOf(request.intent.name) !== -1;
-  }
-
+@Intents("AMAZON.CancelIntent", "AMAZON.StopIntent")
+export class AmazonCancelAndStopIntentHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     return handlerInput.responseBuilder

@@ -1,6 +1,6 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { interfaces, Response } from "ask-sdk-model";
-import { getResponseBuilder } from "../utils";
+import { BaseIntentHandler, getResponseBuilder, Request } from "../utils";
 
 export function getLaunchTemplate(text: string): interfaces.display.Template {
   return {
@@ -18,12 +18,8 @@ export function getLaunchTemplate(text: string): interfaces.display.Template {
   };
 }
 
-export class LaunchRequestHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "LaunchRequest";
-  }
-
+@Request("LaunchRequest")
+export class LaunchRequestHandler extends BaseIntentHandler {
   public async handle(handlerInput: HandlerInput): Promise<Response> {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
