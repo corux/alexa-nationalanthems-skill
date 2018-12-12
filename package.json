@@ -22,7 +22,7 @@
     "@corux/country-data": "1.0.1",
     "@types/i18next": "12.1.0",
     "@types/jest": "23.3.10",
-    "@types/node": "10.12.12",
+    "@types/node": "10.12.14",
     "ask-cli": "1.5.2",
     "ask-sdk-core": "2.3.0",
     "ask-sdk-model": "1.9.0",
