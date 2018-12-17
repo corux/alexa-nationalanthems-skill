@@ -1,5 +1,5 @@
 import { HandlerInput, RequestInterceptor } from "ask-sdk-core";
-import * as i18n from "i18next";
+import i18next, * as i18n from "i18next";
 import * as sprintf from "i18next-sprintf-postprocessor";
 
 import * as locale_de from "../i18n/de.json";
@@ -11,7 +11,7 @@ import { getLocale } from "../utils";
 
 export class LocalizationInterceptor implements RequestInterceptor {
   public process(handlerInput: HandlerInput) {
-    i18n
+    (i18n as any as i18next.i18n)
       .use(sprintf)
       .init({
         defaultNS: "translation",
