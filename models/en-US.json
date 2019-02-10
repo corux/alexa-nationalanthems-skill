@@ -992,8 +992,7 @@
                 "value": "Cuba",
                 "synonyms": [
                   "Republic of Cuba",
-                  "Cuban",
-                  "Cube"
+                  "Cuban"
                 ]
               }
             },
@@ -1064,6 +1063,7 @@
               "name": {
                 "value": "Libya",
                 "synonyms": [
+                  "State of Libya",
                   "Libyan"
                 ]
               }
@@ -1929,7 +1929,7 @@
               "name": {
                 "value": "Tunisia",
                 "synonyms": [
-                  "Tunisian Republic",
+                  "Republic of Tunisia",
                   "Tunisian"
                 ]
               }

@@ -170,7 +170,7 @@
               "name": {
                 "value": "Guinée équatoriale",
                 "synonyms": [
-                  "équato-guinéen"
+                  "équatoguinéen"
                 ]
               }
             },
@@ -1157,6 +1157,7 @@
               "name": {
                 "value": "Birmanie",
                 "synonyms": [
+                  "Myanmar",
                   "birman"
                 ]
               }

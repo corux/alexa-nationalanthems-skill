@@ -203,7 +203,7 @@
               "name": {
                 "value": "Etiopía",
                 "synonyms": [
-                  "etíope​"
+                  "etíope"
                 ]
               }
             },
@@ -232,7 +232,7 @@
                 "value": "Baréin",
                 "synonyms": [
                   "Bahrein",
-                  "bareiní​"
+                  "bareiní"
                 ]
               }
             },
@@ -242,7 +242,7 @@
                 "value": "Bangladés",
                 "synonyms": [
                   "Bangladesh",
-                  "bangladesí​"
+                  "bangladesí"
                 ]
               }
             },
@@ -251,7 +251,7 @@
               "name": {
                 "value": "Barbados",
                 "synonyms": [
-                  "barbadense​"
+                  "barbadense"
                 ]
               }
             },
@@ -260,7 +260,7 @@
               "name": {
                 "value": "Bélgica",
                 "synonyms": [
-                  "belga​"
+                  "belga"
                 ]
               }
             },
@@ -411,7 +411,7 @@
               "name": {
                 "value": "Costa Rica",
                 "synonyms": [
-                  "costarricense​"
+                  "costarricense"
                 ]
               }
             },
@@ -420,7 +420,8 @@
               "name": {
                 "value": "Dinamarca",
                 "synonyms": [
-                  "danés"
+                  "danés",
+                  "dinamarqués"
                 ]
               }
             },
@@ -615,7 +616,8 @@
                 "value": "Guinea-Bisáu",
                 "synonyms": [
                   "Guinea Bissau",
-                  "guineano"
+                  "guineano",
+                  "bisauguineano"
                 ]
               }
             },
@@ -670,7 +672,7 @@
                 "value": "Irak",
                 "synonyms": [
                   "Iraq",
-                  "iraquí​"
+                  "iraquí"
                 ]
               }
             },
@@ -680,7 +682,7 @@
                 "value": "Irán",
                 "synonyms": [
                   "República Islámica de Irán",
-                  "iraní​"
+                  "iraní"
                 ]
               }
             },
@@ -707,7 +709,7 @@
               "name": {
                 "value": "Israel",
                 "synonyms": [
-                  "israelí​"
+                  "israelí"
                 ]
               }
             },
@@ -743,7 +745,7 @@
               "name": {
                 "value": "Yemen",
                 "synonyms": [
-                  "yemení​"
+                  "yemení"
                 ]
               }
             },
@@ -779,7 +781,7 @@
               "name": {
                 "value": "Canadá",
                 "synonyms": [
-                  "canadiense​"
+                  "canadiense"
                 ]
               }
             },
@@ -798,7 +800,8 @@
                 "value": "Kazajistán",
                 "synonyms": [
                   "Kazajstán",
-                  "kazajo"
+                  "kazajo",
+                  "kazako"
                 ]
               }
             },
@@ -808,7 +811,7 @@
                 "value": "Catar",
                 "synonyms": [
                   "Qatar",
-                  "catarí​"
+                  "catarí"
                 ]
               }
             },
@@ -855,7 +858,8 @@
                 "value": "Comoras",
                 "synonyms": [
                   "las Comoras",
-                  "comorense​"
+                  "comorense",
+                  "comorano"
                 ]
               }
             },
@@ -905,7 +909,7 @@
                 "value": "Kosovo",
                 "synonyms": [
                   "República de Kosovo",
-                  "kosovar​"
+                  "kosovar"
                 ]
               }
             },
@@ -914,7 +918,7 @@
               "name": {
                 "value": "Croacia",
                 "synonyms": [
-                  "croata​"
+                  "croata"
                 ]
               }
             },
@@ -932,7 +936,7 @@
               "name": {
                 "value": "Kuwait",
                 "synonyms": [
-                  "kuwaití​"
+                  "kuwaití"
                 ]
               }
             },
@@ -952,7 +956,7 @@
                 "value": "Lesoto",
                 "synonyms": [
                   "Lesotho",
-                  "lesotense​"
+                  "lesotense"
                 ]
               }
             },
@@ -1024,7 +1028,7 @@
               "name": {
                 "value": "Madagascar",
                 "synonyms": [
-                  "malgache​"
+                  "malgache"
                 ]
               }
             },
@@ -1034,7 +1038,7 @@
                 "value": "Malaui",
                 "synonyms": [
                   "Malawi",
-                  "malauí​"
+                  "malauí"
                 ]
               }
             },
@@ -1061,7 +1065,7 @@
               "name": {
                 "value": "Malí",
                 "synonyms": [
-                  "maliense​"
+                  "maliense"
                 ]
               }
             },
@@ -1079,7 +1083,7 @@
               "name": {
                 "value": "Marruecos",
                 "synonyms": [
-                  "marroquí​"
+                  "marroquí"
                 ]
               }
             },
@@ -1237,7 +1241,7 @@
               "name": {
                 "value": "Nicaragua",
                 "synonyms": [
-                  "nicaragüense​"
+                  "nicaragüense"
                 ]
               }
             },
@@ -1293,7 +1297,7 @@
               "name": {
                 "value": "Omán",
                 "synonyms": [
-                  "omaní​"
+                  "omaní"
                 ]
               }
             },
@@ -1312,7 +1316,7 @@
                 "value": "Timor Oriental",
                 "synonyms": [
                   "Timor-Leste",
-                  "timorense​"
+                  "timorense"
                 ]
               }
             },
@@ -1321,7 +1325,7 @@
               "name": {
                 "value": "Pakistán",
                 "synonyms": [
-                  "pakistaní​"
+                  "pakistaní"
                 ]
               }
             },
@@ -1360,7 +1364,8 @@
                 "value": "Papúa Nueva Guinea",
                 "synonyms": [
                   "Papua Nueva Guinea",
-                  "papú​"
+                  "papú",
+                  "papúa"
                 ]
               }
             },
@@ -1444,7 +1449,7 @@
               "name": {
                 "value": "Islas Salomón",
                 "synonyms": [
-                  "salomonense​"
+                  "salomonense"
                 ]
               }
             },
@@ -1471,7 +1476,7 @@
               "name": {
                 "value": "San Marino",
                 "synonyms": [
-                  "sanmarinense​"
+                  "sanmarinense"
                 ]
               }
             },
@@ -1480,7 +1485,7 @@
               "name": {
                 "value": "Santo Tomé y Príncipe",
                 "synonyms": [
-                  "santotomense​"
+                  "santotomense"
                 ]
               }
             },
@@ -1489,7 +1494,7 @@
               "name": {
                 "value": "Arabia Saudita",
                 "synonyms": [
-                  "saudío saudita​"
+                  "saudío saudita"
                 ]
               }
             },
@@ -1534,7 +1539,7 @@
               "name": {
                 "value": "Seychelles",
                 "synonyms": [
-                  "seychellense​"
+                  "seychellense"
                 ]
               }
             },
@@ -1554,7 +1559,7 @@
                 "value": "Zimbabue",
                 "synonyms": [
                   "Zimbabwe",
-                  "zimbabuense​"
+                  "zimbabuense"
                 ]
               }
             },
@@ -1563,7 +1568,7 @@
               "name": {
                 "value": "Singapur",
                 "synonyms": [
-                  "singapurense​"
+                  "singapurense"
                 ]
               }
             },
@@ -1590,7 +1595,7 @@
               "name": {
                 "value": "Somalia",
                 "synonyms": [
-                  "somalí​"
+                  "somalí"
                 ]
               }
             },
@@ -1627,7 +1632,7 @@
               "name": {
                 "value": "Santa Lucía",
                 "synonyms": [
-                  "santalucense​"
+                  "santalucense"
                 ]
               }
             },
@@ -1691,10 +1696,10 @@
             {
               "id": "SWZ",
               "name": {
-                "value": "Suazilandia",
+                "value": "Esuatini",
                 "synonyms": [
-                  "Swazilandia",
-                  "suazi​"
+                  "Suazilandia",
+                  "suazi"
                 ]
               }
             },
@@ -1759,7 +1764,7 @@
               "name": {
                 "value": "Trinidad y Tobago",
                 "synonyms": [
-                  "trinitense​"
+                  "trinitense"
                 ]
               }
             },
@@ -1868,7 +1873,7 @@
               "name": {
                 "value": "Vanuatu",
                 "synonyms": [
-                  "vanuatuense​"
+                  "vanuatuense"
                 ]
               }
             },
@@ -1898,7 +1903,7 @@
                 "value": "Emiratos Árabes Unidos",
                 "synonyms": [
                   "los Emiratos Árabes Unidos",
-                  "emiratí​"
+                  "emiratí"
                 ]
               }
             },
@@ -1929,7 +1934,7 @@
                 "value": "Vietnam",
                 "synonyms": [
                   "Viet Nam",
-                  "vietnamita​"
+                  "vietnamita"
                 ]
               }
             },
@@ -1949,7 +1954,7 @@
                 "value": "República Árabe Saharaui Democrática",
                 "synonyms": [
                   "Sahara Occidental",
-                  "saharaui​"
+                  "saharaui"
                 ]
               }
             },
@@ -1968,7 +1973,7 @@
               "name": {
                 "value": "Chipre",
                 "synonyms": [
-                  "chipriota​"
+                  "chipriota"
                 ]
               }
             }
