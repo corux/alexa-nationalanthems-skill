@@ -7,11 +7,8 @@ import {
   CustomErrorHandler,
   LaunchRequestHandler,
   PlayAnthemHandler,
-  QuizAnswerHandler,
-  QuizStartHandler,
   RandomHandler,
   SessionEndedHandler,
-  SkipHandler,
   UnsupportedHandler,
 } from "./handlers";
 import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
@@ -22,11 +19,8 @@ export const handler = SkillBuilders.custom()
     new AmazonCancelAndStopIntentHandler(),
     new AmazonHelpIntentHandler(),
     new AmazonRepeatIntentHandler(),
-    new SkipHandler(),
     new RandomHandler(),
     new PlayAnthemHandler(),
-    new QuizAnswerHandler(),
-    new QuizStartHandler(),
     new LaunchRequestHandler(),
     new SessionEndedHandler(),
     new UnsupportedHandler(),

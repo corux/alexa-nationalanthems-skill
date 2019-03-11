@@ -51,7 +51,7 @@ test('AMAZON.HelpIntent', async () => {
   expect(response.response.outputSpeech.text).to.contain('Was möchtest du als nächstes tun?');
 });
 
-test('SkipIntent should ask for next anthem when not in quiz mode', async () => {
+test('SkipIntent should ask for next anthem', async () => {
   const event = Request.intent('SkipIntent').build();
   const response = await Skill(event);
   expect(response.response.outputSpeech.text).to.contain('Welche Nationalhymne möchtest du als nächstes abspielen?');
@@ -80,51 +80,6 @@ test('Play anthem without given country', async () => {
   const event = Request.intent('PlayAnthemIntent', {}).build();
   const response = await Skill(event);
   expect(response.response.outputSpeech.text).to.contain('Welche Nationalhymne möchtest du abspielen?');
-});
-
-test('Start quiz', async () => {
-  const event = Request.intent('QuizIntent', { continent: 'europa' }).session({}).build();
-
-  const response = await Skill(event);
-  expect(response.response.outputSpeech.ssml).to.contain('Willkommen beim Quiz.');
-});
-
-test('Correct quiz answer', async () => {
-  const event = Request.intent('CountryIntent', { country: 'deutschland' }).session({
-    attributes: {
-      quizMode: true,
-      iso: 'DEU'
-    }
-  }).build();
-
-  const response = await Skill(event);
-  expect(response.response.outputSpeech.ssml).to.contain('Das war richtig!');
-});
-
-test('Incorrect quiz answer', async () => {
-  const event = Request.intent('CountryIntent', { country: 'frankreich' }).session({
-    attributes: {
-      quizMode: true,
-      iso: 'DEU',
-      try: 0
-    }
-  }).build();
-
-  const response = await Skill(event);
-  expect(response.response.outputSpeech.text).to.contain('Das war nicht richtig.');
-});
-
-test('Incorrect quiz answer after 3rd try tell result', async () => {
-  const event = Request.intent('CountryIntent', { country: 'frankreich' }).session({
-    attributes: {
-      quizMode: true,
-      iso: 'DEU',
-      try: 2
-    }
-  }).build();
-
-  const response = await Skill(event);
-  expect(response.response.outputSpeech.ssml).to.contain('Die richtige Antwort war Deutschland.');
 });
 
 test('SessionEndedRequest', async () => {

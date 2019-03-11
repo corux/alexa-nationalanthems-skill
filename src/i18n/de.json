@@ -3,7 +3,7 @@
   "stop": "Bis Bald!",
   "unsupported": "Entschuldigung, diesen Befehl verstehe ich nicht.",
   "help": {
-    "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von %s\". Um das Quiz zu starten, sage \"Starte das Quiz\".",
+    "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von %s\".",
     "reprompt": "Was möchtest du als nächstes tun?"
   },
   "play": {
@@ -12,20 +12,5 @@
     "no-repeat": "Es gibt nichts zu wiederholen.",
     "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land.",
     "random": "Ich habe ein zufälliges Land ausgewählt."
-  },
-  "quiz": {
-    "reprompt": "Zu welchem Land gehörte die gespielte Hymne?",
-    "start": {
-      "text": "Willkommen beim Quiz. Versuche die Hymnen den richtigen Ländern zuzuordnen. Hier ist die erste Nationalhymne:",
-      "text-with-continent": "Willkommen beim Quiz mit Ländern aus %s. Versuche die Hymnen den richtigen Ländern zuzuordnen. Hier ist die erste Nationalhymne:",
-      "with-continent": "Die Länder wurden auf %s beschränkt. Hier ist die nächste Nationalhymne:",
-      "reset-continent": "Die Beschränkung der Länder wurde aufgehoben. Hier ist die nächste Nationalhymne:"
-    },
-    "answer": {
-      "correct": "Das war richtig! Hier ist die nächste Hymne:",
-      "incorrect": "Das war nicht richtig. Versuche es noch einmal.",
-      "incorrect-with-solution": "Das war nicht richtig. Die richtige Antwort war %s. Hier ist die nächste Hymne:",
-      "skip": "Die richtige Antwort war %s. Hier ist die nächste Hymne:"
-    }
   }
 }

@@ -39,10 +39,8 @@ export function getPlayRenderTemplate(data: ICountry): interfaces.display.Templa
 export class PlayAnthemHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
-    const session = handlerInput.attributesManager.getSessionAttributes();
     return request.type === "IntentRequest"
-      && (request.intent.name === "PlayAnthemIntent" || request.intent.name === "CountryIntent")
-      && !session.quizMode;
+      && (request.intent.name === "PlayAnthemIntent" || request.intent.name === "CountryIntent");
   }
 
   public handle(handlerInput: HandlerInput): Response {
@@ -62,7 +60,6 @@ export class PlayAnthemHandler implements RequestHandler {
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
-      session.quizMode = false;
 
       return responseBuilder
         .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(data))

@@ -6,10 +6,8 @@ import { getPlayRenderTemplate } from "./PlayAnthemIntent";
 export class RandomHandler implements RequestHandler {
   public canHandle(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request;
-    const session = handlerInput.attributesManager.getSessionAttributes();
     return request.type === "IntentRequest"
-      && (request.intent.name === "AMAZON.NextIntent" || request.intent.name === "SkipIntent")
-      && !session.quizMode;
+      && (request.intent.name === "AMAZON.NextIntent" || request.intent.name === "SkipIntent");
   }
 
   public handle(handlerInput: HandlerInput): Response {
