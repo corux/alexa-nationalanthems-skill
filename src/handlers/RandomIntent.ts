@@ -1,15 +1,10 @@
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { getAnthemUrl, getLocale, getRandomCountry, getResponseBuilder } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, getLocale, getRandomCountry, getResponseBuilder, Intents } from "../utils";
 import { getPlayRenderTemplate } from "./PlayAnthemIntent";
 
-export class RandomHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "IntentRequest"
-      && (request.intent.name === "AMAZON.NextIntent" || request.intent.name === "SkipIntent");
-  }
-
+@Intents("AMAZON.NextIntent", "SkipIntent")
+export class RandomHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;

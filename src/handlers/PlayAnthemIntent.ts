@@ -1,8 +1,8 @@
 import { ICountry } from "@corux/country-data";
-import { HandlerInput, RequestHandler } from "ask-sdk-core";
+import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../countries";
-import { getAnthemUrl, getLocale, getResponseBuilder, getSlotValue } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
 
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
   let title = data.name;
@@ -36,13 +36,8 @@ export function getPlayRenderTemplate(data: ICountry): interfaces.display.Templa
   };
 }
 
-export class PlayAnthemHandler implements RequestHandler {
-  public canHandle(handlerInput: HandlerInput): boolean {
-    const request = handlerInput.requestEnvelope.request;
-    return request.type === "IntentRequest"
-      && (request.intent.name === "PlayAnthemIntent" || request.intent.name === "CountryIntent");
-  }
-
+@Intents("PlayAnthemIntent", "CountryIntent")
+export class PlayAnthemHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = getResponseBuilder(handlerInput);
     const t = handlerInput.attributesManager.getRequestAttributes().t;
