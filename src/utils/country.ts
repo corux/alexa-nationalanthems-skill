@@ -41,5 +41,5 @@ export function getRandomCountry(continent: string, lang: string): ICountry {
 }
 
 export function getAnthemUrl(country: ICountry) {
-  return `https://s3-eu-west-1.amazonaws.com/alexa-countryquiz-skill-anthems/${country.iso3}.mp3`;
+  return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/mp3s/${country.iso3}.mp3`;
 }
