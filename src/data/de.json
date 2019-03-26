@@ -1,86 +1,44 @@
-[
-  {
+{
+  "EUROPE": {
     "adjectives": [
       "europäisch"
     ],
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Anthem_of_Europe_%28US_Navy_instrumental_long_version%29.ogg",
     "anthemName": "Europahymne",
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/720px-Flag_of_Europe.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
-    },
-    "iso3": "EUROPE",
     "longName": "Europäischen Union",
     "name": "Europa"
   },
-  {
-    "anthem": "https://www.nato.int/nato_static_fl2014/assets/audio/audio_history/20161104_161104-naot-hymn.mp3",
+  "NATO": {
     "anthemName": "NATO-Hymne",
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/1200px-Flag_of_NATO.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/720px-Flag_of_NATO.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_NATO.svg"
-    },
-    "iso3": "NATO",
     "name": "NATO"
   },
-  {
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/0/07/Auferstanden_aus_Ruinen_%28first_recording_-_1949%29.ogg",
+  "DDR": {
     "anthemName": "Auferstanden aus Ruinen",
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_East_Germany.svg/1200px-Flag_of_East_Germany.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_East_Germany.svg/720px-Flag_of_East_Germany.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flag_of_East_Germany.svg"
-    },
     "longName": "Deutsche Demokratische Republik",
-    "iso3": "DDR",
     "name": "DDR"
   },
-  {
+  "BAVARIA": {
     "adjectives": [
       "bayrisch"
     ],
-    "anthem": "http://www.bayern.de/wp-content/uploads/2015/02/Die-Bayernhymne-Musikkorps-der-Bayerischen-Polizei-MP3.mp3",
     "anthemName": "Für Bayern",
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Bavaria_%28lozengy%29.svg/1200px-Flag_of_Bavaria_%28lozengy%29.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Bavaria_%28lozengy%29.svg/720px-Flag_of_Bavaria_%28lozengy%29.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Bavaria_%28lozengy%29.svg"
-    },
-    "iso3": "BAVARIA",
     "name": "Bayern"
   },
-  {
+  "SCOTLAND": {
     "adjectives": [
       "schottisch"
     ],
-    "anthem": "http://www.nationalanthems.info/sco.mp3",
     "anthemName": "Flower of Scotland",
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/720px-Flag_of_Scotland.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
-    },
-    "iso3": "SCOTLAND",
     "name": "Schottland"
   },
-  {
+  "SU": {
     "adjectives": [
       "sowjetisch"
     ],
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gimn_Sovetskogo_Soyuza_%281977_Vocal%29.oga",
     "anthemName": "Hymne der Sowjetunion",
     "altNames": [
       "UdSSR"
     ],
-    "flag": {
-      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/1200px-Flag_of_the_Soviet_Union.svg.png",
-      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/720px-Flag_of_the_Soviet_Union.svg.png",
-      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg"
-    },
-    "iso3": "SU",
     "longName": "Union der Sozialistischen Sowjetrepubliken",
     "name": "Sowjetunion"
   }
-]
+}

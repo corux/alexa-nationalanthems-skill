@@ -1,5 +1,7 @@
 import { CountryData, ICountry } from "@corux/country-data";
 
+import * as generic from "./generic.json";
+
 import * as de from "./de.json";
 
 const dataExtension: {[lang: string]: any} = {
@@ -13,6 +15,8 @@ export class ExtendedCountryData extends CountryData {
   }
 
   public getCountries(): ICountry[] {
-    return super.getCountries().concat(dataExtension[this.language] || []);
+    const i18nData = dataExtension[this.language] || {};
+    const data = generic.map((val) => Object.assign({}, val, i18nData[val.iso3]));
+    return super.getCountries().concat(data);
   }
 }
