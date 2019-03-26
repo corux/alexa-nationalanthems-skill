@@ -1,0 +1,43 @@
+{
+  "EUROPE": {
+    "adjectives": [
+      "european"
+    ],
+    "anthemName": "Anthem of Europe",
+    "longName": "European Union",
+    "name": "Europe"
+  },
+  "NATO": {
+    "name": "NATO"
+  },
+  "DDR": {
+    "anthemName": "Risen from Ruins",
+    "longName": "German Democratic Republic",
+    "name": "East Germany"
+  },
+  "BAVARIA": {
+    "adjectives": [
+      "bavarian"
+    ],
+    "anthemName": "Hymn of Bavaria",
+    "name": "Bavaria"
+  },
+  "SCOTLAND": {
+    "adjectives": [
+      "scottish"
+    ],
+    "anthemName": "Flower of Scotland",
+    "name": "Scotland"
+  },
+  "SU": {
+    "adjectives": [
+      "soviet"
+    ],
+    "anthemName": "State Anthem of the Soviet Union",
+    "altNames": [
+      "USSR"
+    ],
+    "longName": "Union of Soviet Socialist Republics",
+    "name": "Soviet Union"
+  }
+}

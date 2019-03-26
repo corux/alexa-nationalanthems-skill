@@ -2127,6 +2127,60 @@
                   "Cypriot"
                 ]
               }
+            },
+            {
+              "id": "EUROPE",
+              "name": {
+                "value": "Europe",
+                "synonyms": [
+                  "European Union",
+                  "european"
+                ]
+              }
+            },
+            {
+              "id": "NATO",
+              "name": {
+                "value": "NATO"
+              }
+            },
+            {
+              "id": "DDR",
+              "name": {
+                "value": "East Germany",
+                "synonyms": [
+                  "German Democratic Republic"
+                ]
+              }
+            },
+            {
+              "id": "BAVARIA",
+              "name": {
+                "value": "Bavaria",
+                "synonyms": [
+                  "bavarian"
+                ]
+              }
+            },
+            {
+              "id": "SCOTLAND",
+              "name": {
+                "value": "Scotland",
+                "synonyms": [
+                  "scottish"
+                ]
+              }
+            },
+            {
+              "id": "SU",
+              "name": {
+                "value": "Soviet Union",
+                "synonyms": [
+                  "Union of Soviet Socialist Republics",
+                  "USSR",
+                  "soviet"
+                ]
+              }
             }
           ]
         }

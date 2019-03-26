@@ -3,9 +3,10 @@ import { CountryData, ICountry } from "@corux/country-data";
 import * as generic from "./generic.json";
 
 import * as de from "./de.json";
+import * as en from "./en.json";
 
 const dataExtension: {[lang: string]: any} = {
-  de,
+  de, en,
 };
 
 export class ExtendedCountryData extends CountryData {
