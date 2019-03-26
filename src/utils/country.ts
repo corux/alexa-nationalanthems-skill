@@ -1,5 +1,5 @@
 import { ICountry, Region } from "@corux/country-data";
-import countries from "../countries";
+import countries from "../data/countries";
 
 function getRandomEntry(array) {
   return array[Math.floor(Math.random() * array.length)];

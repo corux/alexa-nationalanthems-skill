@@ -2115,6 +2115,60 @@
                   "zyprische"
                 ]
               }
+            },
+            {
+              "id": "EUROPE",
+              "name": {
+                "value": "Europa",
+                "synonyms": [
+                  "Europäischen Union",
+                  "europäische"
+                ]
+              }
+            },
+            {
+              "id": "NATO",
+              "name": {
+                "value": "NATO"
+              }
+            },
+            {
+              "id": "DDR",
+              "name": {
+                "value": "DDR",
+                "synonyms": [
+                  "Deutsche Demokratische Republik"
+                ]
+              }
+            },
+            {
+              "id": "BAVARIA",
+              "name": {
+                "value": "Bayern",
+                "synonyms": [
+                  "bayrische"
+                ]
+              }
+            },
+            {
+              "id": "SCOTLAND",
+              "name": {
+                "value": "Schottland",
+                "synonyms": [
+                  "schottische"
+                ]
+              }
+            },
+            {
+              "id": "SU",
+              "name": {
+                "value": "Sowjetunion",
+                "synonyms": [
+                  "Union der Sozialistischen Sowjetrepubliken",
+                  "UdSSR",
+                  "sowjetische"
+                ]
+              }
             }
           ]
         }

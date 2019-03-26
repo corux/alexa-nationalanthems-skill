@@ -1,9 +1,10 @@
 import { CountryData, ICountry } from "@corux/country-data";
+import { ExtendedCountryData } from "./ExtendedCountryData";
 
 const cache = {};
 
-function getInstance(lang: string) {
-  const countryData = cache[lang] || (cache[lang] = new CountryData(lang));
+function getInstance(lang: string): CountryData {
+  const countryData = cache[lang] || (cache[lang] = new ExtendedCountryData(lang));
   return countryData;
 }
 

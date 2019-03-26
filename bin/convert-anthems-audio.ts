@@ -2,7 +2,7 @@ import { spawn } from "child_process";
 import * as program from "commander";
 import * as fs from "fs";
 import * as process from "process";
-import countries from "../src/countries";
+import countries from "../src/data/countries";
 
 program
   .option("--destination <path>", "The destination folder, where all converted mp3 will be saved in.")

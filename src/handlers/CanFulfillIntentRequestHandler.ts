@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { canfulfill, Response } from "ask-sdk-model";
-import countries from "../countries";
+import countries from "../data/countries";
 import { BaseIntentHandler, Request } from "../utils";
 
 @Request("CanFulfillIntentRequest")

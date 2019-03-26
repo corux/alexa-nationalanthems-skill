@@ -1,7 +1,7 @@
 import { ICountry } from "@corux/country-data";
 import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
-import countries from "../countries";
+import countries from "../data/countries";
 import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
 
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {

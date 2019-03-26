@@ -2,7 +2,7 @@ import * as program from "commander";
 import * as fs from "fs";
 import * as path from "path";
 import * as process from "process";
-import countries from "../src/countries";
+import countries from "../src/data/countries";
 
 program
   .option("--file <path>", "Schema file to update.")

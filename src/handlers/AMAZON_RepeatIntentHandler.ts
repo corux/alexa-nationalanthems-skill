@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import countries from "../countries";
+import countries from "../data/countries";
 import { BaseIntentHandler, getAnthemUrl, getLocale, Intents } from "../utils";
 
 @Intents("AMAZON.RepeatIntent")
