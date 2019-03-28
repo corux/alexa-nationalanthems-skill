@@ -40,5 +40,12 @@
     ],
     "longName": "Union der Sozialistischen Sowjetrepubliken",
     "name": "Sowjetunion"
+  },
+  "GRL": {
+    "adjectives": [
+      "grönländisch"
+    ],
+    "anthemName": "Unser Land, du wurdest so alt",
+    "name": "Grönland"
   }
 }

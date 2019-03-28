@@ -55,5 +55,14 @@
       "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg"
     },
     "iso3": "SU"
+  },
+  {
+    "anthem": "https://upload.wikimedia.org/wikipedia/commons/2/24/National_Anthem_of_Greenland_-_Nunarput%2C_Utoqqarsuanngoravit.oga",
+    "flag": {
+      "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/1200px-Flag_of_Greenland.svg.png",
+      "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/720px-Flag_of_Greenland.svg.png",
+      "svgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"
+    },
+    "iso3": "GRL"
   }
 ]
