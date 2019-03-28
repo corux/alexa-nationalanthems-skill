@@ -43,15 +43,16 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = getLocale(handlerInput);
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
-    const country = getSlotValue(intent.slots.country);
-    if (!country) {
+    const { name: countryName, id: countryId } = getSlotValue(intent.slots.country);
+    if (!countryName) {
       return responseBuilder
         .speak(t("launch"))
         .reprompt(t("launch"))
         .getResponse();
     }
 
-    const data = countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === country.toUpperCase());
+    const data = countries.getAll(locale).find((val) => (val.iso3 || "") === countryId
+      || (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
@@ -66,11 +67,15 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     }
 
     console.warn({
-      data: country,
+      data: {
+        countryId,
+        countryName,
+        resolvedCountry: data,
+      },
       type: "unknown-country",
     });
     return responseBuilder
-      .speak(t("play.unknown-country", data ? data.name : country))
+      .speak(t("play.unknown-country", data ? data.name : countryName))
       .reprompt(t("play.reprompt"))
       .getResponse();
   }
