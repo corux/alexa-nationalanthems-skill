@@ -65,6 +65,10 @@ export class PlayAnthemHandler extends BaseIntentHandler {
         .getResponse();
     }
 
+    console.warn({
+      data: country,
+      type: "unknown-country",
+    });
     return responseBuilder
       .speak(t("play.unknown-country", data ? data.name : country))
       .reprompt(t("play.reprompt"))
