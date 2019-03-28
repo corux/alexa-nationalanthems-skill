@@ -106,6 +106,7 @@
             "nach der Nationalhymne von {country}",
             "nach der Hymne von {country}",
             "nach {country}",
+            "Nationalhymne {country}",
             "spiel die {country} Nationalhymne",
             "spiel die {country} Hymne",
             "die {country} Nationalhymne",
@@ -115,6 +116,7 @@
             "{country} immer noch",
             "{country} Musik",
             "{country} Lieder",
+            "{country} bitte",
             "{country}"
           ]
         }
@@ -1209,16 +1211,6 @@
               }
             },
             {
-              "id": "MKD",
-              "name": {
-                "value": "Mazedonien",
-                "synonyms": [
-                  "Ehemalige jugoslawische Republik Mazedonien",
-                  "mazedonische"
-                ]
-              }
-            },
-            {
               "id": "MEX",
               "name": {
                 "value": "Mexiko",
@@ -1356,6 +1348,7 @@
                 "synonyms": [
                   "Königreich der Niederlande",
                   "Holland",
+                  "holländische",
                   "niederländische"
                 ]
               }
@@ -1386,6 +1379,17 @@
                 "value": "Niue",
                 "synonyms": [
                   "niueanische"
+                ]
+              }
+            },
+            {
+              "id": "MKD",
+              "name": {
+                "value": "Nordmazedonien",
+                "synonyms": [
+                  "Republik Nordmazedonien",
+                  "Mazedonien",
+                  "mazedonische"
                 ]
               }
             },
@@ -1631,7 +1635,7 @@
                 "value": "Schweiz",
                 "synonyms": [
                   "Schweizerische Eidgenossenschaft",
-                  "Schweizere",
+                  "schweizere",
                   "schweizerische"
                 ]
               }
@@ -1789,6 +1793,7 @@
                 "value": "Sudan",
                 "synonyms": [
                   "Republik Sudan",
+                  "Nordsudan",
                   "sudanesische"
                 ]
               }
@@ -1914,6 +1919,7 @@
                 "value": "Tschechien",
                 "synonyms": [
                   "Tschechische Republik",
+                  "Tschechei",
                   "tschechische"
                 ]
               }
@@ -2062,6 +2068,7 @@
                   "England",
                   "Großbritannien",
                   "englische",
+                  "großbritannische",
                   "britische"
                 ]
               }
@@ -2167,6 +2174,15 @@
                   "Union der Sozialistischen Sowjetrepubliken",
                   "UdSSR",
                   "sowjetische"
+                ]
+              }
+            },
+            {
+              "id": "GRL",
+              "name": {
+                "value": "Grönland",
+                "synonyms": [
+                  "grönländische"
                 ]
               }
             }

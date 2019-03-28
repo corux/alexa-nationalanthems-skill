@@ -1081,15 +1081,6 @@
               }
             },
             {
-              "id": "MKD",
-              "name": {
-                "value": "Macédoine",
-                "synonyms": [
-                  "macédonien"
-                ]
-              }
-            },
-            {
               "id": "MEX",
               "name": {
                 "value": "Mexique",
@@ -1240,6 +1231,17 @@
                 "value": "Niue",
                 "synonyms": [
                   "niouéen"
+                ]
+              }
+            },
+            {
+              "id": "MKD",
+              "name": {
+                "value": "Macédoine du Nord",
+                "synonyms": [
+                  "Macédoine",
+                  "nord-macédonien",
+                  "macédonien"
                 ]
               }
             },

@@ -1200,16 +1200,6 @@
               }
             },
             {
-              "id": "MKD",
-              "name": {
-                "value": "Macedonia",
-                "synonyms": [
-                  "Republic of Macedonia",
-                  "Macedonian"
-                ]
-              }
-            },
-            {
               "id": "MEX",
               "name": {
                 "value": "Mexico",
@@ -1376,6 +1366,17 @@
                 "value": "Niue",
                 "synonyms": [
                   "Niuean"
+                ]
+              }
+            },
+            {
+              "id": "MKD",
+              "name": {
+                "value": "North Macedonia",
+                "synonyms": [
+                  "Republic of North Macedonia",
+                  "Macedonia",
+                  "Macedonian"
                 ]
               }
             },
@@ -1788,6 +1789,7 @@
                 "value": "Sudan",
                 "synonyms": [
                   "Republic of the Sudan",
+                  "North Sudan",
                   "Sudanese"
                 ]
               }
@@ -1825,10 +1827,10 @@
             {
               "id": "SWZ",
               "name": {
-                "value": "Eswatini",
+                "value": "Swaziland",
                 "synonyms": [
                   "Kingdom of Eswatini",
-                  "Swaziland",
+                  "Eswatini",
                   "Swazi",
                   "Swati"
                 ]
@@ -2179,6 +2181,15 @@
                   "Union of Soviet Socialist Republics",
                   "USSR",
                   "soviet"
+                ]
+              }
+            },
+            {
+              "id": "GRL",
+              "name": {
+                "value": "Greenland",
+                "synonyms": [
+                  "greenlandic"
                 ]
               }
             }

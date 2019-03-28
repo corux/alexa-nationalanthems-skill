@@ -1116,16 +1116,6 @@
               }
             },
             {
-              "id": "MKD",
-              "name": {
-                "value": "Macedonia",
-                "synonyms": [
-                  "la ex República Yugoslava de Macedonia",
-                  "macedonio"
-                ]
-              }
-            },
-            {
               "id": "MEX",
               "name": {
                 "value": "México",
@@ -1193,8 +1183,9 @@
             {
               "id": "MMR",
               "name": {
-                "value": "Myanmar",
+                "value": "Birmania",
                 "synonyms": [
+                  "Myanmar",
                   "birmano"
                 ]
               }
@@ -1280,6 +1271,17 @@
                 "value": "Niue",
                 "synonyms": [
                   "niueño"
+                ]
+              }
+            },
+            {
+              "id": "MKD",
+              "name": {
+                "value": "Macedonia del Norte",
+                "synonyms": [
+                  "la ex República Yugoslava de Macedonia",
+                  "Macedonia",
+                  "macedonio"
                 ]
               }
             },
@@ -1696,9 +1698,9 @@
             {
               "id": "SWZ",
               "name": {
-                "value": "Esuatini",
+                "value": "Suazilandia",
                 "synonyms": [
-                  "Suazilandia",
+                  "Esuatini",
                   "suazi"
                 ]
               }
