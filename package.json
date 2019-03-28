@@ -15,7 +15,7 @@
     "deploy:prod": "ask deploy --force --profile default --target lambda",
     "update-schema": "npm-run-all --parallel update-schema:*",
     "update-schema:de": "ts-node ./bin/update-schema.ts --lang de --file ./models/de-DE.json",
-    "update-schema:fr": "ts-node ./bin/update-schema.ts --lang fr --file ./models/fr-FR.json",
+    "update-schema:fr": "ts-node ./bin/update-schema.ts --lang fr --file ./models/fr-FR.json && cp ./models/fr-FR.json ./models/fr-CA.json",
     "update-schema:es": "ts-node ./bin/update-schema.ts --lang es --file ./models/es-ES.json && cp ./models/es-ES.json ./models/es-MX.json",
     "update-schema:it": "ts-node ./bin/update-schema.ts --lang it --file ./models/it-IT.json",
     "update-schema:en": "ts-node ./bin/update-schema.ts --lang en --file ./models/en-US.json && cp ./models/en-US.json ./models/en-GB.json && cp ./models/en-US.json ./models/en-AU.json && cp ./models/en-US.json ./models/en-CA.json && cp ./models/en-US.json ./models/en-IN.json",

@@ -114,6 +114,22 @@
           "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
           "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
         },
+        "fr-CA": {
+          "name": "Hymnes nationaux",
+          "summary": "Écoutez les hymnes nationaux de pays du monde entier.",
+          "description": "Avec la skill, Alexa peut jouer les hymnes nationaux des pays du monde entier. Il suffit de demander un pays et Alexa jouera l'hymne national. La skill connaît les hymnes de 199 pays.\n\nLa skill utilise les hymnes nationaux fournis par Wikipedia: https://fr.wikipedia.org/wiki/Liste_des_hymnes_nationaux",
+          "examplePhrases": [
+            "Alexa, demande à hymnes nationaux de jouer l'hymne national de Canada.",
+            "Jouer l'hymne national des États-Unis."
+          ],
+          "keywords": [
+            "hymne",
+            "hymne national",
+            "pays"
+          ],
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/icon512.png"
+        },
         "es-ES": {
           "name": "Himnos nacionales",
           "summary": "Toca el himno nacional de países de todo el mundo.",

@@ -5,38 +5,41 @@
       "was_cloned": false,
       "resources": {
         "manifest": {
-          "eTag": "f1b63e87f7ad895e093016f2a97b457f"
+          "eTag": "80182f9637ab7e1ef72d9141319b597f"
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "cd551e5343a8d60dc97cc0a6dbf7f6c7"
+            "eTag": "befe4135f83f26959278083822b7275b"
           },
           "en-AU": {
-            "eTag": "4e11a12fd3ebfdb6f016087c1ce563d1"
+            "eTag": "0d35d89c859d41532478d149805e5447"
           },
           "en-GB": {
-            "eTag": "4e11a12fd3ebfdb6f016087c1ce563d1"
+            "eTag": "0d35d89c859d41532478d149805e5447"
           },
           "en-IN": {
-            "eTag": "4e11a12fd3ebfdb6f016087c1ce563d1"
+            "eTag": "0d35d89c859d41532478d149805e5447"
           },
           "en-CA": {
-            "eTag": "4e11a12fd3ebfdb6f016087c1ce563d1"
+            "eTag": "0d35d89c859d41532478d149805e5447"
           },
           "en-US": {
-            "eTag": "4e11a12fd3ebfdb6f016087c1ce563d1"
+            "eTag": "0d35d89c859d41532478d149805e5447"
           },
           "fr-FR": {
-            "eTag": "91e6fba257f48e7435438b7f560e688e"
+            "eTag": "9052e8628abe9f7de61c669c27e52538"
           },
           "es-ES": {
-            "eTag": "704dc3222a100eb3234d32f55921a0ee"
+            "eTag": "0d8092aa45ee4af199220dd3428791a3"
           },
           "es-MX": {
-            "eTag": "704dc3222a100eb3234d32f55921a0ee"
+            "eTag": "0d8092aa45ee4af199220dd3428791a3"
           },
           "it-IT": {
-            "eTag": "5fed2a3f4ed3ca1e1613bfacab51849c"
+            "eTag": "4fc1f1f5d5d7fdf67d06933eb94e1737"
+          },
+          "fr-CA": {
+            "eTag": "9052e8628abe9f7de61c669c27e52538"
           }
         },
         "lambda": [
@@ -49,7 +52,7 @@
             "codeUri": "./dist",
             "functionName": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "0829f005-a914-462b-9525-e634e9ddb45a",
+            "revisionId": "3f65f388-0f2e-4344-b5f4-b16beea24c7a",
             "runtime": "nodejs8.10"
           },
           {
@@ -61,7 +64,7 @@
             "codeUri": "./dist",
             "functionName": "alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "bf5ac509-6f0b-45f7-88ed-199c4c79f8d5",
+            "revisionId": "aced98a8-17ae-418c-ade7-8efc908d870d",
             "runtime": "nodejs8.10"
           }
         ]
