@@ -40,6 +40,7 @@ export function getRandomCountry(continent: string, lang: string): ICountry {
     .filter((val) => val.name && val.anthem && (regions.length === 0 || matchesContinent(val))));
 }
 
-export function getAnthemUrl(country: ICountry) {
-  return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/mp3s/${country.iso3}.mp3`;
+export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {
+  const folder = longVersion ? "mp3s-full" : "mp3s";
+  return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/${folder}/${country.iso3}.mp3`;
 }

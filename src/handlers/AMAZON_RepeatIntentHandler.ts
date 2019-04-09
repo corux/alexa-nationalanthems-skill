@@ -3,7 +3,7 @@ import { Response } from "ask-sdk-model";
 import countries from "../data/countries";
 import { BaseIntentHandler, getAnthemUrl, getLocale, Intents } from "../utils";
 
-@Intents("AMAZON.RepeatIntent")
+@Intents("AMAZON.RepeatIntent", "AMAZON.StartOverIntent", "AMAZON.ResumeIntent")
 export class AmazonRepeatIntentHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;

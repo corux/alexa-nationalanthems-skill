@@ -70,6 +70,14 @@
           "samples": []
         },
         {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
           "name": "PlayAnthemIntent",
           "slots": [
             {

@@ -197,6 +197,9 @@
           },
           {
             "type": "CAN_FULFILL_INTENT_REQUEST"
+          },
+          {
+            "type": "AUDIO_PLAYER"
           }
         ],
         "regions": {

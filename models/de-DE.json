@@ -20,6 +20,14 @@
           "samples": []
         },
         {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
           "name": "AMAZON.RepeatIntent",
           "samples": [
             "das noch mal",

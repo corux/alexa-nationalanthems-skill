@@ -22,6 +22,10 @@ export interface IExtendedResponseBuilder extends ResponseBuilder {
   addHintDirectiveIfSupported(text: string): IExtendedResponseBuilder;
 }
 
+export function shouldUseAudioPlayer(handlerInput: HandlerInput): boolean {
+  return false;
+}
+
 export function supportsDisplay(handlerInput: HandlerInput): boolean {
   const hasDisplay = handlerInput.requestEnvelope.context
     && handlerInput.requestEnvelope.context.System
