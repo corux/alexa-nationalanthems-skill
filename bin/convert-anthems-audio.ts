@@ -7,10 +7,12 @@ import countries from "../src/data/countries";
 program
   .option("--destination <path>", "The destination folder, where all converted mp3 will be saved in.")
   .option("--overwrite", "Determines if existing mp3 files will be overwritten.")
+  .option("--duration <seconds>", "The maximum duration in seconds of the generated mp3 files")
   .parse(process.argv);
 
 const destination = program.destination;
 const overwrite = program.overwrite;
+const duration = program.duration;
 
 if (!fs.existsSync(destination)) {
   fs.mkdirSync(destination);
@@ -22,9 +24,8 @@ for (const country of data) {
   if (country.anthem) {
     const output = `${destination}/${country.iso3}.mp3`;
     if (overwrite || !fs.existsSync(output)) {
-      const maxLengthInSeconds = "88";
       const proc = spawn("ffmpeg", ["-i", country.anthem,
-        "-t", maxLengthInSeconds, "-ac", "2", "-codec:a", "libmp3lame",
+        "-t", duration, "-ac", "2", "-codec:a", "libmp3lame",
         "-b:a", "48k", "-ar", "16000", "-y", output]);
       proc.on("close", (code) => {
         if (code === 0) {
