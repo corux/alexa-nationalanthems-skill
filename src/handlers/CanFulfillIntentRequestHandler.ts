@@ -27,7 +27,8 @@ export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
 
     // Compare slot value, if entity resolution did not provide a value
     if (!isSlotSupported) {
-      const allPossibleNames: string[] = [].concat(...countries.getAll("en-US")
+      const locale: Locale = getLocale(handlerInput) || "en-US";
+      const allPossibleNames: string[] = [].concat(...countries.getAll(locale)
           .map((item) => [].concat(...[item.adjectives, item.altNames, [item.name, item.longName]])))
           .filter((item) => !!item)
           .map((item) => item.toLowerCase());
