@@ -1,7 +1,7 @@
 import { HandlerInput } from "ask-sdk-core";
 import { canfulfill, Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import { BaseIntentHandler, Request } from "../utils";
+import { BaseIntentHandler, getLocale, Request } from "../utils";
 
 @Request("CanFulfillIntentRequest")
 export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
@@ -15,7 +15,7 @@ export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
 
   private isSupported(handlerInput: HandlerInput): boolean {
     const request = handlerInput.requestEnvelope.request as canfulfill.CanFulfillIntentRequest;
-    const isIntentSupported = ["PlayAnthemIntent", "CountryIntent"].indexOf(request.intent.name) !== -1;
+    const isIntentSupported = ["PlayAnthemIntent"].indexOf(request.intent.name) !== -1;
     if (!isIntentSupported) {
       return false;
     }

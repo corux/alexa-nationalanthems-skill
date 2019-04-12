@@ -39,7 +39,7 @@ export function getPlayRenderTemplate(data: ICountry): interfaces.display.Templa
   };
 }
 
-@Intents("PlayAnthemIntent", "CountryIntent")
+@Intents("PlayAnthemIntent")
 export class PlayAnthemHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = getResponseBuilder(handlerInput);
