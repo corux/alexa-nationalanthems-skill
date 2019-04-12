@@ -2,7 +2,10 @@ import { ICountry } from "@corux/country-data";
 import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
+import {
+  BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder,
+  getSlotValue, Intents, supportsAudioPlayer,
+} from "../utils";
 
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
   let title = data.name;
@@ -56,6 +59,16 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
+
+      if (supportsAudioPlayer(handlerInput)) {
+        return responseBuilder
+          .speak(t("play.text", data.name))
+          .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true), data.iso3, 0, undefined, {
+            title: `${data.name}: ${data.anthemName}`,
+          })
+          .withShouldEndSession(true)
+          .getResponse();
+      }
 
       return responseBuilder
         .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(data))

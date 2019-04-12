@@ -1,5 +1,5 @@
 import { HandlerInput, ResponseBuilder } from "ask-sdk-core";
-import { interfaces } from "ask-sdk-model";
+import { interfaces, SupportedInterfaces } from "ask-sdk-model";
 
 export interface IExtendedResponseBuilder extends ResponseBuilder {
   /**
@@ -22,17 +22,20 @@ export interface IExtendedResponseBuilder extends ResponseBuilder {
   addHintDirectiveIfSupported(text: string): IExtendedResponseBuilder;
 }
 
-export function shouldUseAudioPlayer(handlerInput: HandlerInput): boolean {
-  return false;
-}
-
-export function supportsDisplay(handlerInput: HandlerInput): boolean {
-  const hasDisplay = handlerInput.requestEnvelope.context
+function getSupportedInterfaces(handlerInput: HandlerInput): SupportedInterfaces {
+  return handlerInput.requestEnvelope.context
     && handlerInput.requestEnvelope.context.System
     && handlerInput.requestEnvelope.context.System.device
     && handlerInput.requestEnvelope.context.System.device.supportedInterfaces
-    && handlerInput.requestEnvelope.context.System.device.supportedInterfaces.Display;
-  return !!hasDisplay;
+    || {};
+}
+
+export function supportsAudioPlayer(handlerInput: HandlerInput): boolean {
+  return !!getSupportedInterfaces(handlerInput).AudioPlayer;
+}
+
+export function supportsDisplay(handlerInput: HandlerInput): boolean {
+  return !!getSupportedInterfaces(handlerInput).Display;
 }
 
 export function getResponseBuilder(handlerInput: HandlerInput): IExtendedResponseBuilder {

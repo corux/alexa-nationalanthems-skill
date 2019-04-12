@@ -3,6 +3,7 @@ import {
   AmazonCancelAndStopIntentHandler,
   AmazonHelpIntentHandler,
   AmazonRepeatIntentHandler,
+  AudioPlayerUnsupportedHandler,
   CanFulfillIntentRequestHandler,
   CustomErrorHandler,
   LaunchRequestHandler,
@@ -15,6 +16,7 @@ import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
 
 export const handler = SkillBuilders.custom()
   .addRequestHandlers(
+    new AudioPlayerUnsupportedHandler(),
     new CanFulfillIntentRequestHandler(),
     new AmazonCancelAndStopIntentHandler(),
     new AmazonHelpIntentHandler(),

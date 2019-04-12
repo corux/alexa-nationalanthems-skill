@@ -8,3 +8,4 @@ export * from "./PlayAnthemIntent";
 export * from "./RandomIntent";
 export * from "./UnsupportedIntent";
 export * from "./CanFulfillIntentRequestHandler";
+export * from "./AudioPlayerUnsupportedHandler";

@@ -17,18 +17,24 @@ describe("AMAZON.RepeatIntent", () => {
     expect(result.response.shouldEndSession).toBe(false);
   });
 
-  test("Should repeat the previous anthem", async () => {
-    const playResult = await alexa.intend("PlayAnthemIntent", {
-      country: "Germany",
+  describe("Without AudioPlayer", () => {
+    beforeEach(() => {
+      alexa.context().device().audioPlayerSupported(false);
     });
 
-    expect(playResult.response.outputSpeech.ssml).toContain("Here's the national anthem of Germany.");
-    expect(playResult.response.outputSpeech.ssml).toContain("/mp3s/DEU.mp3");
+    test("Should repeat the previous anthem", async () => {
+      const playResult = await alexa.intend("PlayAnthemIntent", {
+        country: "Germany",
+      });
 
-    const repeatResult = await alexa.intend("AMAZON.RepeatIntent");
+      expect(playResult.response.outputSpeech.ssml).toContain("Here's the national anthem of Germany.");
+      expect(playResult.response.outputSpeech.ssml).toContain("/mp3s/DEU.mp3");
 
-    expect(repeatResult.response.outputSpeech.ssml).not.toContain("Here's the national anthem of Germany.");
-    expect(repeatResult.response.outputSpeech.ssml).toContain("/mp3s/DEU.mp3");
-    expect(repeatResult.response.shouldEndSession).toBe(false);
+      const repeatResult = await alexa.intend("AMAZON.RepeatIntent");
+
+      expect(repeatResult.response.outputSpeech.ssml).not.toContain("Here's the national anthem of Germany.");
+      expect(repeatResult.response.outputSpeech.ssml).toContain("/mp3s/DEU.mp3");
+      expect(repeatResult.response.shouldEndSession).toBe(false);
+    });
   });
 });
