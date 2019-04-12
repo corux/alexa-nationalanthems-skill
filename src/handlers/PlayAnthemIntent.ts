@@ -43,7 +43,7 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = getLocale(handlerInput);
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
-    const { name: countryName, id: countryId } = getSlotValue(intent.slots.country);
+    const { name: countryName, id: countryId } = { ...getSlotValue(intent.slots.country) };
     if (!countryName) {
       return responseBuilder
         .speak(t("launch"))
@@ -51,8 +51,8 @@ export class PlayAnthemHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    const data = countries.getAll(locale).find((val) => (val.iso3 || "") === countryId
-      || (val.name || "").toUpperCase() === countryName.toUpperCase());
+    const data = countries.getAll(locale).find((val) => val.iso3 === countryId)
+      || countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem) {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.iso = data.iso3;
