@@ -1,15 +1,14 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import { BaseIntentHandler, getAnthemUrl, getLocale, Intents, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, getLocale, Intents, Request, supportsAudioPlayer } from "../utils";
 import { getAudioPlayerMetadata, getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
+@Request("PlaybackController.PlayCommandIssued")
 @Intents("AMAZON.ResumeIntent")
 export class AmazonResumeIntentHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = handlerInput.responseBuilder;
-    const session = handlerInput.attributesManager.getSessionAttributes();
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = getLocale(handlerInput);
 
     const countryFromAudioPlayer = getCountryFromAudioPlayer(handlerInput);
@@ -22,6 +21,8 @@ export class AmazonResumeIntentHandler extends BaseIntentHandler {
         .getResponse();
     }
 
+    const session = handlerInput.attributesManager.getSessionAttributes();
+    const t = handlerInput.attributesManager.getRequestAttributes().t;
     if (session.iso) {
       const country = countries.getByIso3(session.iso, locale);
       return responseBuilder

@@ -1,7 +1,8 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, Intents, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, Intents, Request, supportsAudioPlayer } from "../utils";
 
+@Request("PlaybackController.PauseCommandIssued")
 @Intents("AMAZON.PauseIntent")
 export class AmazonPauseIntentHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {

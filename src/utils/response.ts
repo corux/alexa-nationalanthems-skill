@@ -1,5 +1,5 @@
 import { HandlerInput, ResponseBuilder } from "ask-sdk-core";
-import { interfaces, SupportedInterfaces } from "ask-sdk-model";
+import { interfaces, SupportedInterfaces, ui } from "ask-sdk-model";
 
 export interface IExtendedResponseBuilder extends ResponseBuilder {
   /**
@@ -8,6 +8,11 @@ export interface IExtendedResponseBuilder extends ResponseBuilder {
    * @param callback Code to run on the builder.
    */
   if(condition: boolean, callback: (builder: ResponseBuilder) => void): IExtendedResponseBuilder;
+
+  /**
+   * Adds the speech output, if it is allowed, i.e. the current request is not of type "PlaybackController".
+   */
+  speakIfSupported(speechOutput: string, playBehavior?: ui.PlayBehavior): IExtendedResponseBuilder;
 
   /**
    * Adds the render template, if the Display interface is supported by the current request.
@@ -38,6 +43,10 @@ export function supportsDisplay(handlerInput: HandlerInput): boolean {
   return !!getSupportedInterfaces(handlerInput).Display;
 }
 
+export function isPlaybackController(handlerInput: HandlerInput): boolean {
+  return handlerInput.requestEnvelope.request.type.startsWith("PlaybackController");
+}
+
 export function getResponseBuilder(handlerInput: HandlerInput): IExtendedResponseBuilder {
   const builder = handlerInput.responseBuilder as IExtendedResponseBuilder;
 
@@ -46,6 +55,11 @@ export function getResponseBuilder(handlerInput: HandlerInput): IExtendedRespons
       callback(builder);
     }
     return builder;
+  };
+  builder.speakIfSupported = (speechOutput: string, playBehavior?: ui.PlayBehavior) => {
+    return builder.if(!isPlaybackController(handlerInput), (n) => {
+      n.speak(speechOutput, playBehavior);
+    });
   };
   builder.addRenderTemplateDirectiveIfSupported = (template) => {
     return builder.if(supportsDisplay(handlerInput), (n) => {
