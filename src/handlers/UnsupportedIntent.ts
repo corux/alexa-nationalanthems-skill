@@ -2,10 +2,7 @@ import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import { BaseIntentHandler, Intents } from "../utils";
 
-@Intents("AMAZON.NoIntent",
-  "AMAZON.YesIntent",
-  "AMAZON.PreviousIntent",
-  "UnsupportedIntent",
+@Intents("AMAZON.PreviousIntent",
   "AMAZON.LoopOffIntent",
   "AMAZON.LoopOnIntent",
   "AMAZON.ShuffleOffIntent",
