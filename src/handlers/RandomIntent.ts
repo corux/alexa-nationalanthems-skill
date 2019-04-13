@@ -4,7 +4,7 @@ import {
   BaseIntentHandler, getAnthemUrl, getLocale,
   getRandomCountry, getResponseBuilder, Intents, supportsAudioPlayer,
 } from "../utils";
-import { getPlayRenderTemplate } from "./PlayAnthemIntent";
+import { getAudioPlayerMetadata, getPlayRenderTemplate } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.NextIntent", "SkipIntent")
 export class RandomHandler extends BaseIntentHandler {
@@ -18,10 +18,9 @@ export class RandomHandler extends BaseIntentHandler {
 
     if (supportsAudioPlayer(handlerInput)) {
       return getResponseBuilder(handlerInput)
-        .speak(`${t("play.random")} ${t("play.text", country.name)}`)
-        .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(country, true), country.iso3, 0, undefined, {
-          title: `${country.name}: ${country.anthemName}`,
-        })
+        .speak(`${t("play.text", country.name)}`)
+        .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(country, true),
+          country.iso3, 0, undefined, getAudioPlayerMetadata(country))
         .withShouldEndSession(true)
         .getResponse();
     }

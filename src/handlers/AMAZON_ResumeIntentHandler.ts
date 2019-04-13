@@ -1,8 +1,8 @@
-import { ICountry } from "@corux/country-data";
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import countries from "../data/countries";
 import { BaseIntentHandler, getAnthemUrl, getLocale, Intents, supportsAudioPlayer } from "../utils";
+import { getAudioPlayerMetadata, getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.ResumeIntent")
 export class AmazonResumeIntentHandler extends BaseIntentHandler {
@@ -12,14 +12,12 @@ export class AmazonResumeIntentHandler extends BaseIntentHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = getLocale(handlerInput);
 
-    const countryFromAudioPlayer = this.getCountryFromAudioPlayer(handlerInput);
+    const countryFromAudioPlayer = getCountryFromAudioPlayer(handlerInput);
     if (supportsAudioPlayer(handlerInput) && countryFromAudioPlayer) {
       const offset = Math.max(handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds - 1000, 0);
       return responseBuilder
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(countryFromAudioPlayer, true),
-          countryFromAudioPlayer.iso3, offset, undefined, {
-            title: `${countryFromAudioPlayer.name}: ${countryFromAudioPlayer.anthemName}`,
-          })
+          countryFromAudioPlayer.iso3, offset, undefined, getAudioPlayerMetadata(countryFromAudioPlayer))
         .withShouldEndSession(true)
         .getResponse();
     }
@@ -36,15 +34,5 @@ export class AmazonResumeIntentHandler extends BaseIntentHandler {
       .speak(t("launch"))
       .reprompt(t("launch"))
       .getResponse();
-  }
-
-  private getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry {
-    if (handlerInput.requestEnvelope.context.AudioPlayer) {
-      const locale = getLocale(handlerInput);
-      const country = countries.getByIso3(handlerInput.requestEnvelope.context.AudioPlayer.token, locale);
-      return country;
-    }
-
-    return undefined;
   }
 }

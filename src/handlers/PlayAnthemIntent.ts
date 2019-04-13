@@ -7,6 +7,43 @@ import {
   getSlotValue, Intents, supportsAudioPlayer,
 } from "../utils";
 
+export function getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry {
+  if (handlerInput.requestEnvelope.context.AudioPlayer) {
+    const locale = getLocale(handlerInput);
+    const iso = handlerInput.requestEnvelope.context.AudioPlayer.token;
+    const country = countries.getByIso3(iso, locale);
+    return country;
+  }
+
+  return undefined;
+}
+
+export function getAudioPlayerMetadata(country: ICountry): interfaces.audioplayer.AudioItemMetadata {
+  return {
+    art: {
+      sources: [
+        {
+          size: "LARGE",
+          url: country.flag.largeImageUrl,
+        },
+        {
+          size: "SMALL",
+          url: country.flag.smallImageUrl,
+        },
+      ],
+    },
+    backgroundImage: {
+      sources: [
+        {
+          url: country.flag.largeImageUrl,
+        },
+      ],
+    },
+    subtitle: country.anthemName,
+    title: country.name,
+  };
+}
+
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
   let title = data.name;
   if (data.anthemName) {
@@ -63,9 +100,8 @@ export class PlayAnthemHandler extends BaseIntentHandler {
       if (supportsAudioPlayer(handlerInput)) {
         return responseBuilder
           .speak(t("play.text", data.name))
-          .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true), data.iso3, 0, undefined, {
-            title: `${data.name}: ${data.anthemName}`,
-          })
+          .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),
+            data.iso3, 0, undefined, getAudioPlayerMetadata(data))
           .withShouldEndSession(true)
           .getResponse();
       }
