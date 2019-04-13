@@ -1,0 +1,16 @@
+{
+  "launch": "Qual hino nacional você quer tocar?",
+  "stop": "Tchau!",
+  "unsupported": "Desculpe, não entendo esse comando.",
+  "help": {
+    "text": "Este skill permite que você ouça o hino nacional de diferentes países. Basta dizer \"Tocar o hino nacional do %s\".",
+    "reprompt": "Qual hino você quer tocar em seguida?"
+  },
+  "play": {
+    "text": "Aqui está o hino nacional da %s.",
+    "reprompt": "Qual hino você quer tocar em seguida?",
+    "no-repeat": "Não há nada para repetir.",
+    "unknown-country": "Eu não conheço o hino nacional do %s. Por favor, escolha outro país.",
+    "random": "Eu selecionei um país aleatório."
+  }
+}

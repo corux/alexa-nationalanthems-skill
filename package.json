@@ -20,6 +20,7 @@
     "update-schema:es": "ts-node ./bin/update-schema.ts --lang es --file ./models/es-ES.json",
     "update-schema:it": "ts-node ./bin/update-schema.ts --lang it --file ./models/it-IT.json",
     "update-schema:en": "ts-node ./bin/update-schema.ts --lang en --file ./models/en-US.json",
+    "update-schema:pt": "ts-node ./bin/update-schema.ts --lang pt --file ./models/pt-BR.json",
     "convert-anthems-audio": "npm-run-all --parallel convert-anthems-audio:*",
     "convert-anthems-audio:limited": "ts-node ./bin/convert-anthems-audio.ts --destination ./assets/mp3s --duration 88",
     "convert-anthems-audio:full": "ts-node ./bin/convert-anthems-audio.ts --destination ./assets/mp3s-full --duration 3600",

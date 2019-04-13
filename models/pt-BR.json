@@ -1,0 +1,2434 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hinos nacionais",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayAnthemIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "COUNTRY"
+            }
+          ],
+          "samples": [
+            "tocar o hino nacional {country}",
+            "tocar o hino nacional da {country}",
+            "o hino nacional {country}",
+            "o hino nacional da {country}",
+            "o hino da {country}",
+            "o hino {country}",
+            "da {country}",
+            "{country}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "COUNTRY",
+          "values": [
+            {
+              "id": "AFG",
+              "name": {
+                "value": "Afeganistão",
+                "synonyms": [
+                  "afegã",
+                  "afegane",
+                  "afegânico",
+                  "afegão"
+                ]
+              }
+            },
+            {
+              "id": "EGY",
+              "name": {
+                "value": "Egito",
+                "synonyms": [
+                  "egipcíaco",
+                  "egipciano",
+                  "egipcião",
+                  "egípcio",
+                  "egiptanense",
+                  "egiptano",
+                  "egíptico",
+                  "egiptino"
+                ]
+              }
+            },
+            {
+              "id": "ALB",
+              "name": {
+                "value": "Albânia",
+                "synonyms": [
+                  "albanense",
+                  "albanês",
+                  "albânio",
+                  "albano"
+                ]
+              }
+            },
+            {
+              "id": "DZA",
+              "name": {
+                "value": "Argélia",
+                "synonyms": [
+                  "algeriano",
+                  "argeliano",
+                  "argeliense",
+                  "argelino"
+                ]
+              }
+            },
+            {
+              "id": "AND",
+              "name": {
+                "value": "Andorra",
+                "synonyms": [
+                  "andorrano",
+                  "andorrenho",
+                  "andorrense",
+                  "andorriano"
+                ]
+              }
+            },
+            {
+              "id": "AGO",
+              "name": {
+                "value": "Angola",
+                "synonyms": [
+                  "angolano",
+                  "angolense",
+                  "angolês"
+                ]
+              }
+            },
+            {
+              "id": "ATG",
+              "name": {
+                "value": "Antígua e Barbuda",
+                "synonyms": [
+                  "antiguano"
+                ]
+              }
+            },
+            {
+              "id": "GNQ",
+              "name": {
+                "value": "Guiné Equatorial",
+                "synonyms": [
+                  "equato-guineense",
+                  "guineense",
+                  "guinéu",
+                  "guinéu-equatoriano"
+                ]
+              }
+            },
+            {
+              "id": "ARG",
+              "name": {
+                "value": "Argentina",
+                "synonyms": [
+                  "argentino",
+                  "platino"
+                ]
+              }
+            },
+            {
+              "id": "ARM",
+              "name": {
+                "value": "Armênia",
+                "synonyms": [
+                  "armeniano",
+                  "arménico",
+                  "armênico",
+                  "arménio",
+                  "armênio"
+                ]
+              }
+            },
+            {
+              "id": "AZE",
+              "name": {
+                "value": "Azerbaijão",
+                "synonyms": [
+                  "azerbaidjanês",
+                  "azerbaidjano",
+                  "azerbaijanês",
+                  "azerbaijano",
+                  "azeri"
+                ]
+              }
+            },
+            {
+              "id": "ETH",
+              "name": {
+                "value": "Etiópia",
+                "synonyms": [
+                  "etíope",
+                  "etiopês",
+                  "etiopiano",
+                  "etiópico",
+                  "etiópio"
+                ]
+              }
+            },
+            {
+              "id": "AUS",
+              "name": {
+                "value": "Austrália",
+                "synonyms": [
+                  "australês",
+                  "australiano",
+                  "austrálio"
+                ]
+              }
+            },
+            {
+              "id": "BHS",
+              "name": {
+                "value": "Bahamas",
+                "synonyms": [
+                  "baamense",
+                  "baamês",
+                  "baamiano",
+                  "bahamense",
+                  "bahamiano"
+                ]
+              }
+            },
+            {
+              "id": "BHR",
+              "name": {
+                "value": "Bahrein",
+                "synonyms": [
+                  "baramês",
+                  "bareinita",
+                  "baremense",
+                  "baremês",
+                  "baremita",
+                  "barenita"
+                ]
+              }
+            },
+            {
+              "id": "BGD",
+              "name": {
+                "value": "Bangladesh",
+                "synonyms": [
+                  "bangladechiano",
+                  "bangladense",
+                  "bangladês",
+                  "bangladeshiano",
+                  "bangladexiano",
+                  "bengala",
+                  "bengalense",
+                  "bengalês",
+                  "bengali",
+                  "bengáli",
+                  "bengalim"
+                ]
+              }
+            },
+            {
+              "id": "BRB",
+              "name": {
+                "value": "Barbados",
+                "synonyms": [
+                  "barbadense",
+                  "barbadiano"
+                ]
+              }
+            },
+            {
+              "id": "BEL",
+              "name": {
+                "value": "Bélgica",
+                "synonyms": [
+                  "belga",
+                  "bélgico"
+                ]
+              }
+            },
+            {
+              "id": "BLZ",
+              "name": {
+                "value": "Belize",
+                "synonyms": [
+                  "belizenho",
+                  "belizense"
+                ]
+              }
+            },
+            {
+              "id": "BEN",
+              "name": {
+                "value": "Benim",
+                "synonyms": [
+                  "beninense",
+                  "beninês"
+                ]
+              }
+            },
+            {
+              "id": "BTN",
+              "name": {
+                "value": "Butão",
+                "synonyms": [
+                  "butanense",
+                  "butanês",
+                  "butani",
+                  "butâni",
+                  "butânico"
+                ]
+              }
+            },
+            {
+              "id": "BOL",
+              "name": {
+                "value": "Bolívia",
+                "synonyms": [
+                  "boliviano"
+                ]
+              }
+            },
+            {
+              "id": "BIH",
+              "name": {
+                "value": "Bósnia e Herzegovina",
+                "synonyms": [
+                  "bosnense",
+                  "bosníaco",
+                  "bosniano",
+                  "bosniense",
+                  "bósnio"
+                ]
+              }
+            },
+            {
+              "id": "BWA",
+              "name": {
+                "value": "Botswana",
+                "synonyms": [
+                  "Botsuana",
+                  "bechuana",
+                  "bechuano",
+                  "bexuana",
+                  "bexuano",
+                  "botsuanense",
+                  "botsuanês",
+                  "botsuano",
+                  "botswanense",
+                  "botswanês"
+                ]
+              }
+            },
+            {
+              "id": "BRA",
+              "name": {
+                "value": "Brasil",
+                "synonyms": [
+                  "brasileiro",
+                  "brasilense",
+                  "brasilês",
+                  "brasiliano",
+                  "brasílico",
+                  "brasiliense",
+                  "brasílio",
+                  "brasilista"
+                ]
+              }
+            },
+            {
+              "id": "BRN",
+              "name": {
+                "value": "Brunei",
+                "synonyms": [
+                  "bruneano",
+                  "bruneíno"
+                ]
+              }
+            },
+            {
+              "id": "BGR",
+              "name": {
+                "value": "Bulgária",
+                "synonyms": [
+                  "bulgarês",
+                  "búlgaro"
+                ]
+              }
+            },
+            {
+              "id": "BFA",
+              "name": {
+                "value": "Burkina Faso",
+                "synonyms": [
+                  "burkinense",
+                  "burquinabê",
+                  "burquinense",
+                  "burquinês",
+                  "burquino"
+                ]
+              }
+            },
+            {
+              "id": "BDI",
+              "name": {
+                "value": "Burundi",
+                "synonyms": [
+                  "burundiano",
+                  "burundiense",
+                  "burundinês",
+                  "burúndio"
+                ]
+              }
+            },
+            {
+              "id": "CHL",
+              "name": {
+                "value": "Chile",
+                "synonyms": [
+                  "chileno"
+                ]
+              }
+            },
+            {
+              "id": "TWN",
+              "name": {
+                "value": "Taiwan",
+                "synonyms": [
+                  "chinês",
+                  "formosano",
+                  "formosino",
+                  "taiuanês",
+                  "taiwanês"
+                ]
+              }
+            },
+            {
+              "id": "CHN",
+              "name": {
+                "value": "China",
+                "synonyms": [
+                  "chim",
+                  "china",
+                  "chinês",
+                  "chino",
+                  "chinoca",
+                  "sínico",
+                  "sino"
+                ]
+              }
+            },
+            {
+              "id": "COK",
+              "name": {
+                "value": "Ilhas Cook",
+                "synonyms": [
+                  "cookense"
+                ]
+              }
+            },
+            {
+              "id": "CRI",
+              "name": {
+                "value": "Costa Rica",
+                "synonyms": [
+                  "costa-ricense",
+                  "costa-riquenho",
+                  "costa-riquense",
+                  "costarricense",
+                  "costarriquenho",
+                  "costarriquense"
+                ]
+              }
+            },
+            {
+              "id": "DNK",
+              "name": {
+                "value": "Dinamarca",
+                "synonyms": [
+                  "danês",
+                  "dânio",
+                  "dano",
+                  "dinamarquês"
+                ]
+              }
+            },
+            {
+              "id": "DEU",
+              "name": {
+                "value": "Alemanha",
+                "synonyms": [
+                  "alamão",
+                  "alemânico",
+                  "alemanisco",
+                  "alemão",
+                  "boche",
+                  "germânico",
+                  "germano",
+                  "tedesco",
+                  "teutão",
+                  "teuto",
+                  "teutónico",
+                  "tudesco"
+                ]
+              }
+            },
+            {
+              "id": "DMA",
+              "name": {
+                "value": "Dominica",
+                "synonyms": [
+                  "dominiquense",
+                  "dominiquês"
+                ]
+              }
+            },
+            {
+              "id": "DOM",
+              "name": {
+                "value": "República Dominicana",
+                "synonyms": [
+                  "dominicano",
+                  "domínico"
+                ]
+              }
+            },
+            {
+              "id": "DJI",
+              "name": {
+                "value": "Djibouti",
+                "synonyms": [
+                  "djibutiano",
+                  "djibutiense",
+                  "jibutiano",
+                  "jibutiense"
+                ]
+              }
+            },
+            {
+              "id": "ECU",
+              "name": {
+                "value": "Equador",
+                "synonyms": [
+                  "equatoriano"
+                ]
+              }
+            },
+            {
+              "id": "SLV",
+              "name": {
+                "value": "El Salvador",
+                "synonyms": [
+                  "salvadorenho",
+                  "salvatoriano"
+                ]
+              }
+            },
+            {
+              "id": "CIV",
+              "name": {
+                "value": "Costa do Marfim",
+                "synonyms": [
+                  "costa-marfinense",
+                  "costa-marfiniano",
+                  "ebúrneo",
+                  "marfinense",
+                  "marfiniano"
+                ]
+              }
+            },
+            {
+              "id": "ERI",
+              "name": {
+                "value": "Eritreia",
+                "synonyms": [
+                  "eritreu"
+                ]
+              }
+            },
+            {
+              "id": "EST",
+              "name": {
+                "value": "Estónia",
+                "synonyms": [
+                  "estoniano",
+                  "estónico",
+                  "estônico",
+                  "estónio",
+                  "estônio"
+                ]
+              }
+            },
+            {
+              "id": "FJI",
+              "name": {
+                "value": "Fiji",
+                "synonyms": [
+                  "fidjiano",
+                  "fijiano"
+                ]
+              }
+            },
+            {
+              "id": "FIN",
+              "name": {
+                "value": "Finlândia",
+                "synonyms": [
+                  "finense",
+                  "finês",
+                  "fínico",
+                  "finlandês",
+                  "fino"
+                ]
+              }
+            },
+            {
+              "id": "FRA",
+              "name": {
+                "value": "França",
+                "synonyms": [
+                  "francês",
+                  "franciú",
+                  "franco",
+                  "galicano",
+                  "gálico",
+                  "gálio",
+                  "galo",
+                  "gaulês",
+                  "gaulo"
+                ]
+              }
+            },
+            {
+              "id": "GAB",
+              "name": {
+                "value": "Gabão",
+                "synonyms": [
+                  "gabonense",
+                  "gabonês"
+                ]
+              }
+            },
+            {
+              "id": "GMB",
+              "name": {
+                "value": "Gâmbia",
+                "synonyms": [
+                  "gambiano",
+                  "gambiense"
+                ]
+              }
+            },
+            {
+              "id": "GEO",
+              "name": {
+                "value": "Geórgia",
+                "synonyms": [
+                  "georgiano",
+                  "geórgico",
+                  "grúzico",
+                  "gruzínico",
+                  "gruzínio",
+                  "grúzio"
+                ]
+              }
+            },
+            {
+              "id": "GHA",
+              "name": {
+                "value": "Gana",
+                "synonyms": [
+                  "ganense",
+                  "ganês"
+                ]
+              }
+            },
+            {
+              "id": "GRD",
+              "name": {
+                "value": "Granada",
+                "synonyms": [
+                  "granadino"
+                ]
+              }
+            },
+            {
+              "id": "GRC",
+              "name": {
+                "value": "Grécia",
+                "synonyms": [
+                  "aqueu",
+                  "grecânico",
+                  "greciano",
+                  "grego",
+                  "gregório",
+                  "helene",
+                  "helénico",
+                  "helênico",
+                  "heleno",
+                  "romaico"
+                ]
+              }
+            },
+            {
+              "id": "GTM",
+              "name": {
+                "value": "Guatemala",
+                "synonyms": [
+                  "guatemalense",
+                  "guatemalteco",
+                  "guatemaltense"
+                ]
+              }
+            },
+            {
+              "id": "GIN",
+              "name": {
+                "value": "Guiné",
+                "synonyms": [
+                  "guineano",
+                  "guineense",
+                  "guinéu"
+                ]
+              }
+            },
+            {
+              "id": "GNB",
+              "name": {
+                "value": "Guiné-Bissau",
+                "synonyms": [
+                  "guineense",
+                  "guinéu"
+                ]
+              }
+            },
+            {
+              "id": "GUY",
+              "name": {
+                "value": "Guiana",
+                "synonyms": [
+                  "guianense",
+                  "guianês",
+                  "guiano"
+                ]
+              }
+            },
+            {
+              "id": "HTI",
+              "name": {
+                "value": "Haiti",
+                "synonyms": [
+                  "haitiano"
+                ]
+              }
+            },
+            {
+              "id": "HND",
+              "name": {
+                "value": "Honduras",
+                "synonyms": [
+                  "hondurenho"
+                ]
+              }
+            },
+            {
+              "id": "IND",
+              "name": {
+                "value": "Índia",
+                "synonyms": [
+                  "hindu",
+                  "hindustani",
+                  "hindustâni",
+                  "indiano",
+                  "indiático",
+                  "índico",
+                  "índio"
+                ]
+              }
+            },
+            {
+              "id": "IDN",
+              "name": {
+                "value": "Indonésia",
+                "synonyms": [
+                  "indonésio"
+                ]
+              }
+            },
+            {
+              "id": "IRQ",
+              "name": {
+                "value": "Iraque",
+                "synonyms": [
+                  "iraquenho",
+                  "iraquense",
+                  "iraquiano"
+                ]
+              }
+            },
+            {
+              "id": "IRN",
+              "name": {
+                "value": "Irão",
+                "synonyms": [
+                  "iraniano",
+                  "irânico",
+                  "irânio"
+                ]
+              }
+            },
+            {
+              "id": "IRL",
+              "name": {
+                "value": "Irlanda",
+                "synonyms": [
+                  "eirense",
+                  "erino",
+                  "hibérnico",
+                  "hibérnio",
+                  "hiérnio",
+                  "irlandês"
+                ]
+              }
+            },
+            {
+              "id": "ISL",
+              "name": {
+                "value": "Islândia",
+                "synonyms": [
+                  "islandense",
+                  "islandês",
+                  "islândico"
+                ]
+              }
+            },
+            {
+              "id": "ISR",
+              "name": {
+                "value": "Israel",
+                "synonyms": [
+                  "israelense",
+                  "israeliano",
+                  "israelita",
+                  "israelítico"
+                ]
+              }
+            },
+            {
+              "id": "ITA",
+              "name": {
+                "value": "Itália",
+                "synonyms": [
+                  "italiano",
+                  "itálico",
+                  "italiota",
+                  "ítalo"
+                ]
+              }
+            },
+            {
+              "id": "JAM",
+              "name": {
+                "value": "Jamaica",
+                "synonyms": [
+                  "jamaicano",
+                  "jamaicense"
+                ]
+              }
+            },
+            {
+              "id": "JPN",
+              "name": {
+                "value": "Japão",
+                "synonyms": [
+                  "japão",
+                  "japona",
+                  "japonense",
+                  "japonês",
+                  "japónico",
+                  "japônico",
+                  "nipão",
+                  "nipo",
+                  "niponense",
+                  "nipónico",
+                  "nipônico"
+                ]
+              }
+            },
+            {
+              "id": "YEM",
+              "name": {
+                "value": "Iémen",
+                "synonyms": [
+                  "iemenense",
+                  "iemenês",
+                  "ieménico",
+                  "iemênico",
+                  "iemenita"
+                ]
+              }
+            },
+            {
+              "id": "JOR",
+              "name": {
+                "value": "Jordânia",
+                "synonyms": [
+                  "jordaniano",
+                  "jordânico",
+                  "jordano"
+                ]
+              }
+            },
+            {
+              "id": "KHM",
+              "name": {
+                "value": "Camboja",
+                "synonyms": [
+                  "cambodjano",
+                  "cambojano",
+                  "cambojiano",
+                  "campucheano"
+                ]
+              }
+            },
+            {
+              "id": "CMR",
+              "name": {
+                "value": "Camarões",
+                "synonyms": [
+                  "camaronense",
+                  "camaronês",
+                  "camerunense",
+                  "camerunês",
+                  "cameruniano"
+                ]
+              }
+            },
+            {
+              "id": "CAN",
+              "name": {
+                "value": "Canadá",
+                "synonyms": [
+                  "canadense",
+                  "canadiano",
+                  "canadiense"
+                ]
+              }
+            },
+            {
+              "id": "CPV",
+              "name": {
+                "value": "Cabo Verde",
+                "synonyms": [
+                  "cabo-verde",
+                  "cabo-verdense",
+                  "cabo-verdiano"
+                ]
+              }
+            },
+            {
+              "id": "KAZ",
+              "name": {
+                "value": "Cazaquistão",
+                "synonyms": [
+                  "casaco",
+                  "casáquio",
+                  "casaquistano",
+                  "cazaque",
+                  "cazaquistanês"
+                ]
+              }
+            },
+            {
+              "id": "QAT",
+              "name": {
+                "value": "Catar",
+                "synonyms": [
+                  "catarense",
+                  "catari",
+                  "catariano"
+                ]
+              }
+            },
+            {
+              "id": "KEN",
+              "name": {
+                "value": "Quénia",
+                "synonyms": [
+                  "queniano"
+                ]
+              }
+            },
+            {
+              "id": "KGZ",
+              "name": {
+                "value": "Quirguistão",
+                "synonyms": [
+                  "quirguistanês",
+                  "quirguiz",
+                  "quirguize",
+                  "quirguizistanês"
+                ]
+              }
+            },
+            {
+              "id": "KIR",
+              "name": {
+                "value": "Kiribati",
+                "synonyms": [
+                  "kiribatiano",
+                  "kiribatino",
+                  "quiribatiano"
+                ]
+              }
+            },
+            {
+              "id": "COL",
+              "name": {
+                "value": "Colômbia",
+                "synonyms": [
+                  "colombiano",
+                  "colombino",
+                  "colombo"
+                ]
+              }
+            },
+            {
+              "id": "COM",
+              "name": {
+                "value": "Comores",
+                "synonyms": [
+                  "comorense",
+                  "comoriano"
+                ]
+              }
+            },
+            {
+              "id": "COD",
+              "name": {
+                "value": "República Democrática do Congo",
+                "synonyms": [
+                  "Congo-Kinshasa",
+                  "congo",
+                  "congolense",
+                  "congolês",
+                  "conguense",
+                  "conguês"
+                ]
+              }
+            },
+            {
+              "id": "COG",
+              "name": {
+                "value": "República do Congo",
+                "synonyms": [
+                  "Congo-Brazzaville",
+                  "congo",
+                  "congolense",
+                  "congolês",
+                  "conguense",
+                  "conguês"
+                ]
+              }
+            },
+            {
+              "id": "PRK",
+              "name": {
+                "value": "Coreia do Norte",
+                "synonyms": [
+                  "norte-coreano"
+                ]
+              }
+            },
+            {
+              "id": "KOR",
+              "name": {
+                "value": "Coreia do Sul",
+                "synonyms": [
+                  "sul-coreano"
+                ]
+              }
+            },
+            {
+              "id": "HRV",
+              "name": {
+                "value": "Croácia",
+                "synonyms": [
+                  "croaciano",
+                  "croácio",
+                  "croata"
+                ]
+              }
+            },
+            {
+              "id": "CUB",
+              "name": {
+                "value": "Cuba",
+                "synonyms": [
+                  "cubano"
+                ]
+              }
+            },
+            {
+              "id": "KWT",
+              "name": {
+                "value": "Kuwait",
+                "synonyms": [
+                  "couaitiano",
+                  "coveitiano",
+                  "cuaitiano",
+                  "cuvaiti",
+                  "cuvaitiano",
+                  "cuwaitiano",
+                  "kowaitiano",
+                  "koweitiano",
+                  "kuwaiti",
+                  "kuwaitiano",
+                  "kuweitiano",
+                  "kwaitiano",
+                  "quaitiano"
+                ]
+              }
+            },
+            {
+              "id": "LAO",
+              "name": {
+                "value": "Laos",
+                "synonyms": [
+                  "lao",
+                  "laociano",
+                  "laosiano",
+                  "lau",
+                  "lausiano"
+                ]
+              }
+            },
+            {
+              "id": "LSO",
+              "name": {
+                "value": "Lesoto",
+                "synonyms": [
+                  "lesotense",
+                  "lesotiano",
+                  "lesoto"
+                ]
+              }
+            },
+            {
+              "id": "LVA",
+              "name": {
+                "value": "Letónia",
+                "synonyms": [
+                  "letão",
+                  "lético",
+                  "letónico",
+                  "letônico",
+                  "letónio",
+                  "letônio"
+                ]
+              }
+            },
+            {
+              "id": "LBN",
+              "name": {
+                "value": "Líbano",
+                "synonyms": [
+                  "libanês"
+                ]
+              }
+            },
+            {
+              "id": "LBR",
+              "name": {
+                "value": "Libéria",
+                "synonyms": [
+                  "liberiano",
+                  "libério"
+                ]
+              }
+            },
+            {
+              "id": "LBY",
+              "name": {
+                "value": "Líbia",
+                "synonyms": [
+                  "líbico",
+                  "líbio"
+                ]
+              }
+            },
+            {
+              "id": "LIE",
+              "name": {
+                "value": "Liechtenstein",
+                "synonyms": [
+                  "liechtensteinense",
+                  "liechtensteinês",
+                  "liechtensteiniano",
+                  "liechtensteiniense",
+                  "listenstainense",
+                  "listenstainês",
+                  "listenstainiano",
+                  "listenstainiense",
+                  "listenstaino"
+                ]
+              }
+            },
+            {
+              "id": "LTU",
+              "name": {
+                "value": "Lituânia",
+                "synonyms": [
+                  "lituânico",
+                  "lituânio",
+                  "lituano"
+                ]
+              }
+            },
+            {
+              "id": "LUX",
+              "name": {
+                "value": "Luxemburgo",
+                "synonyms": [
+                  "luxemburguês"
+                ]
+              }
+            },
+            {
+              "id": "MDG",
+              "name": {
+                "value": "Madagáscar",
+                "synonyms": [
+                  "madagascarense",
+                  "malgaxe",
+                  "malgaxo"
+                ]
+              }
+            },
+            {
+              "id": "MWI",
+              "name": {
+                "value": "Malawi",
+                "synonyms": [
+                  "malaui",
+                  "malauiano",
+                  "malauiense",
+                  "malauista",
+                  "malauita",
+                  "malaviano",
+                  "malavita",
+                  "malawiano",
+                  "malawiense"
+                ]
+              }
+            },
+            {
+              "id": "MYS",
+              "name": {
+                "value": "Malásia",
+                "synonyms": [
+                  "malaico",
+                  "malaio",
+                  "malasiano",
+                  "malásio"
+                ]
+              }
+            },
+            {
+              "id": "MDV",
+              "name": {
+                "value": "Maldivas",
+                "synonyms": [
+                  "maldivano",
+                  "maldivense",
+                  "maldiviano",
+                  "maldívio",
+                  "maldivo"
+                ]
+              }
+            },
+            {
+              "id": "MLI",
+              "name": {
+                "value": "Mali",
+                "synonyms": [
+                  "malês",
+                  "maliano",
+                  "malinês"
+                ]
+              }
+            },
+            {
+              "id": "MLT",
+              "name": {
+                "value": "Malta",
+                "synonyms": [
+                  "maltês"
+                ]
+              }
+            },
+            {
+              "id": "MAR",
+              "name": {
+                "value": "Marrocos",
+                "synonyms": [
+                  "marroquino"
+                ]
+              }
+            },
+            {
+              "id": "MHL",
+              "name": {
+                "value": "Ilhas Marshall",
+                "synonyms": [
+                  "marechalês",
+                  "marechaliniano",
+                  "marshallês",
+                  "marshallino"
+                ]
+              }
+            },
+            {
+              "id": "MRT",
+              "name": {
+                "value": "Mauritânia",
+                "synonyms": [
+                  "mauritaniano",
+                  "mauritânico",
+                  "mauritano"
+                ]
+              }
+            },
+            {
+              "id": "MUS",
+              "name": {
+                "value": "Maurícia",
+                "synonyms": [
+                  "mauriciano"
+                ]
+              }
+            },
+            {
+              "id": "MEX",
+              "name": {
+                "value": "México",
+                "synonyms": [
+                  "mexicano"
+                ]
+              }
+            },
+            {
+              "id": "FSM",
+              "name": {
+                "value": "Estados Federados da Micronésia",
+                "synonyms": [
+                  "micronésio"
+                ]
+              }
+            },
+            {
+              "id": "MDA",
+              "name": {
+                "value": "Moldávia",
+                "synonyms": [
+                  "moldávico",
+                  "moldávio",
+                  "moldavo"
+                ]
+              }
+            },
+            {
+              "id": "MCO",
+              "name": {
+                "value": "Mónaco",
+                "synonyms": [
+                  "monagasco",
+                  "monegasco"
+                ]
+              }
+            },
+            {
+              "id": "MNG",
+              "name": {
+                "value": "Mongólia",
+                "synonyms": [
+                  "mogol",
+                  "mogor",
+                  "mogore",
+                  "mongol",
+                  "mongólico",
+                  "mongolino",
+                  "mongolita"
+                ]
+              }
+            },
+            {
+              "id": "MNE",
+              "name": {
+                "value": "Montenegro",
+                "synonyms": [
+                  "montenegrino"
+                ]
+              }
+            },
+            {
+              "id": "MOZ",
+              "name": {
+                "value": "Moçambique",
+                "synonyms": [
+                  "moçambicano",
+                  "moçambique",
+                  "moçambiquenho",
+                  "moçambiquense"
+                ]
+              }
+            },
+            {
+              "id": "MMR",
+              "name": {
+                "value": "Mianmar",
+                "synonyms": [
+                  "bermá",
+                  "bermã",
+                  "bermano",
+                  "birmã",
+                  "birmane",
+                  "birmanense",
+                  "birmanês",
+                  "birmaniano",
+                  "birmano",
+                  "bramá",
+                  "mianmarense"
+                ]
+              }
+            },
+            {
+              "id": "NAM",
+              "name": {
+                "value": "Namíbia",
+                "synonyms": [
+                  "namibiano",
+                  "namíbio"
+                ]
+              }
+            },
+            {
+              "id": "NRU",
+              "name": {
+                "value": "Nauru",
+                "synonyms": [
+                  "nauruano",
+                  "nauruense"
+                ]
+              }
+            },
+            {
+              "id": "NPL",
+              "name": {
+                "value": "Nepal",
+                "synonyms": [
+                  "nepalês",
+                  "nepali"
+                ]
+              }
+            },
+            {
+              "id": "NZL",
+              "name": {
+                "value": "Nova Zelândia",
+                "synonyms": [
+                  "neozelandense",
+                  "neozelandês",
+                  "neozelandiense"
+                ]
+              }
+            },
+            {
+              "id": "NIC",
+              "name": {
+                "value": "Nicarágua",
+                "synonyms": [
+                  "nicaraguano",
+                  "nicaraguense"
+                ]
+              }
+            },
+            {
+              "id": "NLD",
+              "name": {
+                "value": "Países Baixos",
+                "synonyms": [
+                  "batávico",
+                  "batávio",
+                  "batavo",
+                  "holandês",
+                  "nederlandês",
+                  "neerlandês"
+                ]
+              }
+            },
+            {
+              "id": "NER",
+              "name": {
+                "value": "Níger",
+                "synonyms": [
+                  "nigerense",
+                  "nigerino"
+                ]
+              }
+            },
+            {
+              "id": "NGA",
+              "name": {
+                "value": "Nigéria",
+                "synonyms": [
+                  "nigeriano",
+                  "nigerino"
+                ]
+              }
+            },
+            {
+              "id": "NIU",
+              "name": {
+                "value": "Niue",
+                "synonyms": [
+                  "niueano",
+                  "niuiano"
+                ]
+              }
+            },
+            {
+              "id": "MKD",
+              "name": {
+                "value": "Macedónia do Norte",
+                "synonyms": [
+                  "mácedo",
+                  "macedoniano",
+                  "macedónico",
+                  "macedônico",
+                  "macedónio",
+                  "macedônio"
+                ]
+              }
+            },
+            {
+              "id": "NOR",
+              "name": {
+                "value": "Noruega",
+                "synonyms": [
+                  "noruego",
+                  "norueguense",
+                  "norueguês"
+                ]
+              }
+            },
+            {
+              "id": "OMN",
+              "name": {
+                "value": "Omã",
+                "synonyms": [
+                  "omanense",
+                  "omani",
+                  "omaniano"
+                ]
+              }
+            },
+            {
+              "id": "AUT",
+              "name": {
+                "value": "Áustria",
+                "synonyms": [
+                  "austríaco"
+                ]
+              }
+            },
+            {
+              "id": "TLS",
+              "name": {
+                "value": "Timor-Leste",
+                "synonyms": [
+                  "maubere",
+                  "timor",
+                  "timorense",
+                  "timorino"
+                ]
+              }
+            },
+            {
+              "id": "PAK",
+              "name": {
+                "value": "Paquistão",
+                "synonyms": [
+                  "paquistanense",
+                  "paquistanês",
+                  "paquistani",
+                  "paquistânico"
+                ]
+              }
+            },
+            {
+              "id": "PSE",
+              "name": {
+                "value": "Palestina",
+                "synonyms": [
+                  "palestinense",
+                  "palestiniano",
+                  "palestino"
+                ]
+              }
+            },
+            {
+              "id": "PLW",
+              "name": {
+                "value": "Palau",
+                "synonyms": [
+                  "palauano",
+                  "palauense"
+                ]
+              }
+            },
+            {
+              "id": "PAN",
+              "name": {
+                "value": "Panamá",
+                "synonyms": [
+                  "panamaense",
+                  "panamenho",
+                  "panamense",
+                  "panamiano",
+                  "panamista"
+                ]
+              }
+            },
+            {
+              "id": "PNG",
+              "name": {
+                "value": "Papua-Nova Guiné",
+                "synonyms": [
+                  "papua",
+                  "papuásio"
+                ]
+              }
+            },
+            {
+              "id": "PRY",
+              "name": {
+                "value": "Paraguai",
+                "synonyms": [
+                  "paraguaiano",
+                  "paraguaio"
+                ]
+              }
+            },
+            {
+              "id": "PER",
+              "name": {
+                "value": "Peru",
+                "synonyms": [
+                  "peruano",
+                  "peruviano",
+                  "perúvio"
+                ]
+              }
+            },
+            {
+              "id": "PHL",
+              "name": {
+                "value": "Filipinas",
+                "synonyms": [
+                  "filipino",
+                  "tagal",
+                  "tagalar",
+                  "tagalo"
+                ]
+              }
+            },
+            {
+              "id": "POL",
+              "name": {
+                "value": "Polónia",
+                "synonyms": [
+                  "polaco",
+                  "polonês",
+                  "polónico",
+                  "polônico",
+                  "polónio",
+                  "polônio",
+                  "polono"
+                ]
+              }
+            },
+            {
+              "id": "PRT",
+              "name": {
+                "value": "Portugal",
+                "synonyms": [
+                  "lusíada",
+                  "lusitaniano",
+                  "lusitânico",
+                  "lusitano",
+                  "luso",
+                  "portucalense",
+                  "portuga",
+                  "portugalense",
+                  "portugalês",
+                  "português",
+                  "tuga"
+                ]
+              }
+            },
+            {
+              "id": "RWA",
+              "name": {
+                "value": "Ruanda",
+                "synonyms": [
+                  "ruandense",
+                  "ruandês"
+                ]
+              }
+            },
+            {
+              "id": "ROU",
+              "name": {
+                "value": "Roménia",
+                "synonyms": [
+                  "romenho",
+                  "roménico",
+                  "romênico",
+                  "romeno"
+                ]
+              }
+            },
+            {
+              "id": "RUS",
+              "name": {
+                "value": "Rússia",
+                "synonyms": [
+                  "russiano",
+                  "russo"
+                ]
+              }
+            },
+            {
+              "id": "SLB",
+              "name": {
+                "value": "Ilhas Salomão",
+                "synonyms": [
+                  "salomonense",
+                  "salomónico",
+                  "salomônico"
+                ]
+              }
+            },
+            {
+              "id": "ZMB",
+              "name": {
+                "value": "Zâmbia",
+                "synonyms": [
+                  "zambiano",
+                  "zambiense",
+                  "zâmbio"
+                ]
+              }
+            },
+            {
+              "id": "WSM",
+              "name": {
+                "value": "Samoa",
+                "synonyms": [
+                  "samoano",
+                  "samoense"
+                ]
+              }
+            },
+            {
+              "id": "SMR",
+              "name": {
+                "value": "San Marino",
+                "synonyms": [
+                  "samarinês",
+                  "san-marinense",
+                  "são-marinense",
+                  "são-marinhense"
+                ]
+              }
+            },
+            {
+              "id": "STP",
+              "name": {
+                "value": "São Tomé e Príncipe",
+                "synonyms": [
+                  "forro",
+                  "sã-tomense",
+                  "santomense",
+                  "são-tomense"
+                ]
+              }
+            },
+            {
+              "id": "SAU",
+              "name": {
+                "value": "Arábia Saudita",
+                "synonyms": [
+                  "árabe",
+                  "árabe-saudita",
+                  "arábico",
+                  "arábigo",
+                  "arábio",
+                  "saudi-árabe",
+                  "saudi-arábico",
+                  "saudita"
+                ]
+              }
+            },
+            {
+              "id": "SWE",
+              "name": {
+                "value": "Suécia",
+                "synonyms": [
+                  "suécio",
+                  "sueco"
+                ]
+              }
+            },
+            {
+              "id": "CHE",
+              "name": {
+                "value": "Suíça",
+                "synonyms": [
+                  "esguíçaro",
+                  "esguízaro",
+                  "helvécio",
+                  "helvético",
+                  "helveto",
+                  "suíço"
+                ]
+              }
+            },
+            {
+              "id": "SEN",
+              "name": {
+                "value": "Senegal",
+                "synonyms": [
+                  "senegalense",
+                  "senegalês",
+                  "senegalesco",
+                  "senegaliano",
+                  "senegálico"
+                ]
+              }
+            },
+            {
+              "id": "SRB",
+              "name": {
+                "value": "Sérvia",
+                "synonyms": [
+                  "sérvio"
+                ]
+              }
+            },
+            {
+              "id": "SYC",
+              "name": {
+                "value": "Seicheles",
+                "synonyms": [
+                  "seichelense",
+                  "seychellense"
+                ]
+              }
+            },
+            {
+              "id": "SLE",
+              "name": {
+                "value": "Serra Leoa",
+                "synonyms": [
+                  "serra-leonense",
+                  "serra-leonês",
+                  "serra-leonino"
+                ]
+              }
+            },
+            {
+              "id": "ZWE",
+              "name": {
+                "value": "Zimbabwe",
+                "synonyms": [
+                  "Zimbábue",
+                  "zimbabuano",
+                  "zimbabuense",
+                  "zimbabwense",
+                  "zimbabwiano"
+                ]
+              }
+            },
+            {
+              "id": "SGP",
+              "name": {
+                "value": "Singapura",
+                "synonyms": [
+                  "singapurano",
+                  "singapurense",
+                  "singapuriano"
+                ]
+              }
+            },
+            {
+              "id": "SVK",
+              "name": {
+                "value": "Eslováquia",
+                "synonyms": [
+                  "eslovaco",
+                  "eslováquio"
+                ]
+              }
+            },
+            {
+              "id": "SVN",
+              "name": {
+                "value": "Eslovénia",
+                "synonyms": [
+                  "eslovénico",
+                  "eslovênico",
+                  "esloveno"
+                ]
+              }
+            },
+            {
+              "id": "SOM",
+              "name": {
+                "value": "Somália",
+                "synonyms": [
+                  "somali",
+                  "somáli",
+                  "somaliano",
+                  "somaliense"
+                ]
+              }
+            },
+            {
+              "id": "ESP",
+              "name": {
+                "value": "Espanha",
+                "synonyms": [
+                  "espanhol",
+                  "hispânico",
+                  "hispaniense",
+                  "hispano"
+                ]
+              }
+            },
+            {
+              "id": "LKA",
+              "name": {
+                "value": "Sri Lanka",
+                "synonyms": [
+                  "ceilonense",
+                  "chingalá",
+                  "cingalá",
+                  "cingalês",
+                  "singala",
+                  "singalense",
+                  "singalês",
+                  "singalibense",
+                  "srilankês",
+                  "srilankesa"
+                ]
+              }
+            },
+            {
+              "id": "KNA",
+              "name": {
+                "value": "São Cristóvão e Névis",
+                "synonyms": [
+                  "são-cristovense"
+                ]
+              }
+            },
+            {
+              "id": "LCA",
+              "name": {
+                "value": "Santa Lúcia",
+                "synonyms": [
+                  "santa-lucense",
+                  "santa-luciense"
+                ]
+              }
+            },
+            {
+              "id": "VCT",
+              "name": {
+                "value": "São Vicente e Granadinas",
+                "synonyms": [
+                  "são-vicentino"
+                ]
+              }
+            },
+            {
+              "id": "ZAF",
+              "name": {
+                "value": "África do Sul",
+                "synonyms": [
+                  "austro-africano",
+                  "sul-africanista",
+                  "sul-africano"
+                ]
+              }
+            },
+            {
+              "id": "SDN",
+              "name": {
+                "value": "Sudão",
+                "synonyms": [
+                  "sudanês"
+                ]
+              }
+            },
+            {
+              "id": "SSD",
+              "name": {
+                "value": "Sudão do Sul",
+                "synonyms": [
+                  "sul-sudanês"
+                ]
+              }
+            },
+            {
+              "id": "SUR",
+              "name": {
+                "value": "Suriname",
+                "synonyms": [
+                  "surinamense",
+                  "surinamês"
+                ]
+              }
+            },
+            {
+              "id": "SWZ",
+              "name": {
+                "value": "Suazilândia",
+                "synonyms": [
+                  "essuatiniano",
+                  "suazi",
+                  "suázi",
+                  "suazilandense",
+                  "suazilandês",
+                  "suazilandiense"
+                ]
+              }
+            },
+            {
+              "id": "SYR",
+              "name": {
+                "value": "Síria",
+                "synonyms": [
+                  "siríaco",
+                  "siriano",
+                  "sírio",
+                  "siro"
+                ]
+              }
+            },
+            {
+              "id": "TJK",
+              "name": {
+                "value": "Tajiquistão",
+                "synonyms": [
+                  "tadjique",
+                  "tadjiquistanês",
+                  "tajique",
+                  "tajiquistanês"
+                ]
+              }
+            },
+            {
+              "id": "TZA",
+              "name": {
+                "value": "Tanzânia",
+                "synonyms": [
+                  "tanzaniano"
+                ]
+              }
+            },
+            {
+              "id": "THA",
+              "name": {
+                "value": "Tailândia",
+                "synonyms": [
+                  "siame",
+                  "siamense",
+                  "siamês",
+                  "tailandês"
+                ]
+              }
+            },
+            {
+              "id": "TGO",
+              "name": {
+                "value": "Togo",
+                "synonyms": [
+                  "togolês",
+                  "toguês"
+                ]
+              }
+            },
+            {
+              "id": "TON",
+              "name": {
+                "value": "Tonga",
+                "synonyms": [
+                  "tonganês"
+                ]
+              }
+            },
+            {
+              "id": "TTO",
+              "name": {
+                "value": "Trindade e Tobago",
+                "synonyms": [
+                  "trinitário",
+                  "trinitário-tobagense"
+                ]
+              }
+            },
+            {
+              "id": "TCD",
+              "name": {
+                "value": "Chade",
+                "synonyms": [
+                  "chadiano",
+                  "chadiense",
+                  "tchadiano",
+                  "tchadiense"
+                ]
+              }
+            },
+            {
+              "id": "CZE",
+              "name": {
+                "value": "República Checa",
+                "synonyms": [
+                  "checo",
+                  "tcheco"
+                ]
+              }
+            },
+            {
+              "id": "TUN",
+              "name": {
+                "value": "Tunísia",
+                "synonyms": [
+                  "tunesino",
+                  "tunetano",
+                  "tunisiano",
+                  "tunisino"
+                ]
+              }
+            },
+            {
+              "id": "TUR",
+              "name": {
+                "value": "Turquia",
+                "synonyms": [
+                  "osmandi",
+                  "osmânico",
+                  "osmanli",
+                  "otomano",
+                  "otomão",
+                  "túrcico",
+                  "turco",
+                  "turquesco"
+                ]
+              }
+            },
+            {
+              "id": "TKM",
+              "name": {
+                "value": "Turquemenistão",
+                "synonyms": [
+                  "Turcomenistão",
+                  "turcomeno",
+                  "turquemenistanês",
+                  "turquemeno"
+                ]
+              }
+            },
+            {
+              "id": "TUV",
+              "name": {
+                "value": "Tuvalu",
+                "synonyms": [
+                  "tuvalês",
+                  "tuvaluano"
+                ]
+              }
+            },
+            {
+              "id": "UGA",
+              "name": {
+                "value": "Uganda",
+                "synonyms": [
+                  "ugandense",
+                  "ugandês"
+                ]
+              }
+            },
+            {
+              "id": "UKR",
+              "name": {
+                "value": "Ucrânia",
+                "synonyms": [
+                  "ucraniano",
+                  "ucrânio"
+                ]
+              }
+            },
+            {
+              "id": "HUN",
+              "name": {
+                "value": "Hungria",
+                "synonyms": [
+                  "hungarês",
+                  "hungárico",
+                  "húngaro",
+                  "madgiar",
+                  "magiar"
+                ]
+              }
+            },
+            {
+              "id": "URY",
+              "name": {
+                "value": "Uruguai",
+                "synonyms": [
+                  "oriental",
+                  "uruguaiano",
+                  "uruguaio"
+                ]
+              }
+            },
+            {
+              "id": "UZB",
+              "name": {
+                "value": "Uzbequistão",
+                "synonyms": [
+                  "usbeque",
+                  "usbequistanês",
+                  "uzbeque",
+                  "uzbequistanês"
+                ]
+              }
+            },
+            {
+              "id": "VUT",
+              "name": {
+                "value": "Vanuatu",
+                "synonyms": [
+                  "vanuatense",
+                  "vanuatuense"
+                ]
+              }
+            },
+            {
+              "id": "VAT",
+              "name": {
+                "value": "Vaticano",
+                "synonyms": [
+                  "vaticano"
+                ]
+              }
+            },
+            {
+              "id": "VEN",
+              "name": {
+                "value": "Venezuela",
+                "synonyms": [
+                  "venezolano",
+                  "venezuelano"
+                ]
+              }
+            },
+            {
+              "id": "ARE",
+              "name": {
+                "value": "Emirados Árabes Unidos",
+                "synonyms": [
+                  "árabe",
+                  "emiradense",
+                  "emirático"
+                ]
+              }
+            },
+            {
+              "id": "USA",
+              "name": {
+                "value": "Estados Unidos",
+                "synonyms": [
+                  "americano",
+                  "americano do norte",
+                  "estado-unidense",
+                  "estadunidense",
+                  "ianque",
+                  "norte-americano",
+                  "yankee"
+                ]
+              }
+            },
+            {
+              "id": "GBR",
+              "name": {
+                "value": "Reino Unido",
+                "synonyms": [
+                  "bife",
+                  "bretão",
+                  "britânico",
+                  "britano"
+                ]
+              }
+            },
+            {
+              "id": "VNM",
+              "name": {
+                "value": "Vietname",
+                "synonyms": [
+                  "Vietnã",
+                  "anamês",
+                  "anamita",
+                  "vietnamense",
+                  "vietnamês",
+                  "vietnamiano",
+                  "vietnamita"
+                ]
+              }
+            },
+            {
+              "id": "BLR",
+              "name": {
+                "value": "Bielorrússia",
+                "synonyms": [
+                  "belarusso",
+                  "bielo-russo",
+                  "bielorrusso",
+                  "russo-branco"
+                ]
+              }
+            },
+            {
+              "id": "ESH",
+              "name": {
+                "value": "Saara Ocidental",
+                "synonyms": [
+                  "saaraui",
+                  "saarauí",
+                  "saarense",
+                  "saariano",
+                  "saárico",
+                  "saraui",
+                  "sarauí",
+                  "sarauita",
+                  "sarense",
+                  "sariano",
+                  "sárico"
+                ]
+              }
+            },
+            {
+              "id": "CAF",
+              "name": {
+                "value": "República Centro-Africana",
+                "synonyms": [
+                  "centrafricano",
+                  "centro-africano"
+                ]
+              }
+            },
+            {
+              "id": "CYP",
+              "name": {
+                "value": "Chipre",
+                "synonyms": [
+                  "chiprense",
+                  "cipreno",
+                  "cipríaco",
+                  "cíprico",
+                  "ciprino",
+                  "cíprio",
+                  "cipriota"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

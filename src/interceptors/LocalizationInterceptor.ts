@@ -7,6 +7,7 @@ import * as locale_en from "../i18n/en.json";
 import * as locale_es from "../i18n/es.json";
 import * as locale_fr from "../i18n/fr.json";
 import * as locale_it from "../i18n/it.json";
+import * as locale_pt from "../i18n/pt.json";
 import { getLocale } from "../utils";
 
 export class LocalizationInterceptor implements RequestInterceptor {
@@ -32,6 +33,9 @@ export class LocalizationInterceptor implements RequestInterceptor {
           },
           it: {
             translation: locale_it,
+          },
+          pt: {
+            translation: locale_pt,
           },
         },
         returnObjects: true,
