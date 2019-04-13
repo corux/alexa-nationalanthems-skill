@@ -192,8 +192,8 @@
                 "value": "Equatorial Guinea",
                 "synonyms": [
                   "Republic of Equatorial Guinea",
-                  "Equatorial Guinean",
-                  "Equatoguinean"
+                  "Equatoguinean",
+                  "Equatorial Guinean"
                 ]
               }
             },
@@ -353,8 +353,8 @@
                 "value": "Botswana",
                 "synonyms": [
                   "Republic of Botswana",
-                  "Motswana",
-                  "Botswanan"
+                  "Botswanan",
+                  "Motswana"
                 ]
               }
             },
@@ -866,8 +866,8 @@
                 "value": "Kazakhstan",
                 "synonyms": [
                   "Republic of Kazakhstan",
-                  "Kazakhstani",
-                  "Kazakh"
+                  "Kazakh",
+                  "Kazakhstani"
                 ]
               }
             },
@@ -897,10 +897,10 @@
                 "value": "Kyrgyzstan",
                 "synonyms": [
                   "Kyrgyz Republic",
-                  "Kyrgyzstani",
-                  "Kyrgyz",
+                  "Kirghiz",
                   "Kirgiz",
-                  "Kirghiz"
+                  "Kyrgyz",
+                  "Kyrgyzstani"
                 ]
               }
             },
@@ -979,8 +979,8 @@
                 "value": "Kosovo",
                 "synonyms": [
                   "Republic of Kosovo",
-                  "Kosovar",
-                  "Kosovan"
+                  "Kosovan",
+                  "Kosovar"
                 ]
               }
             },
@@ -1243,8 +1243,8 @@
                 "value": "Monaco",
                 "synonyms": [
                   "Principality of Monaco",
-                  "Monégasque",
-                  "Monacan"
+                  "Monacan",
+                  "Monégasque"
                 ]
               }
             },
@@ -1313,8 +1313,8 @@
                 "value": "Nepal",
                 "synonyms": [
                   "Federal Democratic Republic of Nepal",
-                  "Nepali",
-                  "Nepalese"
+                  "Nepalese",
+                  "Nepali"
                 ]
               }
             },
@@ -1716,8 +1716,8 @@
                 "value": "Slovenia",
                 "synonyms": [
                   "Republic of Slovenia",
-                  "Slovenian",
-                  "Slovene"
+                  "Slovene",
+                  "Slovenian"
                 ]
               }
             },
@@ -1839,8 +1839,8 @@
                 "synonyms": [
                   "Kingdom of Eswatini",
                   "Eswatini",
-                  "Swazi",
-                  "Swati"
+                  "Swati",
+                  "Swazi"
                 ]
               }
             },
@@ -1910,8 +1910,8 @@
                 "value": "Trinidad and Tobago",
                 "synonyms": [
                   "Republic of Trinidad and Tobago",
-                  "Trinidadian",
-                  "Tobagonian"
+                  "Tobagonian",
+                  "Trinidadian"
                 ]
               }
             },
@@ -2017,8 +2017,8 @@
                 "value": "Uzbekistan",
                 "synonyms": [
                   "Republic of Uzbekistan",
-                  "Uzbekistani",
-                  "Uzbek"
+                  "Uzbek",
+                  "Uzbekistani"
                 ]
               }
             },
@@ -2059,8 +2059,8 @@
                 "value": "United Arab Emirates",
                 "synonyms": [
                   "Emirati",
-                  "Emirian",
-                  "Emiri"
+                  "Emiri",
+                  "Emirian"
                 ]
               }
             },
@@ -2070,9 +2070,9 @@
                 "value": "United States",
                 "synonyms": [
                   "United States of America",
-                  "United States",
+                  "American",
                   "U.S.",
-                  "American"
+                  "United States"
                 ]
               }
             },
@@ -2113,9 +2113,9 @@
                 "value": "Western Sahara",
                 "synonyms": [
                   "Sahrawi Arab Democratic Republic",
+                  "Sahraouian",
                   "Sahrawi",
-                  "Sahrawian",
-                  "Sahraouian"
+                  "Sahrawian"
                 ]
               }
             },

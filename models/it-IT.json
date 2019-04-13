@@ -107,8 +107,8 @@
               "name": {
                 "value": "Afghanistan",
                 "synonyms": [
-                  "afghano",
-                  "afgano"
+                  "afgano",
+                  "afghano"
                 ]
               }
             },
@@ -198,8 +198,8 @@
               "name": {
                 "value": "Azerbaigian",
                 "synonyms": [
-                  "azero",
-                  "azerbaigiano"
+                  "azerbaigiano",
+                  "azero"
                 ]
               }
             },
@@ -236,8 +236,8 @@
               "name": {
                 "value": "Bahrein",
                 "synonyms": [
-                  "bahreinita",
-                  "bahrainita"
+                  "bahrainita",
+                  "bahreinita"
                 ]
               }
             },
@@ -246,8 +246,8 @@
               "name": {
                 "value": "Bangladesh",
                 "synonyms": [
-                  "bengalese",
-                  "bangladese"
+                  "bangladese",
+                  "bengalese"
                 ]
               }
             },
@@ -313,8 +313,8 @@
                 "value": "Bosnia ed Erzegovina",
                 "synonyms": [
                   "bosniaco",
-                  "bosniaco-erzegovino",
-                  "bosniaco-erzegovese"
+                  "bosniaco-erzegovese",
+                  "bosniaco-erzegovino"
                 ]
               }
             },
@@ -432,8 +432,8 @@
               "name": {
                 "value": "Germania",
                 "synonyms": [
-                  "tedesco",
-                  "germanico"
+                  "germanico",
+                  "tedesco"
                 ]
               }
             },
@@ -469,8 +469,8 @@
               "name": {
                 "value": "Ecuador",
                 "synonyms": [
-                  "ecuadoriano",
-                  "ecuadoregno"
+                  "ecuadoregno",
+                  "ecuadoriano"
                 ]
               }
             },
@@ -488,8 +488,8 @@
               "name": {
                 "value": "Costa d'Avorio",
                 "synonyms": [
-                  "ivoriano",
-                  "avoriano"
+                  "avoriano",
+                  "ivoriano"
                 ]
               }
             },
@@ -570,9 +570,9 @@
               "name": {
                 "value": "Ghana",
                 "synonyms": [
-                  "ghanese",
+                  "ghanaense",
                   "ghanaese",
-                  "ghanaense"
+                  "ghanese"
                 ]
               }
             },
@@ -590,8 +590,8 @@
               "name": {
                 "value": "Grecia",
                 "synonyms": [
-                  "greco",
-                  "ellenico"
+                  "ellenico",
+                  "greco"
                 ]
               }
             },
@@ -802,8 +802,8 @@
               "name": {
                 "value": "Kazakistan",
                 "synonyms": [
-                  "kazako",
-                  "kazaco"
+                  "kazaco",
+                  "kazako"
                 ]
               }
             },
@@ -821,10 +821,10 @@
               "name": {
                 "value": "Kenya",
                 "synonyms": [
-                  "keniota",
-                  "kenyota",
                   "keniano",
-                  "kenyano"
+                  "keniota",
+                  "kenyano",
+                  "kenyota"
                 ]
               }
             },
@@ -833,9 +833,9 @@
               "name": {
                 "value": "Kirghizistan",
                 "synonyms": [
+                  "chirghiso",
                   "kirghiso",
-                  "kirghizo",
-                  "chirghiso"
+                  "kirghizo"
                 ]
               }
             },
@@ -891,8 +891,8 @@
               "name": {
                 "value": "Corea del Nord",
                 "synonyms": [
-                  "nordcoreano",
-                  "nord-coreano"
+                  "nord-coreano",
+                  "nordcoreano"
                 ]
               }
             },
@@ -901,8 +901,8 @@
               "name": {
                 "value": "Corea del Sud",
                 "synonyms": [
-                  "sudcoreano",
-                  "sud-coreano"
+                  "sud-coreano",
+                  "sudcoreano"
                 ]
               }
             },
@@ -938,8 +938,8 @@
               "name": {
                 "value": "Laos",
                 "synonyms": [
-                  "laotiano",
-                  "laosiano"
+                  "laosiano",
+                  "laotiano"
                 ]
               }
             },
@@ -1031,9 +1031,9 @@
               "name": {
                 "value": "Malawi",
                 "synonyms": [
-                  "malawiano",
+                  "malawense",
                   "malawi",
-                  "malawense"
+                  "malawiano"
                 ]
               }
             },
@@ -1153,8 +1153,8 @@
               "name": {
                 "value": "Mongolia",
                 "synonyms": [
-                  "mongolo",
-                  "mongolico"
+                  "mongolico",
+                  "mongolo"
                 ]
               }
             },
@@ -1226,9 +1226,9 @@
               "name": {
                 "value": "Nicaragua",
                 "synonyms": [
+                  "nicaraguegno",
                   "nicaraguense",
-                  "nicaraguese",
-                  "nicaraguegno"
+                  "nicaraguese"
                 ]
               }
             },
@@ -1237,8 +1237,8 @@
               "name": {
                 "value": "Paesi Bassi",
                 "synonyms": [
-                  "neerlandese",
-                  "nederlandese"
+                  "nederlandese",
+                  "neerlandese"
                 ]
               }
             },
@@ -1320,8 +1320,8 @@
               "name": {
                 "value": "Pakistan",
                 "synonyms": [
-                  "pakistano",
-                  "pachistano"
+                  "pachistano",
+                  "pakistano"
                 ]
               }
             },
@@ -1349,8 +1349,8 @@
               "name": {
                 "value": "Panama",
                 "synonyms": [
-                  "panamense",
-                  "panamegno"
+                  "panamegno",
+                  "panamense"
                 ]
               }
             },
@@ -1423,8 +1423,8 @@
               "name": {
                 "value": "Romania",
                 "synonyms": [
-                  "rumeno",
-                  "romeno"
+                  "romeno",
+                  "rumeno"
                 ]
               }
             },
@@ -1451,8 +1451,8 @@
               "name": {
                 "value": "Zambia",
                 "synonyms": [
-                  "zambiano",
-                  "rhodesiano"
+                  "rhodesiano",
+                  "zambiano"
                 ]
               }
             },
@@ -1489,8 +1489,8 @@
               "name": {
                 "value": "Arabia Saudita",
                 "synonyms": [
-                  "saudita",
-                  "arabo"
+                  "arabo",
+                  "saudita"
                 ]
               }
             },
@@ -1508,8 +1508,8 @@
               "name": {
                 "value": "Svizzera",
                 "synonyms": [
-                  "svizzero",
-                  "elvetico"
+                  "elvetico",
+                  "svizzero"
                 ]
               }
             },
@@ -1536,8 +1536,8 @@
               "name": {
                 "value": "Seychelles",
                 "synonyms": [
-                  "seychellese",
-                  "seicellese"
+                  "seicellese",
+                  "seychellese"
                 ]
               }
             },
@@ -1555,8 +1555,8 @@
               "name": {
                 "value": "Zimbabwe",
                 "synonyms": [
-                  "zimbabwese",
-                  "rhodesiano"
+                  "rhodesiano",
+                  "zimbabwese"
                 ]
               }
             },
@@ -1610,8 +1610,8 @@
               "name": {
                 "value": "Sri Lanka",
                 "synonyms": [
-                  "singalese",
                   "cingalese",
+                  "singalese",
                   "srilankese",
                   "tamil"
                 ]
@@ -1649,8 +1649,8 @@
               "name": {
                 "value": "Sudafrica",
                 "synonyms": [
-                  "sudafricano",
-                  "sud-africano"
+                  "sud-africano",
+                  "sudafricano"
                 ]
               }
             },
@@ -1704,8 +1704,8 @@
               "name": {
                 "value": "Tagikistan",
                 "synonyms": [
-                  "tagiko",
-                  "tagico"
+                  "tagico",
+                  "tagiko"
                 ]
               }
             },
@@ -1723,8 +1723,8 @@
               "name": {
                 "value": "Thailandia",
                 "synonyms": [
-                  "thailandese",
-                  "tailandese"
+                  "tailandese",
+                  "thailandese"
                 ]
               }
             },
@@ -1751,8 +1751,8 @@
               "name": {
                 "value": "Trinidad e Tobago",
                 "synonyms": [
-                  "trinidadiano",
-                  "tobagodiano"
+                  "tobagodiano",
+                  "trinidadiano"
                 ]
               }
             },
@@ -1797,8 +1797,8 @@
               "name": {
                 "value": "Turkmenistan",
                 "synonyms": [
-                  "turkmeno",
-                  "turcmeno"
+                  "turcmeno",
+                  "turkmeno"
                 ]
               }
             },
@@ -1834,8 +1834,8 @@
               "name": {
                 "value": "Ungheria",
                 "synonyms": [
-                  "ungherese",
-                  "magiaro"
+                  "magiaro",
+                  "ungherese"
                 ]
               }
             },
@@ -1854,9 +1854,9 @@
               "name": {
                 "value": "Uzbekistan",
                 "synonyms": [
-                  "uzbeko",
+                  "usbeco",
                   "uzbeco",
-                  "usbeco"
+                  "uzbeko"
                 ]
               }
             },
@@ -1885,8 +1885,8 @@
               "name": {
                 "value": "Venezuela",
                 "synonyms": [
-                  "venezuelano",
-                  "venezolano"
+                  "venezolano",
+                  "venezuelano"
                 ]
               }
             },
@@ -1905,8 +1905,8 @@
               "name": {
                 "value": "Stati Uniti",
                 "synonyms": [
-                  "statunitense",
-                  "americano"
+                  "americano",
+                  "statunitense"
                 ]
               }
             },
@@ -1933,8 +1933,8 @@
               "name": {
                 "value": "Bielorussia",
                 "synonyms": [
-                  "bielorusso",
-                  "belorusso"
+                  "belorusso",
+                  "bielorusso"
                 ]
               }
             },
@@ -1943,8 +1943,8 @@
               "name": {
                 "value": "Sahara Occidentale",
                 "synonyms": [
-                  "sahrāwī",
-                  "sahariano"
+                  "sahariano",
+                  "sahrāwī"
                 ]
               }
             },

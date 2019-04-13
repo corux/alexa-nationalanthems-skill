@@ -364,8 +364,8 @@
                 "value": "Bosnien und Herzegowina",
                 "synonyms": [
                   "bosnische",
-                  "herzegowinische",
-                  "bosnisch-herzegowinische"
+                  "bosnisch-herzegowinische",
+                  "herzegowinische"
                 ]
               }
             },
@@ -375,7 +375,6 @@
                 "value": "Botswana",
                 "synonyms": [
                   "Republik Botsuana",
-                  "botswanische",
                   "botsuanische"
                 ]
               }
@@ -875,8 +874,8 @@
                 "value": "Kap Verde",
                 "synonyms": [
                   "Republik Cabo Verde",
-                  "kapverdische",
-                  "kap-verdische"
+                  "kap-verdische",
+                  "kapverdische"
                 ]
               }
             },
@@ -1294,9 +1293,9 @@
                 "synonyms": [
                   "Republik der Union Myanmar",
                   "Burma",
-                  "myanmarische",
                   "birmanische",
-                  "burmesische"
+                  "burmesische",
+                  "myanmarische"
                 ]
               }
             },
@@ -1456,7 +1455,10 @@
             {
               "id": "PSE",
               "name": {
-                "value": "Palästina"
+                "value": "Palästina",
+                "synonyms": [
+                  "Staat Palästina"
+                ]
               }
             },
             {
@@ -1838,7 +1840,8 @@
                 "value": "Swasiland",
                 "synonyms": [
                   "Königreich Eswatini",
-                  "swasiländische"
+                  "swasiländische",
+                  "swatinische"
                 ]
               }
             },
@@ -2075,9 +2078,9 @@
                   "Vereinigtes Königreich Großbritannien und Nordirland",
                   "England",
                   "Großbritannien",
+                  "britische",
                   "englische",
-                  "großbritannische",
-                  "britische"
+                  "großbritannische"
                 ]
               }
             },
