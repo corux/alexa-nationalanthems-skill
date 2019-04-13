@@ -394,6 +394,7 @@
               "name": {
                 "value": "Chine",
                 "synonyms": [
+                  "République populaire de Chine",
                   "chinois"
                 ]
               }
@@ -850,6 +851,7 @@
               "name": {
                 "value": "République démocratique du Congo",
                 "synonyms": [
+                  "Congo-Kinshasa",
                   "congolais"
                 ]
               }
@@ -857,8 +859,10 @@
             {
               "id": "COG",
               "name": {
-                "value": "Congo",
+                "value": "République du Congo",
                 "synonyms": [
+                  "Congo",
+                  "Congo-Brazzaville",
                   "congolais"
                 ]
               }
@@ -1102,6 +1106,7 @@
               "name": {
                 "value": "Micronésie",
                 "synonyms": [
+                  "États fédérés de Micronésie",
                   "micronésien"
                 ]
               }
@@ -1111,6 +1116,7 @@
               "name": {
                 "value": "Moldavie",
                 "synonyms": [
+                  "République de Moldavie",
                   "moldave"
                 ]
               }
@@ -1411,6 +1417,7 @@
               "name": {
                 "value": "Îles Salomon",
                 "synonyms": [
+                  "Salomon",
                   "salomonais"
                 ]
               }
@@ -1649,8 +1656,9 @@
             {
               "id": "SWZ",
               "name": {
-                "value": "Swaziland",
+                "value": "Eswatini",
                 "synonyms": [
+                  "Swaziland",
                   "swazi"
                 ]
               }
@@ -1912,6 +1920,7 @@
               "name": {
                 "value": "Chypre",
                 "synonyms": [
+                  "Île de Chypre",
                   "chypriote"
                 ]
               }
