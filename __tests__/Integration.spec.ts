@@ -69,6 +69,7 @@ describe("Integration", () => {
       expect(alexa.audioPlayer().isPlaying()).toBe(true);
 
       result = await alexa.utter("stop");
+      expect(alexa.audioPlayer().isPlaying()).toBe(false);
       expect(result.response.outputSpeech.ssml).toContain("Goodbye!");
       expect(result.response.shouldEndSession).toBe(true);
     });

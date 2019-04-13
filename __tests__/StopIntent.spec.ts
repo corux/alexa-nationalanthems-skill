@@ -8,6 +8,7 @@ describe("AMAZON.StopIntent, AMAZON.CancelIntent", () => {
       .handler(handler)
       .interactionModelFile("models/en-US.json")
       .create();
+    alexa.context().device().audioPlayerSupported(false);
   });
 
   it("StopIntent ends session", async () => {
