@@ -24,9 +24,6 @@ export class RandomHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    const session = handlerInput.attributesManager.getSessionAttributes();
-    session.iso = country.iso3;
-
     return getResponseBuilder(handlerInput)
       .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(country))
       .speak(`${t("play.random")}

@@ -94,9 +94,6 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     const data = countries.getAll(locale).find((val) => val.iso3 === countryId)
       || countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem) {
-      const session = handlerInput.attributesManager.getSessionAttributes();
-      session.iso = data.iso3;
-
       if (supportsAudioPlayer(handlerInput)) {
         return responseBuilder
           .speak(t("play.text", data.name))
