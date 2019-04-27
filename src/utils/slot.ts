@@ -5,11 +5,12 @@ export function getSlotValue(slot: Slot, returnDefaultValue: boolean = true): { 
     return null;
   }
   try {
-    if (slot.resolutions.resolutionsPerAuthority[0].status.code !== "ER_SUCCESS_MATCH") {
+    const match = slot.resolutions.resolutionsPerAuthority.find((val) => val.status.code === "ER_SUCCESS_MATCH");
+    if (!match) {
       return returnDefaultValue ? { name: slot.value } : null;
     }
 
-    return slot.resolutions.resolutionsPerAuthority[0].values[0].value;
+    return match.values[0].value;
   } catch (e) {
     return returnDefaultValue ? { name: slot.value } : null;
   }

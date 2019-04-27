@@ -22,8 +22,8 @@ export class CanFulfillIntentRequestHandler extends BaseIntentHandler {
 
     let isSlotSupported = request.intent.slots.country
       && request.intent.slots.country.resolutions
-      && request.intent.slots.country.resolutions.resolutionsPerAuthority[0]
-      && request.intent.slots.country.resolutions.resolutionsPerAuthority[0].status.code === "ER_SUCCESS_MATCH";
+      && !!request.intent.slots.country.resolutions.resolutionsPerAuthority
+          .find((val) => val.status.code === "ER_SUCCESS_MATCH");
 
     // Compare slot value, if entity resolution did not provide a value
     if (!isSlotSupported) {
