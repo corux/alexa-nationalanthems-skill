@@ -8,6 +8,7 @@ describe("PlayAnthemIntent", () => {
       .handler(handler)
       .interactionModelFile("models/en-US.json")
       .create();
+    alexa.context().device().audioPlayerSupported(true);
   });
 
   test("Should ask for anthem if no country was provided", async () => {
@@ -26,36 +27,14 @@ describe("PlayAnthemIntent", () => {
     expect(result.response.shouldEndSession).toBe(false);
   });
 
-  describe("Without AudioPlayer", () => {
-    beforeEach(() => {
-      alexa.context().device().audioPlayerSupported(false);
+  test("Should play anthem for country with available anthem", async () => {
+    const result = await alexa.intend("PlayAnthemIntent", {
+      country: "Germany",
     });
 
-    test("Should play anthem for country with available anthem", async () => {
-      const result = await alexa.intend("PlayAnthemIntent", {
-        country: "Germany",
-      });
-
-      expect(result.response.outputSpeech.ssml).toContain("Here's the national anthem of Germany.");
-      expect(result.response.outputSpeech.ssml).toContain("/mp3s/DEU.mp3");
-      expect(result.response.shouldEndSession).toBe(false);
-    });
-  });
-
-  describe("With AudioPlayer", () => {
-    beforeEach(() => {
-      alexa.context().device().audioPlayerSupported(true);
-    });
-
-    test("Should play anthem for country with available anthem", async () => {
-      const result = await alexa.intend("PlayAnthemIntent", {
-        country: "Germany",
-      });
-
-      expect(alexa.audioPlayer().isPlaying()).toBe(true);
-      expect(result.response.outputSpeech.ssml).toContain("Here's the national anthem of Germany.");
-      expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/DEU.mp3");
-      expect(result.response.directives[0].audioItem.stream.token).toBe("DEU");
-    });
+    expect(alexa.audioPlayer().isPlaying()).toBe(true);
+    expect(result.response.outputSpeech.ssml).toContain("Here's the national anthem of Germany.");
+    expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/DEU.mp3");
+    expect(result.response.directives[0].audioItem.stream.token).toBe("DEU");
   });
 });

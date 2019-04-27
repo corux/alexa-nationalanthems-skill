@@ -2,10 +2,7 @@ import { ICountry } from "@corux/country-data";
 import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import {
-  BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder,
-  getSlotValue, Intents, supportsAudioPlayer,
-} from "../utils";
+import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
 
 export function getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry {
   if (handlerInput.requestEnvelope.context.AudioPlayer) {
@@ -94,21 +91,11 @@ export class PlayAnthemHandler extends BaseIntentHandler {
     const data = countries.getAll(locale).find((val) => val.iso3 === countryId)
       || countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem) {
-      if (supportsAudioPlayer(handlerInput)) {
-        return responseBuilder
-          .speak(t("play.text", data.name))
-          .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),
-            data.iso3, 0, undefined, getAudioPlayerMetadata(data))
-          .withShouldEndSession(true)
-          .getResponse();
-      }
-
       return responseBuilder
-        .addRenderTemplateDirectiveIfSupported(getPlayRenderTemplate(data))
-        .speak(`${t("play.text", data.name)}
-          <audio src="${getAnthemUrl(data)}" />
-          ${t("play.reprompt")}`)
-        .reprompt(t("play.reprompt"))
+        .speak(t("play.text", data.name))
+        .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),
+          data.iso3, 0, undefined, getAudioPlayerMetadata(data))
+        .withShouldEndSession(true)
         .getResponse();
     }
 

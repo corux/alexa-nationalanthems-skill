@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, Intents, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, Intents } from "../utils";
 import { getAudioPlayerMetadata, getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.RepeatIntent", "AMAZON.StartOverIntent")
@@ -10,7 +10,7 @@ export class AmazonRepeatIntentHandler extends BaseIntentHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     const countryFromAudioPlayer = getCountryFromAudioPlayer(handlerInput);
-    if (supportsAudioPlayer(handlerInput) && countryFromAudioPlayer) {
+    if (countryFromAudioPlayer) {
       return responseBuilder
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(countryFromAudioPlayer, true),
           countryFromAudioPlayer.iso3, 0, undefined, getAudioPlayerMetadata(countryFromAudioPlayer))

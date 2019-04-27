@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, Intents, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, Intents } from "../utils";
 import { getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.PreviousIntent",
@@ -12,7 +12,7 @@ export class UnsupportedHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
-    if (supportsAudioPlayer(handlerInput) && getCountryFromAudioPlayer(handlerInput)) {
+    if (getCountryFromAudioPlayer(handlerInput)) {
       return handlerInput.responseBuilder
         .speak(t("unsupported"))
         .withShouldEndSession(true)

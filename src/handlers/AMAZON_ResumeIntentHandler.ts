@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, Intents, Request, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, Intents, Request } from "../utils";
 import { getAudioPlayerMetadata, getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Request("PlaybackController.PlayCommandIssued")
@@ -10,7 +10,7 @@ export class AmazonResumeIntentHandler extends BaseIntentHandler {
     const responseBuilder = handlerInput.responseBuilder;
 
     const countryFromAudioPlayer = getCountryFromAudioPlayer(handlerInput);
-    if (supportsAudioPlayer(handlerInput) && countryFromAudioPlayer) {
+    if (countryFromAudioPlayer) {
       const offset = Math.max(handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds - 1000, 0);
       return responseBuilder
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(countryFromAudioPlayer, true),

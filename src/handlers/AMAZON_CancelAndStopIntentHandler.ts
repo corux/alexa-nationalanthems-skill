@@ -1,6 +1,6 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getResponseBuilder, Intents, supportsAudioPlayer } from "../utils";
+import { BaseIntentHandler, getResponseBuilder, Intents } from "../utils";
 
 @Intents("AMAZON.CancelIntent", "AMAZON.StopIntent")
 export class AmazonCancelAndStopIntentHandler extends BaseIntentHandler {
@@ -8,9 +8,7 @@ export class AmazonCancelAndStopIntentHandler extends BaseIntentHandler {
     const t = handlerInput.attributesManager.getRequestAttributes().t;
 
     return getResponseBuilder(handlerInput)
-      .if(supportsAudioPlayer(handlerInput), (builder) => {
-        builder.addAudioPlayerStopDirective();
-      })
+      .addAudioPlayerStopDirective()
       .speak(t("stop"))
       .withShouldEndSession(true)
       .getResponse();

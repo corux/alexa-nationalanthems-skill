@@ -35,10 +35,6 @@ function getSupportedInterfaces(handlerInput: HandlerInput): SupportedInterfaces
     || {};
 }
 
-export function supportsAudioPlayer(handlerInput: HandlerInput): boolean {
-  return !!getSupportedInterfaces(handlerInput).AudioPlayer;
-}
-
 export function supportsDisplay(handlerInput: HandlerInput): boolean {
   return !!getSupportedInterfaces(handlerInput).Display;
 }
