@@ -111,12 +111,14 @@
             "spiel die Nationalhymne von {country} ab",
             "die Hymne von {country}",
             "von {country}",
+            "vom Land {country}",
             "nach der Nationalhymne von {country}",
             "nach der Hymne von {country}",
             "nach {country}",
             "Nationalhymne {country}",
             "spiel die {country} Nationalhymne",
             "spiel die {country} Hymne",
+            "spiele {country}",
             "die {country} Nationalhymne",
             "die {country} Hymne",
             "die {country}",
@@ -375,7 +377,8 @@
                 "value": "Botswana",
                 "synonyms": [
                   "Republik Botsuana",
-                  "botsuanische"
+                  "botsuanische",
+                  "botswanische"
                 ]
               }
             },
@@ -874,6 +877,7 @@
                 "value": "Kap Verde",
                 "synonyms": [
                   "Republik Cabo Verde",
+                  "caboverdische",
                   "kap-verdische",
                   "kapverdische"
                 ]
@@ -974,7 +978,8 @@
                 "value": "Nordkorea",
                 "synonyms": [
                   "Demokratische Volksrepublik Korea",
-                  "koreanische"
+                  "koreanische",
+                  "nordkoreanische"
                 ]
               }
             },
@@ -984,7 +989,8 @@
                 "value": "Südkorea",
                 "synonyms": [
                   "Republik Korea",
-                  "koreanische"
+                  "koreanische",
+                  "südkoreanische"
                 ]
               }
             },
@@ -1438,7 +1444,8 @@
                   "Demokratische Republik Timor-Leste",
                   "Timor-Leste",
                   "osttimoresische",
-                  "osttimorische"
+                  "osttimorische",
+                  "timorische"
                 ]
               }
             },
