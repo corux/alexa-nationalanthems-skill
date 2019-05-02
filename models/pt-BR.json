@@ -96,6 +96,19 @@
           "name": "COUNTRY",
           "values": [
             {
+              "id": "ABC",
+              "name": {
+                "value": "Abecásia",
+                "synonyms": [
+                  "República da Abecásia",
+                  "abcásio",
+                  "abcázio",
+                  "abecásio",
+                  "abecázio"
+                ]
+              }
+            },
+            {
               "id": "AFG",
               "name": {
                 "value": "Afeganistão",
@@ -1120,6 +1133,20 @@
               }
             },
             {
+              "id": "XXK",
+              "name": {
+                "value": "Kosovo",
+                "synonyms": [
+                  "República do Kosovo",
+                  "cosovano",
+                  "cossovano",
+                  "cossovar",
+                  "kosovar",
+                  "kossovar"
+                ]
+              }
+            },
+            {
               "id": "HRV",
               "name": {
                 "value": "Croácia",
@@ -2050,6 +2077,16 @@
                 "value": "Sudão",
                 "synonyms": [
                   "sudanês"
+                ]
+              }
+            },
+            {
+              "id": "SOS",
+              "name": {
+                "value": "Ossétia do Sul",
+                "synonyms": [
+                  "República da Ossétia do Sul",
+                  "sul-osseta"
                 ]
               }
             },

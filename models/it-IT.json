@@ -103,6 +103,15 @@
           "name": "COUNTRY",
           "values": [
             {
+              "id": "ABC",
+              "name": {
+                "value": "Abcasia",
+                "synonyms": [
+                  "Repubblica di Abcasia"
+                ]
+              }
+            },
+            {
               "id": "AFG",
               "name": {
                 "value": "Afghanistan",
@@ -907,6 +916,17 @@
               }
             },
             {
+              "id": "XXK",
+              "name": {
+                "value": "Kosovo",
+                "synonyms": [
+                  "Repubblica del Kosovo",
+                  "kosovaro",
+                  "kossovaro"
+                ]
+              }
+            },
+            {
               "id": "HRV",
               "name": {
                 "value": "Croazia",
@@ -1660,6 +1680,15 @@
                 "value": "Sudan",
                 "synonyms": [
                   "sudanese"
+                ]
+              }
+            },
+            {
+              "id": "SOS",
+              "name": {
+                "value": "Ossezia del Sud",
+                "synonyms": [
+                  "Repubblica dell'Ossezia del Sud"
                 ]
               }
             },
