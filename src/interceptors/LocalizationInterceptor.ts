@@ -41,9 +41,25 @@ export class LocalizationInterceptor implements RequestInterceptor {
         returnObjects: true,
       }, (err, t) => {
         const attributes = handlerInput.attributesManager.getRequestAttributes();
-        attributes.t = (...args: any[]) => {
-          return (t as any)(...args);
-        };
+        attributes.t = this.randomTranslation(t);
       });
+  }
+
+  private randomTranslation(t: any): any {
+    return (...args: any[]) => {
+      const values = args.slice(1);
+
+      const value = t(args[0], {
+        postProcess: "sprintf",
+        returnObjects: true,
+        sprintf: values,
+      });
+
+      if (Array.isArray(value)) {
+        return value[Math.floor(Math.random() * value.length)];
+      } else {
+        return value;
+      }
+    };
   }
 }
