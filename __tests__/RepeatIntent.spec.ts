@@ -1,19 +1,16 @@
 import { VirtualAlexa } from "virtual-alexa";
-import { handler } from "../src";
+import { createVirtualAlexa } from "../test-utils/utils";
 
 describe("AMAZON.RepeatIntent", () => {
   let alexa: VirtualAlexa;
   beforeEach(() => {
-    alexa = VirtualAlexa.Builder()
-      .handler(handler)
-      .interactionModelFile("models/en-US.json")
-      .create();
+    alexa = createVirtualAlexa();
   });
 
   test("Should not fail if there is nothing to repeat", async () => {
     const result = await alexa.intend("AMAZON.RepeatIntent");
 
-    expect(result.response.outputSpeech.ssml).toContain("There is nothing to repeat.");
+    expect(result.response.outputSpeech.ssml).toContain("repeat");
     expect(result.response.shouldEndSession).toBe(false);
   });
 });

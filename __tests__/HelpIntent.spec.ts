@@ -1,18 +1,15 @@
 import { VirtualAlexa } from "virtual-alexa";
-import { handler } from "../src";
+import { createVirtualAlexa } from "../test-utils/utils";
 
 describe("AMAZON.HelpIntent", () => {
   let alexa: VirtualAlexa;
   beforeEach(() => {
-    alexa = VirtualAlexa.Builder()
-      .handler(handler)
-      .interactionModelFile("models/en-US.json")
-      .create();
+    alexa = createVirtualAlexa();
   });
 
   it("Provide help message", async () => {
-    const result: any = await alexa.utter("help");
-    expect(result.response.outputSpeech.ssml).toContain("play the national anthem for different countries");
+    const result: any = await alexa.intend("AMAZON.HelpIntent");
+    expect(result.response.outputSpeech.ssml).toContain("help");
     expect(result.response.shouldEndSession).toBe(false);
   });
 

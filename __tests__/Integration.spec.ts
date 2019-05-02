@@ -1,32 +1,28 @@
 import { VirtualAlexa } from "virtual-alexa";
-import { handler } from "../src";
+import { createVirtualAlexa } from "../test-utils/utils";
 
 describe("Integration", () => {
   let alexa: VirtualAlexa;
   beforeEach(() => {
-    alexa = VirtualAlexa.Builder()
-      .handler(handler)
-      .interactionModelFile("models/en-US.json")
-      .create();
-    alexa.context().device().audioPlayerSupported(true);
+    alexa = createVirtualAlexa();
   });
 
   test("Play multiple anthems", async () => {
     let result = await alexa.launch();
-    expect(result.response.outputSpeech.ssml).toContain("Which national anthem do you want to play?");
+    expect(result.response.outputSpeech.ssml).toContain("launch");
     expect(result.response.shouldEndSession).toBe(false);
 
     result = await alexa.intend("PlayAnthemIntent", { country: "any" });
-    expect(result.response.outputSpeech.ssml).toContain("I don't know the national anthem of any.");
+    expect(result.response.outputSpeech.ssml).toContain("play.unknown-country");
     expect(result.response.shouldEndSession).toBe(false);
 
     result = await alexa.intend("PlayAnthemIntent", { country: "United States" });
-    expect(result.response.outputSpeech.ssml).toContain("Here's the national anthem of United States.");
+    expect(result.response.outputSpeech.ssml).toContain("play.text");
     expect(result.response.shouldEndSession).toBe(true);
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
 
     result = await alexa.utter("next");
-    expect(result.response.outputSpeech.ssml).toContain("Here's the national anthem of");
+    expect(result.response.outputSpeech.ssml).toContain("play.text");
     expect(result.response.shouldEndSession).toBe(true);
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
 
@@ -38,7 +34,7 @@ describe("Integration", () => {
 
     result = await alexa.utter("stop");
     expect(alexa.audioPlayer().isPlaying()).toBe(false);
-    expect(result.response.outputSpeech.ssml).toContain("Goodbye!");
+    expect(result.response.outputSpeech.ssml).toContain("stop");
     expect(result.response.shouldEndSession).toBe(true);
   });
 });
