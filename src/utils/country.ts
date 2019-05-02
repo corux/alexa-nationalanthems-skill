@@ -37,7 +37,7 @@ export function getRandomCountry(continent: string, lang: string): ICountry {
     return country.region && regions.indexOf(country.region) !== -1;
   };
   return getRandomEntry(countries.getAll(lang)
-    .filter((val) => val.name && val.anthem && (regions.length === 0 || matchesContinent(val))));
+    .filter((val) => val.anthem && (regions.length === 0 || matchesContinent(val))));
 }
 
 export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {

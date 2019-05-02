@@ -16,7 +16,7 @@ export class RandomHandler extends BaseIntentHandler {
     const country = getRandomCountry(null, locale);
 
     return getResponseBuilder(handlerInput)
-      .speakIfSupported(`${t("play.text", country.name)}`)
+      .speakIfSupported(t("play.text", country.name))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(country, true),
         country.iso3, 0, undefined, getAudioPlayerMetadata(country))
       .withShouldEndSession(true)
