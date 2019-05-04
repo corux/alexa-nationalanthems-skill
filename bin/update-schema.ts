@@ -32,11 +32,13 @@ const countryOutput: any = {
 countryOutput.values = all.filter((country) => country && country.iso3 && country.name)
   .map((country) => {
     let synonyms = [].concat(
-      country.longName !== country.name ? [country.longName] : [],
-      country.altNames || [],
+      [country.longName],
+      country.altNames,
       (country.adjectives || []).map((adj) => getAdjective(adj)),
     ).filter((n) => !!n);
-    synonyms = synonyms.filter((n, i) => synonyms.indexOf(n) === i);
+    synonyms = synonyms
+      .filter((n, i) => synonyms.indexOf(n) === i)
+      .filter((val) => val.toUpperCase() !== country.name.toUpperCase());
     return {
       iso3: country.iso3,
       name: country.name,

@@ -960,10 +960,7 @@
             {
               "id": "LBR",
               "name": {
-                "value": "Liberia",
-                "synonyms": [
-                  "liberia"
-                ]
+                "value": "Liberia"
               }
             },
             {
@@ -1479,10 +1476,7 @@
             {
               "id": "CHE",
               "name": {
-                "value": "Suisse",
-                "synonyms": [
-                  "suisse"
-                ]
+                "value": "Suisse"
               }
             },
             {

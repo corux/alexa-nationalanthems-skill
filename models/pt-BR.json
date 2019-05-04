@@ -492,7 +492,6 @@
                 "value": "China",
                 "synonyms": [
                   "chim",
-                  "china",
                   "chinês",
                   "chino",
                   "chinoca",
@@ -924,7 +923,6 @@
               "name": {
                 "value": "Japão",
                 "synonyms": [
-                  "japão",
                   "japona",
                   "japonense",
                   "japonês",
@@ -1206,8 +1204,7 @@
                 "value": "Lesoto",
                 "synonyms": [
                   "lesotense",
-                  "lesotiano",
-                  "lesoto"
+                  "lesotiano"
                 ]
               }
             },
@@ -1474,7 +1471,6 @@
                 "value": "Moçambique",
                 "synonyms": [
                   "moçambicano",
-                  "moçambique",
                   "moçambiquenho",
                   "moçambiquense"
                 ]
@@ -2338,10 +2334,7 @@
             {
               "id": "VAT",
               "name": {
-                "value": "Vaticano",
-                "synonyms": [
-                  "vaticano"
-                ]
+                "value": "Vaticano"
               }
             },
             {

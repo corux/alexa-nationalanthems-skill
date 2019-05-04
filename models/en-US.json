@@ -1102,7 +1102,6 @@
                 "value": "Luxembourg",
                 "synonyms": [
                   "Grand Duchy of Luxembourg",
-                  "Luxembourg",
                   "Luxembourgish"
                 ]
               }
@@ -1321,10 +1320,7 @@
             {
               "id": "NZL",
               "name": {
-                "value": "New Zealand",
-                "synonyms": [
-                  "New Zealand"
-                ]
+                "value": "New Zealand"
               }
             },
             {
@@ -1695,7 +1691,6 @@
                 "value": "Singapore",
                 "synonyms": [
                   "Republic of Singapore",
-                  "Singapore",
                   "Singaporean"
                 ]
               }
@@ -2071,8 +2066,7 @@
                 "synonyms": [
                   "United States of America",
                   "American",
-                  "U.S.",
-                  "United States"
+                  "U.S."
                 ]
               }
             },
