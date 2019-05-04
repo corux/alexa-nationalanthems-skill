@@ -58,7 +58,7 @@
             "codeUri": "./dist",
             "functionName": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "bb50ce7e-cbee-4788-a527-c04bcf05518f",
+            "revisionId": "16dc0ce9-64dd-435d-ae0f-46dd31e5bf0f",
             "runtime": "nodejs8.10"
           },
           {
@@ -70,7 +70,7 @@
             "codeUri": "./dist",
             "functionName": "alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "0560d5a4-7328-4666-aeb6-666afc219449",
+            "revisionId": "58aaf5c7-0054-44b3-8f96-bb1f26226253",
             "runtime": "nodejs8.10"
           }
         ]

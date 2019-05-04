@@ -1,9 +1,9 @@
-import { CountryData, ICountry } from "@corux/country-data";
+import { ICountry } from "@corux/country-data";
 import { ExtendedCountryData } from "./ExtendedCountryData";
 
 const cache = {};
 
-function getInstance(lang: string): CountryData {
+function getInstance(lang: string): ExtendedCountryData {
   const countryData = cache[lang] || (cache[lang] = new ExtendedCountryData(lang));
   return countryData;
 }

@@ -88,8 +88,9 @@ export class PlayAnthemHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    const data = countries.getAll(locale).find((val) => val.iso3 === countryId)
-      || countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
+    const allCountries = countries.getAll(locale);
+    const data = allCountries.find((val) => val.iso3 === countryId)
+      || allCountries.find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem.url) {
       return responseBuilder
         .speak(t("play.text", data.name))

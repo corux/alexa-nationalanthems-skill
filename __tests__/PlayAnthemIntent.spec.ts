@@ -34,4 +34,15 @@ describe("PlayAnthemIntent", () => {
     expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/DEU.mp3");
     expect(result.response.directives[0].audioItem.stream.token).toBe("DEU");
   });
+
+  test("Should play anthem from extended dataset", async () => {
+    const result = await alexa.intend("PlayAnthemIntent", {
+      country: "Europe",
+    });
+
+    expect(alexa.audioPlayer().isPlaying()).toBe(true);
+    expect(result.response.outputSpeech.ssml).toContain("play.text");
+    expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/EUROPE.mp3");
+    expect(result.response.directives[0].audioItem.stream.token).toBe("EUROPE");
+  });
 });
