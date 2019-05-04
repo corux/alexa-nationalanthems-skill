@@ -1,7 +1,7 @@
 {
   "name": "alexa-nationalanthems-skill",
-  "version": "0.0.0",
-  "description": "An Alexa skill for the Amazon Echo.",
+  "version": "1.0.0",
+  "description": "Alexa national anthems skill",
   "main": "dist/index.js",
   "private": true,
   "scripts": {
@@ -35,7 +35,6 @@
     "ask-cli": "1.7.2",
     "ask-sdk-core": "2.5.2",
     "ask-sdk-model": "1.15.0",
-    "class.extend": "0.9.2",
     "commander": "2.20.0",
     "i18next": "15.1.0",
     "i18next-sprintf-postprocessor": "0.2.2",
@@ -46,7 +45,6 @@
     "ts-node": "8.1.0",
     "tslint": "5.16.0",
     "typescript": "3.4.5",
-    "underscore": "1.9.1",
     "virtual-alexa": "0.7.2",
     "webpack": "4.30.0",
     "webpack-command": "0.4.2"
