@@ -36,15 +36,15 @@ export function getAudioPlayerMetadata(country: ICountry): interfaces.audioplaye
         },
       ],
     },
-    subtitle: country.anthemName,
+    subtitle: country.anthem.name,
     title: country.name,
   };
 }
 
 export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
   let title = data.name;
-  if (data.anthemName) {
-    title = `${title}: ${data.anthemName}`;
+  if (data.anthem.name) {
+    title = `${title}: ${data.anthem.name}`;
   }
   return {
     backButton: "HIDDEN",
@@ -90,7 +90,7 @@ export class PlayAnthemHandler extends BaseIntentHandler {
 
     const data = countries.getAll(locale).find((val) => val.iso3 === countryId)
       || countries.getAll(locale).find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
-    if (data && data.anthem) {
+    if (data && data.anthem.url) {
       return responseBuilder
         .speak(t("play.text", data.name))
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),

@@ -1,43 +1,16 @@
-import { ICountry, Region } from "@corux/country-data";
+import { ContinentCode, ICountry } from "@corux/country-data";
 import countries from "../data/countries";
 
 function getRandomEntry(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-function getRegionFromString(continent: string): Region[] {
-  switch ((continent || "").toUpperCase()) {
-    case "EUROPA":
-    case "EU":
-      return [Region.EUROPE];
-    case "AFRIKA":
-    case "AF":
-      return [Region.AFRICA];
-    case "AMERIKA":
-    case "AM":
-      return [Region.AMERICAS, Region.SOUTH_AMERICA, Region.NORTH_AMERICA];
-    case "ASIEN":
-    case "AS":
-      return [Region.ASIA];
-    case "OZEANIEN":
-    case "OC":
-      return [Region.OCEANIA];
-    case "SA":
-      return [Region.SOUTH_AMERICA];
-    case "NA":
-      return [Region.NORTH_AMERICA];
-    default:
-      return [];
-  }
-}
-
-export function getRandomCountry(continent: string, lang: string): ICountry {
-  const regions = getRegionFromString(continent);
+export function getRandomCountry(continent: ContinentCode, lang: string): ICountry {
   const matchesContinent = (country: ICountry) => {
-    return country.region && regions.indexOf(country.region) !== -1;
+    return country.continent && continent === country.continent.code;
   };
   return getRandomEntry(countries.getAll(lang)
-    .filter((val) => val.anthem && (regions.length === 0 || matchesContinent(val))));
+    .filter((val) => val.anthem.url && (!continent || matchesContinent(val))));
 }
 
 export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {

@@ -21,10 +21,10 @@ if (!fs.existsSync(destination)) {
 const data = countries.getAll("en");
 
 for (const country of data) {
-  if (country.anthem) {
+  if (country.anthem.url) {
     const output = `${destination}/${country.iso3}.mp3`;
     if (overwrite || !fs.existsSync(output)) {
-      const proc = spawn("ffmpeg", ["-i", country.anthem,
+      const proc = spawn("ffmpeg", ["-i", country.anthem.url,
         "-t", duration, "-ac", "2", "-codec:a", "libmp3lame",
         "-b:a", "48k", "-ar", "16000", "-y", output]);
       proc.on("close", (code) => {

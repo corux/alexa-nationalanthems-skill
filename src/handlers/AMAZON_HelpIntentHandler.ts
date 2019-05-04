@@ -1,4 +1,4 @@
-import { Region } from "@corux/country-data";
+import { ContinentCode } from "@corux/country-data";
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
 import { BaseIntentHandler, getLocale, getRandomCountry, Intents } from "../utils";
@@ -17,22 +17,25 @@ export class AmazonHelpIntentHandler extends BaseIntentHandler {
       .getResponse();
   }
 
-  private getRegion(locale: Locale): Region {
+  private getRegion(locale: Locale): ContinentCode {
     switch (locale) {
       case "en-US":
       case "en-CA":
       case "es-MX":
-        return Region.AMERICAS;
+      case "es-US":
+        return ContinentCode.NORTH_AMERICA;
+      case "pt-BR":
+        return ContinentCode.SOUTH_AMERICA;
       case "en-IN":
-        return Region.ASIA;
+        return ContinentCode.ASIA;
       case "en-AU":
-        return Region.OCEANIA;
+        return ContinentCode.OCEANIA;
       case "de-DE":
       case "en-GB":
       case "es-ES":
       case "it-IT":
       case "fr-FR":
-        return Region.EUROPE;
+        return ContinentCode.EUROPE;
     }
   }
 }

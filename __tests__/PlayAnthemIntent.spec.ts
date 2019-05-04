@@ -14,7 +14,8 @@ describe("PlayAnthemIntent", () => {
     expect(result.response.shouldEndSession).toBe(false);
   });
 
-  test("Should tell if anthem of selected country is unavailable", async () => {
+  // Disabled, because anthems for all countries are available
+  xtest("Should tell if anthem of selected country is unavailable", async () => {
     const result = await alexa.intend("PlayAnthemIntent", {
       country: "South Ossetia",
     });

@@ -3,7 +3,9 @@
     "adjectives": [
       "european"
     ],
-    "anthemName": "Anthem of Europe",
+    "anthem": {
+      "name": "Anthem of Europe"
+    },
     "longName": "European Union",
     "name": "Europe"
   },
@@ -11,7 +13,9 @@
     "name": "NATO"
   },
   "DDR": {
-    "anthemName": "Risen from Ruins",
+    "anthem": {
+      "name": "Risen from Ruins"
+    },
     "longName": "German Democratic Republic",
     "name": "East Germany"
   },
@@ -19,21 +23,27 @@
     "adjectives": [
       "bavarian"
     ],
-    "anthemName": "Hymn of Bavaria",
+    "anthem": {
+      "name": "Hymn of Bavaria"
+    },
     "name": "Bavaria"
   },
   "SCOTLAND": {
     "adjectives": [
       "scottish"
     ],
-    "anthemName": "Flower of Scotland",
+    "anthem": {
+      "name": "Flower of Scotland"
+    },
     "name": "Scotland"
   },
   "SU": {
     "adjectives": [
       "soviet"
     ],
-    "anthemName": "State Anthem of the Soviet Union",
+    "anthem": {
+      "name": "State Anthem of the Soviet Union"
+    },
     "altNames": [
       "USSR"
     ],
@@ -44,7 +54,9 @@
     "adjectives": [
       "greenlandic"
     ],
-    "anthemName": "You, Our Ancient Land",
+    "anthem": {
+      "name": "You, Our Ancient Land"
+    },
     "name": "Greenland"
   }
 }

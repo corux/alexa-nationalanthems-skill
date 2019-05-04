@@ -3,7 +3,9 @@
     "adjectives": [
       "europäisch"
     ],
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Anthem_of_Europe_%28US_Navy_instrumental_long_version%29.ogg",
+    "anthem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Anthem_of_Europe_%28US_Navy_instrumental_long_version%29.ogg"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/720px-Flag_of_Europe.svg.png",
@@ -12,7 +14,9 @@
     "iso3": "EUROPE"
   },
   {
-    "anthem": "https://www.nato.int/nato_static_fl2014/assets/audio/audio_history/20161104_161104-naot-hymn.mp3",
+    "anthem": {
+      "url": "https://www.nato.int/nato_static_fl2014/assets/audio/audio_history/20161104_161104-naot-hymn.mp3"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/1200px-Flag_of_NATO.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/720px-Flag_of_NATO.svg.png",
@@ -21,7 +25,10 @@
     "iso3": "NATO"
   },
   {
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/0/07/Auferstanden_aus_Ruinen_%28first_recording_-_1949%29.ogg",
+    "anthem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Auferstanden_aus_Ruinen_%28Instrumental%29.oga",
+      "vocalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Auferstanden_aus_Ruinen_%28Vocal%29.ogg"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_East_Germany.svg/1200px-Flag_of_East_Germany.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_East_Germany.svg/720px-Flag_of_East_Germany.svg.png",
@@ -30,7 +37,9 @@
     "iso3": "DDR"
   },
   {
-    "anthem": "http://www.bayern.de/wp-content/uploads/2015/02/Die-Bayernhymne-Musikkorps-der-Bayerischen-Polizei-MP3.mp3",
+    "anthem": {
+      "url": "http://www.bayern.de/wp-content/uploads/2015/02/Die-Bayernhymne-Musikkorps-der-Bayerischen-Polizei-MP3.mp3"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Bavaria_%28lozengy%29.svg/1200px-Flag_of_Bavaria_%28lozengy%29.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Bavaria_%28lozengy%29.svg/720px-Flag_of_Bavaria_%28lozengy%29.svg.png",
@@ -39,7 +48,9 @@
     "iso3": "BAVARIA"
   },
   {
-    "anthem": "http://www.nationalanthems.info/sco.mp3",
+    "anthem": {
+      "url": "http://www.nationalanthems.info/sco.mp3"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/720px-Flag_of_Scotland.svg.png",
@@ -48,7 +59,9 @@
     "iso3": "SCOTLAND"
   },
   {
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gimn_Sovetskogo_Soyuza_%281977_Vocal%29.oga",
+    "anthem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gimn_Sovetskogo_Soyuza_%281977_Vocal%29.oga"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/1200px-Flag_of_the_Soviet_Union.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/720px-Flag_of_the_Soviet_Union.svg.png",
@@ -57,7 +70,9 @@
     "iso3": "SU"
   },
   {
-    "anthem": "https://upload.wikimedia.org/wikipedia/commons/2/24/National_Anthem_of_Greenland_-_Nunarput%2C_Utoqqarsuanngoravit.oga",
+    "anthem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/National_Anthem_of_Greenland_-_Nunarput%2C_Utoqqarsuanngoravit.oga"
+    },
     "flag": {
       "largeImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/1200px-Flag_of_Greenland.svg.png",
       "smallImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/720px-Flag_of_Greenland.svg.png",

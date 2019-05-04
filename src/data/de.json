@@ -3,16 +3,22 @@
     "adjectives": [
       "europäisch"
     ],
-    "anthemName": "Europahymne",
+    "anthem": {
+      "name": "Europahymne"
+    },
     "longName": "Europäischen Union",
     "name": "Europa"
   },
   "NATO": {
-    "anthemName": "NATO-Hymne",
+    "anthem": {
+      "name": "NATO-Hymne"
+    },
     "name": "NATO"
   },
   "DDR": {
-    "anthemName": "Auferstanden aus Ruinen",
+    "anthem": {
+      "name": "Auferstanden aus Ruinen"
+    },
     "longName": "Deutsche Demokratische Republik",
     "name": "DDR"
   },
@@ -20,21 +26,27 @@
     "adjectives": [
       "bayrisch"
     ],
-    "anthemName": "Für Bayern",
+    "anthem": {
+      "name": "Für Bayern"
+    },
     "name": "Bayern"
   },
   "SCOTLAND": {
     "adjectives": [
       "schottisch"
     ],
-    "anthemName": "Flower of Scotland",
+    "anthem": {
+      "name": "Flower of Scotland"
+    },
     "name": "Schottland"
   },
   "SU": {
     "adjectives": [
       "sowjetisch"
     ],
-    "anthemName": "Hymne der Sowjetunion",
+    "anthem": {
+      "name": "Hymne der Sowjetunion"
+    },
     "altNames": [
       "UdSSR"
     ],
@@ -45,7 +57,9 @@
     "adjectives": [
       "grönländisch"
     ],
-    "anthemName": "Unser Land, du wurdest so alt",
+    "anthem": {
+      "name": "Unser Land, du wurdest so alt"
+    },
     "name": "Grönland"
   }
 }

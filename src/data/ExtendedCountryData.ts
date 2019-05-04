@@ -5,7 +5,7 @@ import * as generic from "./generic.json";
 import * as de from "./de.json";
 import * as en from "./en.json";
 
-const dataExtension: {[lang: string]: any} = {
+const dataExtension: { [lang: string]: any } = {
   de, en,
 };
 
@@ -17,7 +17,12 @@ export class ExtendedCountryData extends CountryData {
 
   public getCountries(): ICountry[] {
     const i18nData = dataExtension[this.language] || {};
-    const data = generic.map((val) => Object.assign({}, val, i18nData[val.iso3]));
+    const data = generic.map((val) => {
+      const result = Object.assign({}, val, i18nData[val.iso3]);
+      result.anthem.url = val.anthem.url;
+      result.anthem.vocalUrl = val.anthem.vocalUrl;
+      return result;
+    });
     return super.getCountries().concat(data);
   }
 }
