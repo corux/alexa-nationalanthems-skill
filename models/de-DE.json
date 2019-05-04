@@ -121,12 +121,15 @@
             "spiele {country}",
             "die {country} Nationalhymne",
             "die {country} Hymne",
+            "die {country} instrumental",
             "die {country}",
+            "starte {country}",
             "{country} Bundeshymne",
             "{country} immer noch",
             "{country} Musik",
             "{country} Lieder",
             "{country} bitte",
+            "{country} hören",
             "{country}"
           ]
         }
@@ -2162,7 +2165,8 @@
               "name": {
                 "value": "DDR",
                 "synonyms": [
-                  "Deutsche Demokratische Republik"
+                  "Deutsche Demokratische Republik",
+                  "ostdeutsche"
                 ]
               }
             },

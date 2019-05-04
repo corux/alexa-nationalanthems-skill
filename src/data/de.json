@@ -16,6 +16,9 @@
     "name": "NATO"
   },
   "DDR": {
+    "adjectives": [
+      "ostdeutsch"
+    ],
     "anthem": {
       "name": "Auferstanden aus Ruinen"
     },
