@@ -119,17 +119,22 @@
             "spiel die {country} Nationalhymne",
             "spiel die {country} Hymne",
             "spiele {country}",
+            "wie klingt die Nationalhymne von {country}",
+            "wie klingt die {country} Nationalhymne",
             "die {country} Nationalhymne",
             "die {country} Hymne",
             "die {country} instrumental",
             "die {country}",
             "starte {country}",
+            "frage nach {country}",
+            "ask {country}",
             "{country} Bundeshymne",
             "{country} immer noch",
             "{country} Musik",
             "{country} Lieder",
             "{country} bitte",
             "{country} hören",
+            "{country} abspielen",
             "{country}"
           ]
         }
