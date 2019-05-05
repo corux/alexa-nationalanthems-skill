@@ -11,7 +11,10 @@ export class AmazonResumeIntentHandler extends BaseIntentHandler {
 
     const countryFromAudioPlayer = getCountryFromAudioPlayer(handlerInput);
     if (countryFromAudioPlayer) {
-      const offset = Math.max(handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds - 1000, 0);
+      let offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
+      if (handlerInput.requestEnvelope.context.AudioPlayer.playerActivity === "FINISHED") {
+        offset = 0;
+      }
       return responseBuilder
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(countryFromAudioPlayer, true),
           countryFromAudioPlayer.iso3, offset, undefined, getAudioPlayerMetadata(countryFromAudioPlayer))
