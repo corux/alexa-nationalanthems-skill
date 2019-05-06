@@ -7,11 +7,11 @@
   "unsupported": "Entschuldigung, diesen Befehl verstehe ich nicht.",
   "help": {
     "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von %s\".",
-    "reprompt": "Was möchtest du als nächstes tun?"
+    "reprompt": "Welche Nationalhymne möchtest du abspielen?"
   },
   "play": {
     "text": "Hier ist die Nationalhymne von %s.",
-    "reprompt": "Welche Nationalhymne möchtest du als nächstes abspielen?",
+    "reprompt": "Welche Nationalhymne möchtest du abspielen?",
     "no-repeat": "Es gibt nichts zu wiederholen.",
     "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land.",
     "random": "Ich habe ein zufälliges Land ausgewählt."

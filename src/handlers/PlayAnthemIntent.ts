@@ -5,14 +5,33 @@ import countries from "../data/countries";
 import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
 
 export function getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry {
+  const response = parseAudioToken(handlerInput);
+  return response && response.country;
+}
+
+export function parseAudioToken(handlerInput: HandlerInput)
+  : { country: ICountry, loopMode: boolean, shuffleMode: boolean } {
   if (handlerInput.requestEnvelope.context.AudioPlayer) {
     const locale = getLocale(handlerInput);
-    const iso = handlerInput.requestEnvelope.context.AudioPlayer.token;
+    const tokenParts = (handlerInput.requestEnvelope.context.AudioPlayer.token || "").split(":");
+    const iso = tokenParts[0];
     const country = countries.getByIso3(iso, locale);
-    return country;
+    if (country) {
+      return {
+        country,
+        loopMode: tokenParts[1] === "1",
+        shuffleMode: tokenParts[2] === "1",
+      };
+    }
   }
+}
 
-  return undefined;
+export function createAudioToken(country: ICountry, loopMode: boolean = false, shuffleMode: boolean = false) {
+  return [
+    country.iso3,
+    loopMode ? 1 : 0,
+    shuffleMode ? 1 : 0,
+  ].join(":");
 }
 
 export function getAudioPlayerMetadata(country: ICountry): interfaces.audioplayer.AudioItemMetadata {
@@ -77,6 +96,7 @@ export function getPlayRenderTemplate(data: ICountry): interfaces.display.Templa
 export class PlayAnthemHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const responseBuilder = getResponseBuilder(handlerInput);
+    const session = handlerInput.attributesManager.getSessionAttributes();
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const locale = getLocale(handlerInput);
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
@@ -95,7 +115,7 @@ export class PlayAnthemHandler extends BaseIntentHandler {
       return responseBuilder
         .speak(t("play.text", data.name))
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),
-          data.iso3, 0, undefined, getAudioPlayerMetadata(data))
+          createAudioToken(data, session.loopMode, session.shuffleMode), 0, undefined, getAudioPlayerMetadata(data))
         .withShouldEndSession(true)
         .getResponse();
     }
