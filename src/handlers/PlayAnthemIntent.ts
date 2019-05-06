@@ -9,20 +9,18 @@ export function getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry 
   return response && response.country;
 }
 
-export function parseAudioToken(handlerInput: HandlerInput)
+export function parseAudioToken(handlerInput: HandlerInput, token?: string)
   : { country: ICountry, loopMode: boolean, shuffleMode: boolean } {
-  if (handlerInput.requestEnvelope.context.AudioPlayer) {
-    const locale = getLocale(handlerInput);
-    const tokenParts = (handlerInput.requestEnvelope.context.AudioPlayer.token || "").split(":");
-    const iso = tokenParts[0];
-    const country = countries.getByIso3(iso, locale);
-    if (country) {
-      return {
-        country,
-        loopMode: tokenParts[1] === "1",
-        shuffleMode: tokenParts[2] === "1",
-      };
-    }
+  const locale = getLocale(handlerInput);
+  const tokenParts = (token || handlerInput.requestEnvelope.context.AudioPlayer.token || "").split(":");
+  const iso = tokenParts[0];
+  const country = countries.getByIso3(iso, locale);
+  if (country) {
+    return {
+      country,
+      loopMode: tokenParts[1] === "1",
+      shuffleMode: tokenParts[2] === "1",
+    };
   }
 }
 

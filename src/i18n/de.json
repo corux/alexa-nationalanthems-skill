@@ -15,5 +15,10 @@
     "no-repeat": "Es gibt nichts zu wiederholen.",
     "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land.",
     "random": "Ich habe ein zufälliges Land ausgewählt."
+  },
+  "audio": {
+    "loop-on-prepare": "Die Endlosschleife ist aktiviert.",
+    "loop-on": "Die Endlosschleife der Nationalhymne von %s ist aktiviert.",
+    "loop-off": "Die Endlosschleife ist deaktiviert."
   }
 }

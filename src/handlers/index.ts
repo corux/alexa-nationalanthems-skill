@@ -10,4 +10,6 @@ export * from "./PlayAnthemIntent";
 export * from "./RandomIntent";
 export * from "./UnsupportedIntent";
 export * from "./CanFulfillIntentRequestHandler";
+export * from "./AMAZON_LoopIntentHandler";
 export * from "./AudioPlayerUnsupportedHandler";
+export * from "./AudioPlayerPlaybackHandler";

@@ -4,8 +4,6 @@ import { BaseIntentHandler, Intents } from "../utils";
 import { getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.PreviousIntent",
-  "AMAZON.LoopOffIntent",
-  "AMAZON.LoopOnIntent",
   "AMAZON.ShuffleOffIntent",
   "AMAZON.ShuffleOnIntent")
 export class UnsupportedHandler extends BaseIntentHandler {

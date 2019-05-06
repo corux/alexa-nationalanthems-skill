@@ -12,5 +12,10 @@
     "no-repeat": "Non c'è nulla da ripetere.",
     "unknown-country": "Non conosco l'inno nazionale per la %s. Si prega di scegliere un altro paese.",
     "random": "Ho selezionato un paese a caso."
+  },
+  "audio": {
+    "loop-on-prepare": "Il ciclo infinito è attivato.",
+    "loop-on": "Il ciclo infinito è attivata per l'inno nazionale %s.",
+    "loop-off": "Il ciclo infinito è disattivato."
   }
 }

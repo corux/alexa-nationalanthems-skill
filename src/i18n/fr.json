@@ -12,5 +12,10 @@
     "no-repeat": "Il n'y a rien à répéter.",
     "unknown-country": "Je ne connais pas l'hymne national de %s. Veuillez choisir un autre pays.",
     "random": "J'ai sélectionné un pays au hasard."
+  },
+  "audio": {
+    "loop-on-prepare": "La boucle infinie est activée.",
+    "loop-on": "La boucle infinie est activé pour l'hymne national de %s.",
+    "loop-off": "La boucle infinie est désactivée."
   }
 }

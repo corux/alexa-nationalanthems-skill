@@ -4,7 +4,6 @@ import { BaseIntentHandler, Request } from "../utils";
 
 @Request(
   "AudioPlayer.PlaybackStarted",
-  "AudioPlayer.PlaybackNearlyFinished",
   "AudioPlayer.PlaybackFinished",
   "AudioPlayer.PlaybackStopped",
   "AudioPlayer.PlaybackFailed")

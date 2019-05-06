@@ -12,5 +12,10 @@
     "no-repeat": "Não há nada para repetir.",
     "unknown-country": "Eu não conheço o hino nacional do %s. Por favor, escolha outro país.",
     "random": "Eu selecionei um país aleatório."
+  },
+  "audio": {
+    "loop-on-prepare": "O loop infinito é ativado.",
+    "loop-on": "O loop infinito é ativado para o hino nacional da %s.",
+    "loop-off": "O loop infinito é desativado.",
   }
 }

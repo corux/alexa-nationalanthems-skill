@@ -2,9 +2,11 @@ import { SkillBuilders } from "ask-sdk-core";
 import {
   AmazonCancelAndStopIntentHandler,
   AmazonHelpIntentHandler,
+  AmazonLoopIntentHandler,
   AmazonPauseIntentHandler,
   AmazonRepeatIntentHandler,
   AmazonResumeIntentHandler,
+  AudioPlayerPlaybackHandler,
   AudioPlayerUnsupportedHandler,
   CanFulfillIntentRequestHandler,
   CustomErrorHandler,
@@ -19,12 +21,14 @@ import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
 export const handler = SkillBuilders.custom()
   .addRequestHandlers(
     new AudioPlayerUnsupportedHandler(),
+    new AudioPlayerPlaybackHandler(),
     new CanFulfillIntentRequestHandler(),
     new AmazonCancelAndStopIntentHandler(),
     new AmazonPauseIntentHandler(),
     new AmazonResumeIntentHandler(),
     new AmazonHelpIntentHandler(),
     new AmazonRepeatIntentHandler(),
+    new AmazonLoopIntentHandler(),
     new RandomHandler(),
     new PlayAnthemHandler(),
     new LaunchRequestHandler(),

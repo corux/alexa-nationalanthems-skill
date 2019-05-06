@@ -15,5 +15,10 @@
     "no-repeat": "There is nothing to repeat.",
     "unknown-country": "I don't know the national anthem of %s. Please choose another country.",
     "random": "I've selected a random country."
+  },
+  "audio": {
+    "loop-on-prepare": "Loop mode is activated.",
+    "loop-on": "Loop mode is activated for the national anthem of %s.",
+    "loop-off": "Loop mode is deactivated."
   }
 }
