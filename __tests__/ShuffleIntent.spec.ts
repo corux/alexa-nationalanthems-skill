@@ -52,8 +52,8 @@ describe("AMAZON.ShuffleOnIntent and AMAZON.ShuffleOffIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("audio.shuffle-on");
-    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ENQUEUED");
-    expect(result.directive("AudioPlayer.Play").audioItem.stream.token).toContain(":0:1");
+    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ALL");
+    expect(result.directive("AudioPlayer.Play").audioItem.stream.token).toBe("DEU:0:1");
   });
 
   test("Should allow deactivating shuffle mode during playback", async () => {
@@ -71,7 +71,8 @@ describe("AMAZON.ShuffleOnIntent and AMAZON.ShuffleOffIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("audio.shuffle-off");
-    expect(result.directive("AudioPlayer.ClearQueue").clearBehavior).toBe("CLEAR_ENQUEUED");
+    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ALL");
+    expect(result.directive("AudioPlayer.Play").audioItem.stream.token).toBe("DEU:0:0");
   });
 
   test("Should shuffle random anthems", async () => {

@@ -52,7 +52,7 @@ describe("AMAZON.LoopOnIntent and AMAZON.LoopOffIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("audio.loop-on");
-    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ENQUEUED");
+    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ALL");
     expect(result.directive("AudioPlayer.Play").audioItem.stream.token).toBe("DEU:1:0");
   });
 
@@ -71,7 +71,8 @@ describe("AMAZON.LoopOnIntent and AMAZON.LoopOffIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("audio.loop-off");
-    expect(result.directive("AudioPlayer.ClearQueue").clearBehavior).toBe("CLEAR_ENQUEUED");
+    expect(result.directive("AudioPlayer.Play").playBehavior).toBe("REPLACE_ALL");
+    expect(result.directive("AudioPlayer.Play").audioItem.stream.token).toBe("DEU:0:0");
   });
 
   test("Should loop current anthem", async () => {

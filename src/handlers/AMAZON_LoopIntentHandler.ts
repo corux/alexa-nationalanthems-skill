@@ -22,18 +22,13 @@ export class AmazonLoopIntentHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    if (isLoopOnIntent) {
-      return getResponseBuilder(handlerInput)
-        .speak(t("audio.loop-on", currentAudio.country.name))
-        .addAudioPlayerPlayDirective("REPLACE_ENQUEUED", getAnthemUrl(currentAudio.country, true),
-          createAudioToken(currentAudio.country, true), 0, undefined, getAudioPlayerMetadata(currentAudio.country))
-        .withShouldEndSession(true)
-        .getResponse();
-    }
-
+    const offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
     return getResponseBuilder(handlerInput)
-      .speak(t("audio.loop-off"))
-      .addAudioPlayerClearQueueDirective("CLEAR_ENQUEUED")
+      .if(isLoopOnIntent, (builder) => builder.speak(t("audio.loop-on", currentAudio.country.name)))
+      .if(!isLoopOnIntent, (builder) => builder.speak(t("audio.loop-off")))
+      .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),
+        createAudioToken(currentAudio.country, isLoopOnIntent), offset,
+        undefined, getAudioPlayerMetadata(currentAudio.country))
       .withShouldEndSession(true)
       .getResponse();
   }

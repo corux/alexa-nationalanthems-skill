@@ -20,12 +20,11 @@ export class AudioPlayerPlaybackHandler extends BaseIntentHandler {
 
       if (currentAudio.shuffleMode) {
         const locale = getLocale(handlerInput);
-        const country = getRandomCountry(null, locale);
-        const token = createAudioToken(country, false, true);
+        const randomCountry = getRandomCountry(null, locale);
 
         return responseBuilder
-          .addAudioPlayerPlayDirective("REPLACE_ENQUEUED", getAnthemUrl(currentAudio.country, true),
-            token, 0, undefined, getAudioPlayerMetadata(currentAudio.country))
+          .addAudioPlayerPlayDirective("REPLACE_ENQUEUED", getAnthemUrl(randomCountry, true),
+          createAudioToken(randomCountry, false, true), 0, undefined, getAudioPlayerMetadata(randomCountry))
           .getResponse();
       }
     }

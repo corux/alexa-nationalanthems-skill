@@ -1,12 +1,11 @@
 import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, getLocale, getRandomCountry, getResponseBuilder, Intents } from "../utils";
+import { BaseIntentHandler, getAnthemUrl, getResponseBuilder, Intents } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.ShuffleOffIntent", "AMAZON.ShuffleOnIntent")
 export class AmazonShuffleIntentHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
-    const locale = getLocale(handlerInput);
     const t = handlerInput.attributesManager.getRequestAttributes().t;
     const isShuffleOnIntent = (handlerInput.requestEnvelope.request as IntentRequest)
       .intent.name === "AMAZON.ShuffleOnIntent";
@@ -23,20 +22,13 @@ export class AmazonShuffleIntentHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    if (isShuffleOnIntent) {
-      const country = getRandomCountry(null, locale);
-      const token = createAudioToken(country, false, true);
-      return getResponseBuilder(handlerInput)
-        .speak(t("audio.shuffle-on", currentAudio.country.name))
-        .addAudioPlayerPlayDirective("REPLACE_ENQUEUED", getAnthemUrl(currentAudio.country, true),
-          token, 0, undefined, getAudioPlayerMetadata(currentAudio.country))
-        .withShouldEndSession(true)
-        .getResponse();
-    }
-
+    const offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
     return getResponseBuilder(handlerInput)
-      .speak(t("audio.shuffle-off"))
-      .addAudioPlayerClearQueueDirective("CLEAR_ENQUEUED")
+      .if(isShuffleOnIntent, (builder) => builder.speak(t("audio.shuffle-on")))
+      .if(!isShuffleOnIntent, (builder) => builder.speak(t("audio.shuffle-off")))
+      .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),
+        createAudioToken(currentAudio.country, false, isShuffleOnIntent), offset,
+        undefined, getAudioPlayerMetadata(currentAudio.country))
       .withShouldEndSession(true)
       .getResponse();
   }
