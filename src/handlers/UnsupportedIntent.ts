@@ -3,9 +3,7 @@ import { Response } from "ask-sdk-model";
 import { BaseIntentHandler, Intents } from "../utils";
 import { getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
-@Intents("AMAZON.PreviousIntent",
-  "AMAZON.ShuffleOffIntent",
-  "AMAZON.ShuffleOnIntent")
+@Intents("AMAZON.PreviousIntent")
 export class UnsupportedHandler extends BaseIntentHandler {
   public handle(handlerInput: HandlerInput): Response {
     const t = handlerInput.attributesManager.getRequestAttributes().t;

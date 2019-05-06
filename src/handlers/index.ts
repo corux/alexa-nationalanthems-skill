@@ -11,5 +11,6 @@ export * from "./RandomIntent";
 export * from "./UnsupportedIntent";
 export * from "./CanFulfillIntentRequestHandler";
 export * from "./AMAZON_LoopIntentHandler";
+export * from "./AMAZON_ShuffleIntentHandler";
 export * from "./AudioPlayerUnsupportedHandler";
 export * from "./AudioPlayerPlaybackHandler";

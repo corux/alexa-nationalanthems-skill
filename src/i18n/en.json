@@ -19,6 +19,8 @@
   "audio": {
     "loop-on-prepare": "Loop mode is activated.",
     "loop-on": "Loop mode is activated for the national anthem of %s.",
-    "loop-off": "Loop mode is deactivated."
+    "loop-off": "Loop mode is deactivated.",
+    "shuffle-on": "Shuffle mode is activated.",
+    "shuffle-off": "Shuffle mode is deactivated."
   }
 }

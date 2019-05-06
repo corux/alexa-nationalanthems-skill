@@ -16,6 +16,8 @@
   "audio": {
     "loop-on-prepare": "La boucle infinie est activée.",
     "loop-on": "La boucle infinie est activé pour l'hymne national de %s.",
-    "loop-off": "La boucle infinie est désactivée."
+    "loop-off": "La boucle infinie est désactivée.",
+    "shuffle-on": "La lecture aléatoire est activée.",
+    "shuffle-off": "La lecture aléatoire est désactivée."
   }
 }

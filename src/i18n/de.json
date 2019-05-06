@@ -19,6 +19,8 @@
   "audio": {
     "loop-on-prepare": "Die Endlosschleife ist aktiviert.",
     "loop-on": "Die Endlosschleife der Nationalhymne von %s ist aktiviert.",
-    "loop-off": "Die Endlosschleife ist deaktiviert."
+    "loop-off": "Die Endlosschleife ist deaktiviert.",
+    "shuffle-on": "Die Zufallswiedergabe ist aktiviert.",
+    "shuffle-off": "Die Zufallswiedergabe ist deaktiviert."
   }
 }

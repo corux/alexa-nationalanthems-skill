@@ -16,6 +16,8 @@
   "audio": {
     "loop-on-prepare": "El bucle infinito está activado.",
     "loop-on": "El modo de bucle se activa para el himno nacional de %s.",
-    "loop-off": "El bucle infinito está desactivado."
+    "loop-off": "El bucle infinito está desactivado.",
+    "shuffle-on": "La reproducción aleatoria está activada.",
+    "shuffle-off": "La reproducción aleatoria está desactivada."
   }
 }

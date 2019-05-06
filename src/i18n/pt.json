@@ -17,5 +17,7 @@
     "loop-on-prepare": "O loop infinito é ativado.",
     "loop-on": "O loop infinito é ativado para o hino nacional da %s.",
     "loop-off": "O loop infinito é desativado.",
+    "shuffle-on": "A reprodução aleatória está ativada.",
+    "shuffle-off": "A reprodução aleatória está desativada."
   }
 }
