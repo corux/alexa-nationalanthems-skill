@@ -86,16 +86,26 @@
             }
           ],
           "samples": [
+            "de jouer l'hymne du {country}",
             "de jouer l'hymne de {country}",
-            "de jouer l'hymne de le {country}",
+            "de jouer l'hymne des {country}",
             "de jouer l'hymne de la {country}",
+            "jouer l'hymne national du {country}",
+            "jouer l'hymne national de {country}",
+            "jouer l'hymne national des {country}",
+            "jouer l'hymne national de la {country}",
             "jouer l'hymne national {country}",
             "jouer hymne national de {country}",
             "jouer hymne de {country}",
             "hymne national de {country}",
             "hymne de {country}",
             "celle du {country}",
+            "celle des {country}",
+            "celle de la {country}",
+            "du {country}",
             "de {country}",
+            "des {country}",
+            "de la {country}",
             "{country}"
           ]
         }
