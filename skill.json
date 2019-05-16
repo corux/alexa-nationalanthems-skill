@@ -4,8 +4,9 @@
       "locales": {
         "de-DE": {
           "name": "Nationalhymnen",
-          "summary": "Lasse dir die Nationalhymnen aller Staaten vorspielen.",
-          "description": "Dieser Skill erlaubt es dir, die Nationalhymnen verschiedener Staaten abzuspielen. Frage einfach nach dem gewünschten Land und Alexa spielt die passende Nationalhymne ab. Dieser Skill kennt die Hymnen von 199 Ländern.\n\nDieser Skill verwendet die Nationalhymnen, welche auf Wikipedia bereitgestellt werden. Die vollständige Liste findest du hier: https://de.wikipedia.org/wiki/Liste_der_Nationalhymnen",
+          "summary": "Lasse dir die Nationalhymnen aller Länder vorspielen.",
+          "description": "Dieser Skill erlaubt es dir, die Nationalhymnen verschiedener Länder abzuspielen. Frage einfach nach dem gewünschten Land und Alexa spielt die passende Nationalhymne ab. Dieser Skill kennt die Hymnen von über 200 Ländern.\n\nStarte den Skill mit \"Alexa, öffne Nationalhymnen\". Du kannst die Wiedergabe mit folgenden Befehlen steuern:\n• \"Alexa, weiter\" — spielt eine zufällige Hymne ab\n• \"Alexa, aktiviere die Endlosschleife\" — die aktuell gespielte Hymne wird in einer Endlosschleife wiederholt\n• \"Alexa, aktiviere die Zufallswiedergabe\" — es werden zufällige Hymnen abgespielt\n\nAuf dem Echo Show, Echo Spot oder Fire TV kannst du die Wiedergabe über den Bildschirm steuern. Zusätzlich wird auf dem Bildschirm die passende Flagge gezeigt.\n\nDieser Skill verwendet die Nationalhymnen, welche auf Wikipedia bereitgestellt werden. Die vollständige Liste findest du hier: https://de.wikipedia.org/wiki/Liste_der_Nationalhymnen",
+          "updatesDescription": "Ab sofort wird die Endlosschleife und Zufallswiedergabe unterstützt.",
           "examplePhrases": [
             "Alexa, frage Nationalhymnen nach Deutschland",
             "Spiel die französische Nationalhymne"
