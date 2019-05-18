@@ -8,8 +8,8 @@
           "description": "Dieser Skill erlaubt es dir, die Nationalhymnen verschiedener Länder abzuspielen. Frage einfach nach dem gewünschten Land und Alexa spielt die passende Nationalhymne ab. Dieser Skill kennt die Hymnen von über 200 Ländern.\n\nStarte den Skill mit \"Alexa, öffne Nationalhymnen\". Du kannst die Wiedergabe mit folgenden Befehlen steuern:\n• \"Alexa, weiter\" — spielt eine zufällige Hymne ab\n• \"Alexa, aktiviere die Endlosschleife\" — die aktuell gespielte Hymne wird in einer Endlosschleife wiederholt\n• \"Alexa, aktiviere die Zufallswiedergabe\" — es werden zufällige Hymnen abgespielt\n\nAuf dem Echo Show, Echo Spot oder Fire TV kannst du die Wiedergabe über den Bildschirm steuern. Zusätzlich wird auf dem Bildschirm die passende Flagge gezeigt.\n\nDieser Skill verwendet die Nationalhymnen, welche auf Wikipedia bereitgestellt werden. Die vollständige Liste findest du hier: https://de.wikipedia.org/wiki/Liste_der_Nationalhymnen",
           "updatesDescription": "Ab sofort wird die Endlosschleife und Zufallswiedergabe unterstützt.",
           "examplePhrases": [
-            "Alexa, frage Nationalhymnen nach Deutschland",
-            "Spiel die französische Nationalhymne"
+            "Alexa, starte Nationalhymnen.",
+            "Spiel die deutsche Nationalhymne."
           ],
           "keywords": [
             "hymne",
@@ -24,8 +24,8 @@
           "summary": "Play the national anthem from countries all over the world.",
           "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, ask national anthems for United States",
-            "Play the Canadian national anthem."
+            "Alexa, open national anthems.",
+            "Play the American national anthem."
           ],
           "keywords": [
             "anthem",
@@ -40,8 +40,8 @@
           "summary": "Play the national anthem from countries all over the world.",
           "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, ask national anthems for United Kingdom.",
-            "Play the French national anthem."
+            "Alexa, open national anthems.",
+            "Play the British national anthem."
           ],
           "keywords": [
             "anthem",
@@ -56,8 +56,8 @@
           "summary": "Play the national anthem from countries all over the world.",
           "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, ask national anthems for Australia.",
-            "Play the New Zealand national anthem."
+            "Alexa, open national anthems.",
+            "Play the Australian national anthem."
           ],
           "keywords": [
             "anthem",
@@ -72,8 +72,8 @@
           "summary": "Play the national anthem from countries all over the world.",
           "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, ask national anthems for Canada.",
-            "Play the French national anthem."
+            "Alexa, open national anthems.",
+            "Play the Canadian national anthem."
           ],
           "keywords": [
             "anthem",
@@ -88,8 +88,8 @@
           "summary": "Play the national anthem from countries all over the world.",
           "description": "This skill allows Alexa to play the national anthems from countries all over the world. Just ask for a country and Alexa will play the national anthem. This skill knows the anthems of 199 countries.\n\nThis skill uses the national anthems provided by Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, ask national anthems for India.",
-            "Play the British national anthem."
+            "Alexa, open national anthems.",
+            "Play the Indian national anthem."
           ],
           "keywords": [
             "anthem",
@@ -104,8 +104,8 @@
           "summary": "Écoutez les hymnes nationaux de pays du monde entier.",
           "description": "Avec la skill, Alexa peut jouer les hymnes nationaux des pays du monde entier. Il suffit de demander un pays et Alexa jouera l'hymne national. La skill connaît les hymnes de 199 pays.\n\nLa skill utilise les hymnes nationaux fournis par Wikipedia: https://fr.wikipedia.org/wiki/Liste_des_hymnes_nationaux",
           "examplePhrases": [
-            "Alexa, demande à hymnes nationaux de jouer l'hymne national de France.",
-            "Jouer l'hymne national espagnol."
+            "Alexa, ouvre hymnes nationaux.",
+            "Jouer l'hymne national français."
           ],
           "keywords": [
             "hymne",
@@ -120,8 +120,8 @@
           "summary": "Écoutez les hymnes nationaux de pays du monde entier.",
           "description": "Avec la skill, Alexa peut jouer les hymnes nationaux des pays du monde entier. Il suffit de demander un pays et Alexa jouera l'hymne national. La skill connaît les hymnes de 199 pays.\n\nLa skill utilise les hymnes nationaux fournis par Wikipedia: https://fr.wikipedia.org/wiki/Liste_des_hymnes_nationaux",
           "examplePhrases": [
-            "Alexa, demande à hymnes nationaux de jouer l'hymne national de Canada.",
-            "Jouer l'hymne national des États-Unis."
+            "Alexa, ouvre hymnes nationaux.",
+            "Jouer l'hymne national canadien."
           ],
           "keywords": [
             "hymne",
@@ -136,8 +136,8 @@
           "summary": "Toca el himno nacional de países de todo el mundo.",
           "description": "Esta skill le permite a Alexa tocar los himnos nacionales de países de todo el mundo. Solo pide un país y Alexa tocará el himno nacional. Esta skill conoce los himnos de 199 países.\n\nEsta skill usa los himnos nacionales proporcionados por Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, pregúntale a himnos nacionales el himno de España.",
-            "Toca el himno nacional francés."
+            "Alexa, abre himnos nacionales.",
+            "Toca el himno nacional español."
           ],
           "keywords": [
             "himno",
@@ -152,8 +152,8 @@
           "summary": "Toca el himno nacional de países de todo el mundo.",
           "description": "Esta skill le permite a Alexa tocar los himnos nacionales de países de todo el mundo. Solo pide un país y Alexa tocará el himno nacional. Este skill conoce los himnos de 199 países.\n\nEsta skill usa los himnos nacionales proporcionados por Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, pregúntale a himnos nacionales el himno de México.",
-            "Toca el himno nacional estadounidense."
+            "Alexa, abre himnos nacionales.",
+            "Toca el himno nacional mexicano."
           ],
           "keywords": [
             "himno",
@@ -168,8 +168,8 @@
           "summary": "Toca el himno nacional de países de todo el mundo.",
           "description": "Esta skill le permite a Alexa tocar los himnos nacionales de países de todo el mundo. Solo pide un país y Alexa tocará el himno nacional. Este skill conoce los himnos de 199 países.\n\nEsta skill usa los himnos nacionales proporcionados por Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, pregúntale a himnos nacionales el himno de Estados Unidos.",
-            "Toca el himno nacional mexicano."
+            "Alexa, abre himnos nacionales.",
+            "Toca el himno nacional estadounidense."
           ],
           "keywords": [
             "himno",
@@ -184,8 +184,8 @@
           "summary": "Suona l'inno nazionale dai paesi di tutto il mondo.",
           "description": "Questa skill permette ad Alexa di suonare gli inni nazionali dei paesi di tutto il mondo. Basta chiedere un paese e Alexa suonerà l'inno nazionale. Questa skill conosce gli inni di 199 paesi.\n\nQuesta skill usa gli inni nazionali forniti da Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, chiedi a inni nazionali per l'Italia.",
-            "Suona l'inno nazionale austriaco."
+            "Alexa, apri inni nazionali.",
+            "Suona l'inno nazionale italiano."
           ],
           "keywords": [
             "inno",
@@ -200,7 +200,8 @@
           "summary": "Ouça os hinos nacionais de países de todo o mundo.",
           "description": "Este skill permite que Alexa toque os hinos nacionais de países de todo o mundo. Basta perguntar por um país e Alexa vai tocar o hino nacional. Este skill conhece os hinos de 199 países.\n\nEste skill usa os hinos nacionais fornecidos pela Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
-            "Alexa, toca hinos nacionais."
+            "Alexa, toca hinos nacionais.",
+            "Tocar o hino nacional brasileiro."
           ],
           "keywords": [
             "hino",
