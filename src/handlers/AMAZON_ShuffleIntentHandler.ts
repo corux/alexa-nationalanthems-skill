@@ -1,12 +1,12 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, getResponseBuilder, Intents } from "../utils";
+import { getAnthemUrl } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.ShuffleOffIntent", "AMAZON.ShuffleOnIntent")
-export class AmazonShuffleIntentHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class AmazonShuffleIntentHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
     const isShuffleOnIntent = (handlerInput.requestEnvelope.request as IntentRequest)
       .intent.name === "AMAZON.ShuffleOnIntent";
 
@@ -15,7 +15,7 @@ export class AmazonShuffleIntentHandler extends BaseIntentHandler {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.shuffleMode = isShuffleOnIntent;
 
-      return getResponseBuilder(handlerInput)
+      return handlerInput.getResponseBuilder()
         .if(isShuffleOnIntent, (builder) => builder.speak(`${t("audio.shuffle-on-prepare")} ${t("help.reprompt")}`))
         .if(!isShuffleOnIntent, (builder) => builder.speak(`${t("audio.shuffle-off")} ${t("help.reprompt")}`))
         .reprompt(t("help.reprompt"))
@@ -23,7 +23,7 @@ export class AmazonShuffleIntentHandler extends BaseIntentHandler {
     }
 
     const offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
-    return getResponseBuilder(handlerInput)
+    return handlerInput.getResponseBuilder()
       .if(isShuffleOnIntent, (builder) => builder.speak(t("audio.shuffle-on")))
       .if(!isShuffleOnIntent, (builder) => builder.speak(t("audio.shuffle-off")))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),

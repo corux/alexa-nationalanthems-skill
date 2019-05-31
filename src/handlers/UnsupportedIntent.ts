@@ -1,22 +1,21 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, Intents } from "../utils";
 import { getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.PreviousIntent")
-export class UnsupportedHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class UnsupportedHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
 
     if (getCountryFromAudioPlayer(handlerInput)) {
-      return handlerInput.responseBuilder
+      return handlerInput.getResponseBuilder()
         .speak(t("unsupported"))
         .withShouldEndSession(true)
         .getResponse();
     }
 
     const reprompt = t("play.reprompt");
-    return handlerInput.responseBuilder
+    return handlerInput.getResponseBuilder()
       .speak(`${t("unsupported")} ${reprompt}`)
       .reprompt(reprompt)
       .getResponse();

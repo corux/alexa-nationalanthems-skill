@@ -1,12 +1,12 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, getResponseBuilder, Intents } from "../utils";
+import {  getAnthemUrl } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.LoopOffIntent", "AMAZON.LoopOnIntent")
-export class AmazonLoopIntentHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class AmazonLoopIntentHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
     const isLoopOnIntent = (handlerInput.requestEnvelope.request as IntentRequest)
       .intent.name === "AMAZON.LoopOnIntent";
 
@@ -15,7 +15,7 @@ export class AmazonLoopIntentHandler extends BaseIntentHandler {
       const session = handlerInput.attributesManager.getSessionAttributes();
       session.loopMode = isLoopOnIntent;
 
-      return getResponseBuilder(handlerInput)
+      return handlerInput.getResponseBuilder()
         .if(isLoopOnIntent, (builder) => builder.speak(`${t("audio.loop-on-prepare")} ${t("help.reprompt")}`))
         .if(!isLoopOnIntent, (builder) => builder.speak(`${t("audio.loop-off")} ${t("help.reprompt")}`))
         .reprompt(t("help.reprompt"))
@@ -23,7 +23,7 @@ export class AmazonLoopIntentHandler extends BaseIntentHandler {
     }
 
     const offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
-    return getResponseBuilder(handlerInput)
+    return handlerInput.getResponseBuilder()
       .if(isLoopOnIntent, (builder) => builder.speak(t("audio.loop-on", currentAudio.country.name)))
       .if(!isLoopOnIntent, (builder) => builder.speak(t("audio.loop-off")))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),

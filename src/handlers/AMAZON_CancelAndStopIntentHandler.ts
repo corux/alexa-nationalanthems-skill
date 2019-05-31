@@ -1,13 +1,12 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getResponseBuilder, Intents } from "../utils";
 
 @Intents("AMAZON.CancelIntent", "AMAZON.StopIntent")
-export class AmazonCancelAndStopIntentHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class AmazonCancelAndStopIntentHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
 
-    return getResponseBuilder(handlerInput)
+    return handlerInput.getResponseBuilder()
       .addAudioPlayerStopDirective()
       .speak(t("stop"))
       .withShouldEndSession(true)

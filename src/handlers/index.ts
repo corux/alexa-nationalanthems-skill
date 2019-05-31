@@ -5,7 +5,6 @@ export * from "./AMAZON_RepeatIntentHandler";
 export * from "./AMAZON_ResumeIntentHandler";
 export * from "./CustomErrorHandler";
 export * from "./LaunchRequestHandler";
-export * from "./SessionEndedHandler";
 export * from "./PlayAnthemIntent";
 export * from "./RandomIntent";
 export * from "./UnsupportedIntent";

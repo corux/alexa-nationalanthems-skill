@@ -1,25 +1,24 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getAnthemUrl, Intents } from "../utils";
+import { getAnthemUrl } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.RepeatIntent", "AMAZON.StartOverIntent")
-export class AmazonRepeatIntentHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = handlerInput.responseBuilder;
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class AmazonRepeatIntentHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
 
     const currentAudio = parseAudioToken(handlerInput);
     if (currentAudio) {
       const token = createAudioToken(currentAudio.country, currentAudio.loopMode, currentAudio.shuffleMode);
-      return responseBuilder
+      return handlerInput.getResponseBuilder()
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),
           token, 0, undefined, getAudioPlayerMetadata(currentAudio.country))
         .withShouldEndSession(true)
         .getResponse();
     }
 
-    return responseBuilder
+    return handlerInput.getResponseBuilder()
       .speak(`${t("play.no-repeat")} ${t("play.reprompt")}`)
       .reprompt(t("play.reprompt"))
       .getResponse();

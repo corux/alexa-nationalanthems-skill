@@ -1,3 +1,4 @@
+import { LocalizationInterceptor, LogInterceptor, SessionEndedHandler} from "@corux/ask-extensions";
 import { SkillBuilders } from "ask-sdk-core";
 import * as path from "path";
 import {
@@ -15,10 +16,8 @@ import {
   LaunchRequestHandler,
   PlayAnthemHandler,
   RandomHandler,
-  SessionEndedHandler,
   UnsupportedHandler,
 } from "./handlers";
-import { LocalizationInterceptor, LogInterceptor } from "./interceptors";
 
 export const handler = SkillBuilders.custom()
   .addRequestHandlers(

@@ -1,13 +1,13 @@
+import { BaseRequestHandler, IExtendedHandlerInput, Intents, Locale } from "@corux/ask-extensions";
 import { ContinentCode } from "@corux/country-data";
-import { HandlerInput } from "ask-sdk-core";
 import { Response } from "ask-sdk-model";
-import { BaseIntentHandler, getLocale, getRandomCountry, Intents } from "../utils";
+import { getRandomCountry } from "../utils";
 
 @Intents("AMAZON.HelpIntent")
-export class AmazonHelpIntentHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = getLocale(handlerInput);
+export class AmazonHelpIntentHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
+    const locale = handlerInput.getLocale();
     const country = getRandomCountry(this.getRegion(locale), locale);
 
     return handlerInput.responseBuilder

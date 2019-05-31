@@ -1,17 +1,17 @@
+import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { ICountry } from "@corux/country-data";
-import { HandlerInput } from "ask-sdk-core";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import { BaseIntentHandler, getAnthemUrl, getLocale, getResponseBuilder, getSlotValue, Intents } from "../utils";
+import { getAnthemUrl, getSlotValue } from "../utils";
 
-export function getCountryFromAudioPlayer(handlerInput: HandlerInput): ICountry {
+export function getCountryFromAudioPlayer(handlerInput: IExtendedHandlerInput): ICountry {
   const response = parseAudioToken(handlerInput);
   return response && response.country;
 }
 
-export function parseAudioToken(handlerInput: HandlerInput, token?: string)
+export function parseAudioToken(handlerInput: IExtendedHandlerInput, token?: string)
   : { country: ICountry, loopMode: boolean, shuffleMode: boolean } {
-  const locale = getLocale(handlerInput);
+  const locale = handlerInput.getLocale();
   const tokenParts = (token || handlerInput.requestEnvelope.context.AudioPlayer.token || "").split(":");
   const iso = tokenParts[0];
   const country = countries.getByIso3(iso, locale);
@@ -91,12 +91,11 @@ export function getPlayRenderTemplate(data: ICountry): interfaces.display.Templa
 }
 
 @Intents("PlayAnthemIntent")
-export class PlayAnthemHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const responseBuilder = getResponseBuilder(handlerInput);
+export class PlayAnthemHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const responseBuilder = handlerInput.getResponseBuilder();
     const session = handlerInput.attributesManager.getSessionAttributes();
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
-    const locale = getLocale(handlerInput);
+    const t = handlerInput.t;
     const intent = (handlerInput.requestEnvelope.request as IntentRequest).intent;
     const { name: countryName, id: countryId } = { ...getSlotValue(intent.slots.country) };
     if (!countryName) {
@@ -106,7 +105,7 @@ export class PlayAnthemHandler extends BaseIntentHandler {
         .getResponse();
     }
 
-    const allCountries = countries.getAll(locale);
+    const allCountries = countries.getAll(handlerInput.getLocale());
     const data = allCountries.find((val) => val.iso3 === countryId)
       || allCountries.find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem.url) {

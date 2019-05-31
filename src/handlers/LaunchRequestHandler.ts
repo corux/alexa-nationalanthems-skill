@@ -1,6 +1,5 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Request } from "@corux/ask-extensions";
 import { interfaces, Response } from "ask-sdk-model";
-import { BaseIntentHandler, getResponseBuilder, Request } from "../utils";
 
 export function getLaunchTemplate(text: string): interfaces.display.Template {
   return {
@@ -19,11 +18,11 @@ export function getLaunchTemplate(text: string): interfaces.display.Template {
 }
 
 @Request("LaunchRequest")
-export class LaunchRequestHandler extends BaseIntentHandler {
-  public async handle(handlerInput: HandlerInput): Promise<Response> {
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class LaunchRequestHandler extends BaseRequestHandler {
+  public async handle(handlerInput: IExtendedHandlerInput): Promise<Response> {
+    const t = handlerInput.t;
 
-    return getResponseBuilder(handlerInput)
+    return handlerInput.getResponseBuilder()
       .addRenderTemplateDirectiveIfSupported(getLaunchTemplate(t("launch")))
       .speak(t("launch"))
       .reprompt(t("launch"))

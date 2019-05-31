@@ -1,25 +1,21 @@
-import { HandlerInput } from "ask-sdk-core";
+import { BaseRequestHandler, IExtendedHandlerInput, Intents, Request } from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
-import {
-  BaseIntentHandler, getAnthemUrl, getLocale,
-  getRandomCountry, getResponseBuilder, Intents, Request,
-} from "../utils";
+import { getAnthemUrl, getRandomCountry } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Request("PlaybackController.NextCommandIssued")
 @Intents("AMAZON.NextIntent", "SkipIntent")
-export class RandomHandler extends BaseIntentHandler {
-  public handle(handlerInput: HandlerInput): Response {
-    const locale = getLocale(handlerInput);
-    const t = handlerInput.attributesManager.getRequestAttributes().t;
+export class RandomHandler extends BaseRequestHandler {
+  public handle(handlerInput: IExtendedHandlerInput): Response {
+    const t = handlerInput.t;
 
     const currentAudio = parseAudioToken(handlerInput);
-    const country = getRandomCountry(null, locale);
+    const country = getRandomCountry(null, handlerInput.getLocale());
     const token = createAudioToken(country,
       currentAudio && currentAudio.loopMode,
       currentAudio && currentAudio.shuffleMode);
 
-    return getResponseBuilder(handlerInput)
+    return handlerInput.getResponseBuilder()
       .speakIfSupported(t("play.text", country.name))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(country, true),
         token, 0, undefined, getAudioPlayerMetadata(country))
