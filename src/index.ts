@@ -1,4 +1,5 @@
 import { SkillBuilders } from "ask-sdk-core";
+import * as path from "path";
 import {
   AmazonCancelAndStopIntentHandler,
   AmazonHelpIntentHandler,
@@ -42,7 +43,7 @@ export const handler = SkillBuilders.custom()
   )
   .addRequestInterceptors(
     new LogInterceptor(),
-    new LocalizationInterceptor(),
+    new LocalizationInterceptor(path.join(__dirname, "i18n/{{lng}}.json")),
   )
   .addResponseInterceptors(
     new LogInterceptor(),
