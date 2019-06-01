@@ -1,6 +1,6 @@
 import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { IntentRequest, Response } from "ask-sdk-model";
-import {  getAnthemUrl } from "../utils";
+import { getAnthemUrl } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.LoopOffIntent", "AMAZON.LoopOnIntent")
