@@ -6,3 +6,4 @@ npm-debug.log
 assets/mp3s
 assets/mp3s-full
 .cache/
+coverage/

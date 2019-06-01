@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "pretest": "npm run build:prod",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "lint": "tslint --project tsconfig.json",
     "lint:fix": "npm run lint -- --fix",
