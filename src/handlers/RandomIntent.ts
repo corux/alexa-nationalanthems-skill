@@ -4,7 +4,7 @@ import { getAnthemUrl, getRandomCountry } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Request("PlaybackController.NextCommandIssued")
-@Intents("AMAZON.NextIntent", "SkipIntent")
+@Intents("AMAZON.NextIntent", "SkipIntent", "RandomIntent")
 export class RandomHandler extends BaseRequestHandler {
   public handle(handlerInput: IExtendedHandlerInput): Response {
     const t = handlerInput.t;

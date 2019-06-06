@@ -12,6 +12,10 @@ describe("Integration", () => {
     expect(result.response.outputSpeech.ssml).toContain("launch");
     expect(result.response.shouldEndSession).toBe(false);
 
+    result = await alexa.intend("RandomIntent");
+    expect(result.response.outputSpeech.ssml).toContain("play.text");
+    expect(result.response.shouldEndSession).toBe(true);
+
     result = await alexa.intend("PlayAnthemIntent", { country: "any" });
     expect(result.response.outputSpeech.ssml).toContain("play.unknown-country");
     expect(result.response.shouldEndSession).toBe(false);

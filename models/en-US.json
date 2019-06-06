@@ -75,6 +75,15 @@
           "samples": []
         },
         {
+          "name": "RandomIntent",
+          "samples": [
+            "I don't know you tell me",
+            "play a random anthem",
+            "just any anthem",
+            "random"
+          ]
+        },
+        {
           "name": "PlayAnthemIntent",
           "slots": [
             {
@@ -98,6 +107,7 @@
             "the {country}",
             "ask {country}",
             "{country} anthem",
+            "{country} please",
             "{country}"
           ]
         }
