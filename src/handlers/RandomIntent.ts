@@ -1,6 +1,6 @@
 import { BaseRequestHandler, IExtendedHandlerInput, Intents, Request } from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
-import { getAnthemUrl, getRandomCountry } from "../utils";
+import { getAnthemUrl, getRandomCountry, getTArgument } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Request("PlaybackController.NextCommandIssued")
@@ -16,7 +16,7 @@ export class RandomHandler extends BaseRequestHandler {
       currentAudio && currentAudio.shuffleMode);
 
     return handlerInput.getResponseBuilder()
-      .speakIfSupported(t("play.text", country.name))
+      .speakIfSupported(t("play.text", getTArgument(country, handlerInput.getLocale())))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(country, true),
         token, 0, undefined, getAudioPlayerMetadata(country))
       .withShouldEndSession(true)

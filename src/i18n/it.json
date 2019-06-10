@@ -3,19 +3,19 @@
   "stop": "Ciao!",
   "unsupported": "Scusa, non capisco questo comando.",
   "help": {
-    "text": "Questa skill ti permette di suonare l'inno nazionale per diversi paesi. Dì solo \"Suona l'inno nazionale per la %s\".",
+    "text": "Questa skill ti permette di suonare l'inno nazionale per diversi paesi. Dì solo \"Suona l'inno nazionale per la {{country}}\".",
     "reprompt": "Quale inno vuoi suonare dopo?"
   },
   "play": {
-    "text": "Ecco l'inno nazionale per la %s.",
+    "text": "Ecco l'inno nazionale per la {{country}}.",
     "reprompt": "Quale inno vuoi suonare dopo?",
     "no-repeat": "Non c'è nulla da ripetere.",
-    "unknown-country": "Non conosco l'inno nazionale per la %s. Si prega di scegliere un altro paese.",
+    "unknown-country": "Non conosco l'inno nazionale per la {{country}}. Si prega di scegliere un altro paese.",
     "random": "Ho selezionato un paese a caso."
   },
   "audio": {
     "loop-on-prepare": "Il ciclo infinito è attivato.",
-    "loop-on": "Il ciclo infinito è attivata per l'inno nazionale %s.",
+    "loop-on": "Il ciclo infinito è attivata per l'inno nazionale {{country}}.",
     "loop-off": "Il ciclo infinito è disattivato.",
     "shuffle-on": "La riproduzione casuale è attivata.",
     "shuffle-off": "La riproduzione casuale è disabilitata."

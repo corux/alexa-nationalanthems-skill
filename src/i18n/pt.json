@@ -3,19 +3,19 @@
   "stop": "Tchau!",
   "unsupported": "Desculpe, não entendo esse comando.",
   "help": {
-    "text": "Este skill permite que você ouça o hino nacional de diferentes países. Basta dizer \"Tocar o hino nacional do %s\".",
+    "text": "Este skill permite que você ouça o hino nacional de diferentes países. Basta dizer \"Tocar o hino nacional {{preposition}} {{country}}\".",
     "reprompt": "Qual hino você quer tocar em seguida?"
   },
   "play": {
-    "text": "Aqui está o hino nacional da %s.",
+    "text": "Aqui está o hino nacional {{preposition}} {{country}}.",
     "reprompt": "Qual hino você quer tocar em seguida?",
     "no-repeat": "Não há nada para repetir.",
-    "unknown-country": "Eu não conheço o hino nacional do %s. Por favor, escolha outro país.",
+    "unknown-country": "Eu não conheço o hino nacional {{preposition}} {{country}}. Por favor, escolha outro país.",
     "random": "Eu selecionei um país aleatório."
   },
   "audio": {
     "loop-on-prepare": "O loop infinito é ativado.",
-    "loop-on": "O loop infinito é ativado para o hino nacional da %s.",
+    "loop-on": "O loop infinito é ativado para o hino nacional {{preposition}} {{country}}.",
     "loop-off": "O loop infinito é desativado.",
     "shuffle-on": "A reprodução aleatória está ativada.",
     "shuffle-off": "A reprodução aleatória está desativada."

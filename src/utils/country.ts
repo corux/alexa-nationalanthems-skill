@@ -1,3 +1,4 @@
+import { Locale } from "@corux/ask-extensions";
 import { ContinentCode, ICountry } from "@corux/country-data";
 import countries from "../data/countries";
 
@@ -16,4 +17,22 @@ export function getRandomCountry(continent: ContinentCode, lang: string): ICount
 export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {
   const folder = longVersion ? "mp3s-full" : "mp3s";
   return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/${folder}/${country.iso3}.mp3`;
+}
+
+export function getTArgument(country: ICountry, locale?: Locale): ({ country: string, preposition: string }) {
+  let preposition = "";
+  if (locale === "pt-BR") {
+    if (country.article === "a") {
+      preposition = "da";
+    } else if (country.article === "o") {
+      preposition = "do";
+    } else {
+      preposition = "de";
+    }
+  }
+
+  return {
+    country: country.name,
+    preposition,
+  };
 }

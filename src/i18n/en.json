@@ -6,19 +6,19 @@
   ],
   "unsupported": "Sorry, I don't understand this command.",
   "help": {
-    "text": "This skill allows you to play the national anthem for different countries. Just say \"Play the national anthem of %s\".",
+    "text": "This skill allows you to play the national anthem for different countries. Just say \"Play the national anthem of {{country}}\".",
     "reprompt": "Which anthem do you want to play next?"
   },
   "play": {
-    "text": "Here's the national anthem of %s.",
+    "text": "Here's the national anthem of {{country}}.",
     "reprompt": "Which anthem do you want to play next?",
     "no-repeat": "There is nothing to repeat.",
-    "unknown-country": "I don't know the national anthem of %s. Please choose another country.",
+    "unknown-country": "I don't know the national anthem of {{country}}. Please choose another country.",
     "random": "I've selected a random country."
   },
   "audio": {
     "loop-on-prepare": "Loop mode is activated.",
-    "loop-on": "Loop mode is activated for the national anthem of %s.",
+    "loop-on": "Loop mode is activated for the national anthem of {{country}}.",
     "loop-off": "Loop mode is deactivated.",
     "shuffle-on": "Shuffle mode is activated.",
     "shuffle-off": "Shuffle mode is deactivated."

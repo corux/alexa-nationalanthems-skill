@@ -3,19 +3,19 @@
   "stop": "Adieu!",
   "unsupported": "Désolé, je ne comprends pas cette commande.",
   "help": {
-    "text": "La skill vous permet de jouer l'hymne national pour différents pays. Dites simplement \"Jouer l'hymne national de %s\".",
+    "text": "La skill vous permet de jouer l'hymne national pour différents pays. Dites simplement \"Jouer l'hymne national de {{country}}\".",
     "reprompt": "Quel hymne voulez-vous jouer ensuite?"
   },
   "play": {
-    "text": "Voici l'hymne national de %s.",
+    "text": "Voici l'hymne national de {{country}}.",
     "reprompt": "Quel hymne voulez-vous jouer ensuite?",
     "no-repeat": "Il n'y a rien à répéter.",
-    "unknown-country": "Je ne connais pas l'hymne national de %s. Veuillez choisir un autre pays.",
+    "unknown-country": "Je ne connais pas l'hymne national de {{country}}. Veuillez choisir un autre pays.",
     "random": "J'ai sélectionné un pays au hasard."
   },
   "audio": {
     "loop-on-prepare": "La boucle infinie est activée.",
-    "loop-on": "La boucle infinie est activé pour l'hymne national de %s.",
+    "loop-on": "La boucle infinie est activé pour l'hymne national de {{country}}.",
     "loop-off": "La boucle infinie est désactivée.",
     "shuffle-on": "La lecture aléatoire est activée.",
     "shuffle-off": "La lecture aléatoire est désactivée."

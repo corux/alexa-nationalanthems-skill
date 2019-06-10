@@ -2,7 +2,7 @@ import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-e
 import { ICountry } from "@corux/country-data";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
 import countries from "../data/countries";
-import { getAnthemUrl, getSlotValue } from "../utils";
+import { getAnthemUrl, getSlotValue, getTArgument } from "../utils";
 
 export function getCountryFromAudioPlayer(handlerInput: IExtendedHandlerInput): ICountry {
   const response = parseAudioToken(handlerInput);
@@ -110,7 +110,7 @@ export class PlayAnthemHandler extends BaseRequestHandler {
       || allCountries.find((val) => (val.name || "").toUpperCase() === countryName.toUpperCase());
     if (data && data.anthem.url) {
       return responseBuilder
-        .speak(t("play.text", data.name))
+        .speak(t("play.text", getTArgument(data, handlerInput.getLocale())))
         .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(data, true),
           createAudioToken(data, session.loopMode, session.shuffleMode), 0, undefined, getAudioPlayerMetadata(data))
         .withShouldEndSession(true)
@@ -126,7 +126,7 @@ export class PlayAnthemHandler extends BaseRequestHandler {
       type: "unknown-country",
     });
     return responseBuilder
-      .speak(t("play.unknown-country", data ? data.name : countryName))
+      .speak(t("play.unknown-country", data ? getTArgument(data, handlerInput.getLocale()) : { country: countryName }))
       .reprompt(t("play.reprompt"))
       .getResponse();
   }

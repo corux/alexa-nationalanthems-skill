@@ -6,19 +6,19 @@
   ],
   "unsupported": "Entschuldigung, diesen Befehl verstehe ich nicht.",
   "help": {
-    "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von %s\".",
+    "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von {{country}}\".",
     "reprompt": "Welche Nationalhymne möchtest du abspielen?"
   },
   "play": {
-    "text": "Hier ist die Nationalhymne von %s.",
+    "text": "Hier ist die Nationalhymne von {{country}}.",
     "reprompt": "Welche Nationalhymne möchtest du abspielen?",
     "no-repeat": "Es gibt nichts zu wiederholen.",
-    "unknown-country": "Ich kenne die Nationalhymne von %s leider nicht. Bitte wähle ein anderes Land.",
+    "unknown-country": "Ich kenne die Nationalhymne von {{country}} leider nicht. Bitte wähle ein anderes Land.",
     "random": "Ich habe ein zufälliges Land ausgewählt."
   },
   "audio": {
     "loop-on-prepare": "Die Endlosschleife ist aktiviert.",
-    "loop-on": "Die Endlosschleife der Nationalhymne von %s ist aktiviert.",
+    "loop-on": "Die Endlosschleife der Nationalhymne von {{country}} ist aktiviert.",
     "loop-off": "Die Endlosschleife ist deaktiviert.",
     "shuffle-on": "Die Zufallswiedergabe ist aktiviert.",
     "shuffle-off": "Die Zufallswiedergabe ist deaktiviert."

@@ -1,6 +1,6 @@
 import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { IntentRequest, Response } from "ask-sdk-model";
-import { getAnthemUrl } from "../utils";
+import { getAnthemUrl, getTArgument } from "../utils";
 import { createAudioToken, getAudioPlayerMetadata, parseAudioToken } from "./PlayAnthemIntent";
 
 @Intents("AMAZON.LoopOffIntent", "AMAZON.LoopOnIntent")
@@ -24,7 +24,8 @@ export class AmazonLoopIntentHandler extends BaseRequestHandler {
 
     const offset = handlerInput.requestEnvelope.context.AudioPlayer.offsetInMilliseconds;
     return handlerInput.getResponseBuilder()
-      .if(isLoopOnIntent, (builder) => builder.speak(t("audio.loop-on", currentAudio.country.name)))
+      .if(isLoopOnIntent, (builder) =>
+        builder.speak(t("audio.loop-on", getTArgument(currentAudio.country, handlerInput.getLocale()))))
       .if(!isLoopOnIntent, (builder) => builder.speak(t("audio.loop-off")))
       .addAudioPlayerPlayDirective("REPLACE_ALL", getAnthemUrl(currentAudio.country, true),
         createAudioToken(currentAudio.country, isLoopOnIntent), offset,

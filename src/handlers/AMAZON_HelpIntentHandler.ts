@@ -1,7 +1,7 @@
 import { BaseRequestHandler, IExtendedHandlerInput, Intents, Locale } from "@corux/ask-extensions";
 import { ContinentCode } from "@corux/country-data";
 import { Response } from "ask-sdk-model";
-import { getRandomCountry } from "../utils";
+import { getRandomCountry, getTArgument } from "../utils";
 
 @Intents("AMAZON.HelpIntent")
 export class AmazonHelpIntentHandler extends BaseRequestHandler {
@@ -11,7 +11,7 @@ export class AmazonHelpIntentHandler extends BaseRequestHandler {
     const country = getRandomCountry(this.getRegion(locale), locale);
 
     return handlerInput.responseBuilder
-      .speak(`${t("help.text", country.name)} ${t("help.reprompt")}`)
+      .speak(`${t("help.text", getTArgument(country, handlerInput.getLocale()))} ${t("help.reprompt")}`)
       .reprompt(t("help.reprompt"))
       .withShouldEndSession(false)
       .getResponse();
