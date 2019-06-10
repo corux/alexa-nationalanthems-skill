@@ -1,6 +1,6 @@
 import { CountryData, ICountry } from "@corux/country-data";
 
-import * as generic from "./generic.json";
+import generic = require("./generic.json");
 
 import * as de from "./de.json";
 import * as en from "./en.json";
