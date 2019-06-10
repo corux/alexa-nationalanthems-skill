@@ -72,6 +72,12 @@
           "samples": []
         },
         {
+          "name": "RandomIntent",
+          "samples": [
+            "un hymne aléatoire"
+          ]
+        },
+        {
           "name": "PlayAnthemIntent",
           "slots": [
             {

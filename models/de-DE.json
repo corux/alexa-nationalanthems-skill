@@ -28,6 +28,14 @@
           "samples": []
         },
         {
+          "name": "RandomIntent",
+          "samples": [
+            "eine zufällige Hymne",
+            "spiel irgendeine",
+            "ich weiß nicht"
+          ]
+        },
+        {
           "name": "AMAZON.RepeatIntent",
           "samples": [
             "das noch mal",
