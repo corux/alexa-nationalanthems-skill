@@ -198,7 +198,7 @@
         "pt-BR": {
           "name": "Hinos Nacionais",
           "summary": "Ouça os hinos nacionais de países de todo o mundo.",
-          "description": "Este skill permite que Alexa toque os hinos nacionais de países de todo o mundo. Basta perguntar por um país e Alexa vai tocar o hino nacional. Este skill conhece os hinos de 199 países.\n\nEste skill usa os hinos nacionais fornecidos pela Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
+          "description": "Esta skill permite que Alexa toque os hinos nacionais de países de todo o mundo. Basta perguntar por um país e Alexa vai tocar o hino nacional. Esta skill conhece os hinos de 199 países.\n\nEsta skill usa os hinos nacionais fornecidos pela Wikipedia: https://en.wikipedia.org/wiki/List_of_national_anthems",
           "examplePhrases": [
             "Alexa, toca hinos nacionais.",
             "Tocar o hino nacional brasileiro."
