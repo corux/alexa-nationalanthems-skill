@@ -23,7 +23,7 @@ export class LaunchRequestHandler extends BaseRequestHandler {
     const t = handlerInput.t;
 
     return handlerInput.getResponseBuilder()
-      .addRenderTemplateDirectiveIfSupported(getLaunchTemplate(t("launch")))
+      // .addRenderTemplateDirectiveIfSupported(getLaunchTemplate(t("launch")))
       .speak(t("launch"))
       .reprompt(t("launch"))
       .getResponse();
