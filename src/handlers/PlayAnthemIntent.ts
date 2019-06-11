@@ -58,38 +58,6 @@ export function getAudioPlayerMetadata(country: ICountry): interfaces.audioplaye
   };
 }
 
-export function getPlayRenderTemplate(data: ICountry): interfaces.display.Template {
-  let title = data.name;
-  if (data.anthem.name) {
-    title = `${title}: ${data.anthem.name}`;
-  }
-  return {
-    backButton: "HIDDEN",
-    backgroundImage: {
-      sources: [
-        {
-          size: "X_LARGE",
-          url: "https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/background.jpg",
-        },
-      ],
-    },
-    image: {
-      sources: [
-        {
-          size: "LARGE",
-          url: data.flag.largeImageUrl,
-        },
-        {
-          size: "SMALL",
-          url: data.flag.smallImageUrl,
-        },
-      ],
-    },
-    title,
-    type: "BodyTemplate7",
-  };
-}
-
 @Intents("PlayAnthemIntent")
 export class PlayAnthemHandler extends BaseRequestHandler {
   public handle(handlerInput: IExtendedHandlerInput): Response {
