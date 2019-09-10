@@ -9,43 +9,43 @@
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "c984d2230c8aa00fb0e55a8f31ab9408"
+            "eTag": "e729eaa8fbf9edf7e94db236e0b2adbb"
           },
           "en-AU": {
-            "eTag": "2a5f9d1941a4cdbd1fd34a474076d795"
+            "eTag": "ce5b16d40f6157ec673b2bef9fff3fdc"
           },
           "en-GB": {
-            "eTag": "2a5f9d1941a4cdbd1fd34a474076d795"
+            "eTag": "ce5b16d40f6157ec673b2bef9fff3fdc"
           },
           "en-IN": {
-            "eTag": "2a5f9d1941a4cdbd1fd34a474076d795"
+            "eTag": "ce5b16d40f6157ec673b2bef9fff3fdc"
           },
           "en-CA": {
-            "eTag": "2a5f9d1941a4cdbd1fd34a474076d795"
+            "eTag": "ce5b16d40f6157ec673b2bef9fff3fdc"
           },
           "en-US": {
-            "eTag": "2a5f9d1941a4cdbd1fd34a474076d795"
+            "eTag": "ce5b16d40f6157ec673b2bef9fff3fdc"
           },
           "fr-FR": {
-            "eTag": "6ee837a216482f0b2ceb63c97111af62"
+            "eTag": "ec44662f81819218a39ce67b30f2049b"
           },
           "es-ES": {
-            "eTag": "3868adf68d609742300ad73c4fc44ca8"
+            "eTag": "a5156c24950b15b06967287296939df8"
           },
           "es-MX": {
-            "eTag": "3868adf68d609742300ad73c4fc44ca8"
+            "eTag": "a5156c24950b15b06967287296939df8"
           },
           "it-IT": {
-            "eTag": "18be9e6d60b2914f0e372a8c0e89b2f4"
+            "eTag": "30194eb47f3fe8d6617a7999bf3db4f5"
           },
           "fr-CA": {
-            "eTag": "6ee837a216482f0b2ceb63c97111af62"
+            "eTag": "ec44662f81819218a39ce67b30f2049b"
           },
           "es-US": {
-            "eTag": "3868adf68d609742300ad73c4fc44ca8"
+            "eTag": "a5156c24950b15b06967287296939df8"
           },
           "pt-BR": {
-            "eTag": "4c17364e54b2a86d770cf69d14555edb"
+            "eTag": "22c4e8effb04db6c13b92bff1dbd9b83"
           }
         },
         "lambda": [
@@ -58,8 +58,8 @@
             "codeUri": "./dist",
             "functionName": "arn:aws:lambda:eu-west-1:347839150037:function:alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "a567d2ce-a9fd-4801-b7c8-569640b6ba49",
-            "runtime": "nodejs8.10"
+            "revisionId": "9139fe40-01ad-472e-b5bc-b6554d8d0e41",
+            "runtime": "nodejs10.x"
           },
           {
             "alexaUsage": [
@@ -70,8 +70,8 @@
             "codeUri": "./dist",
             "functionName": "alexa-nationalanthems-skill-production-skill",
             "handler": "index.handler",
-            "revisionId": "31fe744a-68b5-4fbe-906b-e67bf33dabf7",
-            "runtime": "nodejs8.10"
+            "revisionId": "9bb1624a-f51c-4fbb-a583-d349519ca44e",
+            "runtime": "nodejs10.x"
           }
         ]
       }
