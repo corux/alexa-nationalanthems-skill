@@ -1,5 +1,6 @@
 import { Locale } from "@corux/ask-extensions";
 import { ContinentCode, ICountry } from "@corux/country-data";
+import { TOptions } from "i18next";
 import countries from "../data/countries";
 
 function getRandomEntry(array) {
@@ -19,7 +20,7 @@ export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {
   return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/${folder}/${country.iso3}.mp3`;
 }
 
-export function getTArgument(country: ICountry, locale?: Locale): ({ country: string, preposition: string }) {
+export function getTArgument(country: ICountry, locale?: Locale): TOptions<({ country: string, preposition: string })> {
   let preposition = "";
   if (locale === "pt-BR") {
     if (country.article === "a") {

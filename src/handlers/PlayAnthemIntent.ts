@@ -1,6 +1,7 @@
 import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
 import { ICountry } from "@corux/country-data";
 import { IntentRequest, interfaces, Response } from "ask-sdk-model";
+import { TOptions } from "i18next";
 import countries from "../data/countries";
 import { getAnthemUrl, getSlotValue, getTArgument } from "../utils";
 
@@ -94,7 +95,9 @@ export class PlayAnthemHandler extends BaseRequestHandler {
       type: "unknown-country",
     });
     return responseBuilder
-      .speak(t("play.unknown-country", data ? getTArgument(data, handlerInput.getLocale()) : { country: countryName }))
+      .speak(t("play.unknown-country", data
+        ? getTArgument(data, handlerInput.getLocale())
+        : { country: countryName } as TOptions))
       .reprompt(t("play.reprompt"))
       .getResponse();
   }
