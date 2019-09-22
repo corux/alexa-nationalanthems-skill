@@ -19,6 +19,7 @@ import {
   RandomHandler,
   UnsupportedHandler,
 } from "./handlers";
+import { UsageTrackerInterceptor } from "./interceptors";
 
 const dynamodbAdapter = new DynamoDbPersistenceAdapter({
   createTable: true,
@@ -51,6 +52,7 @@ export const handler = SkillBuilders.custom()
     new LocalizationInterceptor(path.join(__dirname, "i18n/{{lng}}.json")),
   )
   .addResponseInterceptors(
+    new UsageTrackerInterceptor(),
     new LogInterceptor(),
   )
   .withPersistenceAdapter(dynamodbAdapter)

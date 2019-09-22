@@ -22,5 +22,9 @@
     "loop-off": "Die Endlosschleife ist deaktiviert.",
     "shuffle-on": "Die Zufallswiedergabe ist aktiviert.",
     "shuffle-off": "Die Zufallswiedergabe ist deaktiviert."
+  },
+  "rating-card": {
+    "title": "Nationalhymnen: Bitte um Bewertung",
+    "text": "Bitte unterstützen Sie uns: Eine 5-Sterne-Bewertung im Skill Store sichert die weitere Entwicklung des Skills.\nVielen Dank!"
   }
 }
