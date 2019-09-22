@@ -1,5 +1,6 @@
-import { LocalizationInterceptor, LogInterceptor, SessionEndedHandler} from "@corux/ask-extensions";
+import { LocalizationInterceptor, LogInterceptor, SessionEndedHandler } from "@corux/ask-extensions";
 import { SkillBuilders } from "ask-sdk-core";
+import { DynamoDbPersistenceAdapter } from "ask-sdk-dynamodb-persistence-adapter";
 import * as path from "path";
 import {
   AmazonCancelAndStopIntentHandler,
@@ -18,6 +19,11 @@ import {
   RandomHandler,
   UnsupportedHandler,
 } from "./handlers";
+
+const dynamodbAdapter = new DynamoDbPersistenceAdapter({
+  createTable: true,
+  tableName: "alexa-nationalanthems-skill",
+});
 
 export const handler = SkillBuilders.custom()
   .addRequestHandlers(
@@ -47,4 +53,5 @@ export const handler = SkillBuilders.custom()
   .addResponseInterceptors(
     new LogInterceptor(),
   )
+  .withPersistenceAdapter(dynamodbAdapter)
   .lambda();

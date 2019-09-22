@@ -10,5 +10,6 @@ export function createVirtualAlexa(): any {
     requestJSON.request.locale = "un-UNSUPPORTED";
   });
   alexa.context().device().audioPlayerSupported(true);
+  alexa.dynamoDB().mock();
   return alexa;
 }

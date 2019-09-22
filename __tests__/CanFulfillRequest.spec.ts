@@ -8,6 +8,7 @@ describe("CanFulfillIntentRequest", () => {
       .handler(handler)
       .interactionModelFile("models/en-US.json")
       .create();
+    alexa.dynamoDB().mock();
   });
 
   test("Should return YES for valid country", async () => {
