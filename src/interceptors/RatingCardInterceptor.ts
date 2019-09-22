@@ -5,7 +5,7 @@ import i18next from "i18next";
 import { DateTime, Interval } from "luxon";
 import { IPersistentAttributes } from "../utils";
 
-export class UsageTrackerInterceptor implements ResponseInterceptor {
+export class RatingCardInterceptor implements ResponseInterceptor {
   public async process(handlerInput: IExtendedHandlerInput, response?: Response): Promise<void> {
     const attributes = await handlerInput.attributesManager.getPersistentAttributes() as IPersistentAttributes;
     let sessionCount: number = attributes.sessionCount || 0;
@@ -33,6 +33,6 @@ export class UsageTrackerInterceptor implements ResponseInterceptor {
       };
     }
 
-    await handlerInput.attributesManager.savePersistentAttributes();
+    handlerInput.attributesManager.savePersistentAttributes();
   }
 }
