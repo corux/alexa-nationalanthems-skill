@@ -83,8 +83,10 @@
           "name": "AMAZON.StopIntent",
           "samples": [
             "keine",
+            "keine, danke",
             "gar keine",
             "keine mehr",
+            "danke, keine mehr",
             "gute nacht",
             "hör auf",
             "klappe",
