@@ -12,11 +12,12 @@ export class RatingCardInterceptor implements ResponseInterceptor {
     const ratingDate: DateTime = DateTime.fromMillis(attributes.lastRatingCardTimestamp || 0);
     const lastCardShown = Interval.fromDateTimes(ratingDate, DateTime.local()).length("months");
 
-    if (handlerInput.requestEnvelope && handlerInput.requestEnvelope.session
-      && handlerInput.requestEnvelope.session.new) {
-      attributes.sessionCount = ++sessionCount;
+    if (!handlerInput.requestEnvelope || !handlerInput.requestEnvelope.session
+      || !handlerInput.requestEnvelope.session.new) {
+      return;
     }
 
+    attributes.sessionCount = ++sessionCount;
     const showRatingCard = !response.card && sessionCount >= 4 && lastCardShown > 2
       && i18next.exists("rating-card.text");
 
