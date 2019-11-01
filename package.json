@@ -37,7 +37,7 @@
   "devDependencies": {
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
-    "@types/jest": "24.0.19",
+    "@types/jest": "24.0.21",
     "@types/luxon": "1.15.2",
     "@types/node": "10.14.1",
     "ask-sdk": "2.7.0",
