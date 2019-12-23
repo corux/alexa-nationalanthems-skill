@@ -37,7 +37,7 @@
   "devDependencies": {
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
-    "@types/jest": "24.0.23",
+    "@types/jest": "24.0.24",
     "@types/luxon": "1.21.0",
     "@types/node": "10.14.1",
     "ask-sdk": "2.7.0",
@@ -50,7 +50,7 @@
     "ts-jest": "24.2.0",
     "ts-node": "8.5.4",
     "tslint": "5.20.1",
-    "typescript": "3.7.3",
+    "typescript": "3.7.4",
     "virtual-alexa": "0.7.3"
   }
 }
