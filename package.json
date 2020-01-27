@@ -37,7 +37,7 @@
   "devDependencies": {
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
-    "@types/jest": "24.9.0",
+    "@types/jest": "24.9.1",
     "@types/luxon": "1.21.0",
     "@types/node": "10.14.1",
     "ask-sdk": "2.7.0",
@@ -46,7 +46,7 @@
     "jest": "24.9.0",
     "npm-run-all": "4.1.5",
     "parcel-bundler": "1.12.4",
-    "parcel-plugin-static-files-copy": "2.2.2",
+    "parcel-plugin-static-files-copy": "2.3.1",
     "ts-jest": "24.3.0",
     "ts-node": "8.6.2",
     "tslint": "5.20.1",
