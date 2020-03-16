@@ -1,7 +1,8 @@
 import { spawn } from "child_process";
-import * as program from "commander";
+import { program } from "commander";
 import * as fs from "fs";
 import * as process from "process";
+import ffmpegPath from "ffmpeg-static";
 import countries from "../src/data/countries";
 
 program
@@ -24,7 +25,7 @@ for (const country of data) {
   if (country.anthem.url) {
     const output = `${destination}/${country.iso3}.mp3`;
     if (overwrite || !fs.existsSync(output)) {
-      const proc = spawn("ffmpeg", ["-i", country.anthem.url,
+      const proc = spawn(ffmpegPath, ["-i", country.anthem.url,
         "-t", duration, "-ac", "2", "-codec:a", "libmp3lame",
         "-b:a", "48k", "-ar", "16000", "-y", output]);
       proc.on("close", (code) => {
