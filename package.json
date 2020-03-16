@@ -24,6 +24,7 @@
     "convert-anthems-audio": "npm-run-all --parallel convert-anthems-audio:*",
     "convert-anthems-audio:limited": "ts-node ./bin/convert-anthems-audio.ts --destination ./assets/mp3s --duration 88",
     "convert-anthems-audio:full": "ts-node ./bin/convert-anthems-audio.ts --destination ./assets/mp3s-full --duration 3600",
+    "download-subtitles": "ts-node ./bin/download-subtitles.ts --destination ./assets/webvtt",
     "convert-assets": "rsvg-convert -w 108 -o assets/icon108.png assets/icon.svg && rsvg-convert -w 512 -o assets/icon512.png assets/icon.svg",
     "create-s3-bucket": "aws s3 ls s3://alexa-nationalanthems-skill > /dev/null 2>&1 || aws s3 mb s3://alexa-nationalanthems-skill --region eu-west-1",
     "deploy:assets": "aws s3 sync ./assets s3://alexa-nationalanthems-skill/ --acl public-read"
@@ -41,6 +42,7 @@
     "@types/luxon": "1.21.0",
     "@types/node": "10.14.1",
     "ask-sdk": "2.7.0",
+    "aws-sdk": "2.640.0",
     "commander": "5.0.0",
     "cross-env": "7.0.2",
     "ffmpeg-static": "4.0.1",
