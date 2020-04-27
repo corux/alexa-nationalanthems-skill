@@ -52,7 +52,7 @@
     "parcel-plugin-static-files-copy": "2.3.1",
     "ts-jest": "25.4.0",
     "ts-node": "8.9.1",
-    "tslint": "6.1.1",
+    "tslint": "6.1.2",
     "typescript": "3.8.3",
     "virtual-alexa": "0.7.5"
   }
