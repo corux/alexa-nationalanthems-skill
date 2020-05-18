@@ -38,11 +38,11 @@
   "devDependencies": {
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
-    "@types/jest": "25.2.1",
+    "@types/jest": "25.2.2",
     "@types/luxon": "1.24.0",
     "@types/node": "10.14.1",
     "ask-sdk": "2.8.0",
-    "aws-sdk": "2.673.0",
+    "aws-sdk": "2.678.0",
     "commander": "5.1.0",
     "cross-env": "7.0.2",
     "ffmpeg-static": "4.2.1",
@@ -53,7 +53,7 @@
     "ts-jest": "25.5.1",
     "ts-node": "8.10.1",
     "tslint": "6.1.2",
-    "typescript": "3.8.3",
+    "typescript": "3.9.2",
     "virtual-alexa": "0.7.5"
   }
 }
