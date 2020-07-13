@@ -38,11 +38,11 @@
   "devDependencies": {
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
-    "@types/jest": "26.0.3",
+    "@types/jest": "26.0.4",
     "@types/luxon": "1.24.1",
     "@types/node": "10.14.1",
     "ask-sdk": "2.8.0",
-    "aws-sdk": "2.709.0",
+    "aws-sdk": "2.713.0",
     "commander": "5.1.0",
     "cross-env": "7.0.2",
     "ffmpeg-static": "4.2.5",
