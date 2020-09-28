@@ -42,7 +42,7 @@
     "@types/luxon": "1.25.0",
     "@types/node": "10.14.1",
     "ask-sdk": "2.9.0",
-    "aws-sdk": "2.756.0",
+    "aws-sdk": "2.761.0",
     "commander": "6.1.0",
     "cross-env": "7.0.2",
     "ffmpeg-static": "4.2.7",
