@@ -1,4 +1,8 @@
-import { BaseRequestHandler, IExtendedHandlerInput, Intents } from "@corux/ask-extensions";
+import {
+  BaseRequestHandler,
+  IExtendedHandlerInput,
+  Intents,
+} from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
 import { getCountryFromAudioPlayer } from "./PlayAnthemIntent";
 
@@ -8,14 +12,16 @@ export class UnsupportedHandler extends BaseRequestHandler {
     const t = handlerInput.t;
 
     if (getCountryFromAudioPlayer(handlerInput)) {
-      return handlerInput.getResponseBuilder()
+      return handlerInput
+        .getResponseBuilder()
         .speak(t("unsupported"))
         .withShouldEndSession(true)
         .getResponse();
     }
 
     const reprompt = t("play.reprompt");
-    return handlerInput.getResponseBuilder()
+    return handlerInput
+      .getResponseBuilder()
       .speak(`${t("unsupported")} ${reprompt}`)
       .reprompt(reprompt)
       .getResponse();

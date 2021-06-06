@@ -6,9 +6,18 @@ import ffmpegPath from "ffmpeg-static";
 import countries from "../src/data/countries";
 
 program
-  .option("--destination <path>", "The destination folder, where all converted mp3 will be saved in.")
-  .option("--overwrite", "Determines if existing mp3 files will be overwritten.")
-  .option("--duration <seconds>", "The maximum duration in seconds of the generated mp3 files")
+  .option(
+    "--destination <path>",
+    "The destination folder, where all converted mp3 will be saved in."
+  )
+  .option(
+    "--overwrite",
+    "Determines if existing mp3 files will be overwritten."
+  )
+  .option(
+    "--duration <seconds>",
+    "The maximum duration in seconds of the generated mp3 files"
+  )
   .parse(process.argv);
 
 const destination = program.destination;
@@ -25,14 +34,31 @@ for (const country of data) {
   if (country.anthem.url) {
     const output = `${destination}/${country.iso3}.mp3`;
     if (overwrite || !fs.existsSync(output)) {
-      const proc = spawn(ffmpegPath, ["-i", country.anthem.url,
-        "-t", duration, "-ac", "2", "-codec:a", "libmp3lame",
-        "-b:a", "48k", "-ar", "16000", "-y", output]);
+      const proc = spawn(ffmpegPath, [
+        "-i",
+        country.anthem.url,
+        "-t",
+        duration,
+        "-ac",
+        "2",
+        "-codec:a",
+        "libmp3lame",
+        "-b:a",
+        "48k",
+        "-ar",
+        "16000",
+        "-y",
+        output,
+      ]);
       proc.on("close", (code) => {
         if (code === 0) {
-          console.info(`Anthem for country "${country.name}" successfully converted.`);
+          console.info(
+            `Anthem for country "${country.name}" successfully converted.`
+          );
         } else {
-          console.error(`Failed to convert anthem for country "${country.name}".`);
+          console.error(
+            `Failed to convert anthem for country "${country.name}".`
+          );
         }
       });
     } else {

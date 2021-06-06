@@ -1,4 +1,8 @@
-import { LocalizationInterceptor, LogInterceptor, SessionEndedHandler } from "@corux/ask-extensions";
+import {
+  LocalizationInterceptor,
+  LogInterceptor,
+  SessionEndedHandler,
+} from "@corux/ask-extensions";
 import { SkillBuilders } from "ask-sdk-core";
 import { DynamoDbPersistenceAdapter } from "ask-sdk-dynamodb-persistence-adapter";
 import * as path from "path";
@@ -42,18 +46,13 @@ export const handler = SkillBuilders.custom()
     new PlayAnthemHandler(),
     new LaunchRequestHandler(),
     new SessionEndedHandler(),
-    new UnsupportedHandler(),
+    new UnsupportedHandler()
   )
-  .addErrorHandlers(
-    new CustomErrorHandler(),
-  )
+  .addErrorHandlers(new CustomErrorHandler())
   .addRequestInterceptors(
     new LogInterceptor(),
-    new LocalizationInterceptor(path.join(__dirname, "i18n/{{lng}}.json")),
+    new LocalizationInterceptor(path.join(__dirname, "i18n/{{lng}}.json"))
   )
-  .addResponseInterceptors(
-    new RatingCardInterceptor(),
-    new LogInterceptor(),
-  )
+  .addResponseInterceptors(new RatingCardInterceptor(), new LogInterceptor())
   .withPersistenceAdapter(dynamodbAdapter)
   .lambda();

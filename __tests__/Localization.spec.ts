@@ -45,8 +45,14 @@ describe("Localization", () => {
       let result = await alexa.request().launch().send();
       expect(result.response.outputSpeech.ssml).toContain(launchMap[locale]);
 
-      result = await alexa.request().intent("PlayAnthemIntent").slot("country", "Germany").send();
-      expect(result.response.outputSpeech.ssml).toContain(playAnthemMap[locale]);
+      result = await alexa
+        .request()
+        .intent("PlayAnthemIntent")
+        .slot("country", "Germany")
+        .send();
+      expect(result.response.outputSpeech.ssml).toContain(
+        playAnthemMap[locale]
+      );
     });
   });
 });

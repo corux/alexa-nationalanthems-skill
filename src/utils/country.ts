@@ -7,12 +7,18 @@ function getRandomEntry(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-export function getRandomCountry(continent: ContinentCode, lang: string): ICountry {
+export function getRandomCountry(
+  continent: ContinentCode,
+  lang: string
+): ICountry {
   const matchesContinent = (country: ICountry) => {
     return country.continent && continent === country.continent.code;
   };
-  return getRandomEntry(countries.getAll(lang)
-    .filter((val) => val.anthem.url && (!continent || matchesContinent(val))));
+  return getRandomEntry(
+    countries
+      .getAll(lang)
+      .filter((val) => val.anthem.url && (!continent || matchesContinent(val)))
+  );
 }
 
 export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {
@@ -20,7 +26,10 @@ export function getAnthemUrl(country: ICountry, longVersion: boolean = false) {
   return `https://s3-eu-west-1.amazonaws.com/alexa-nationalanthems-skill/${folder}/${country.iso3}.mp3`;
 }
 
-export function getTArgument(country: ICountry, locale?: Locale): TOptions<({ country: string, preposition: string })> {
+export function getTArgument(
+  country: ICountry,
+  locale?: Locale
+): TOptions<{ country: string; preposition: string }> {
   let preposition = "";
   if (locale === "pt-BR") {
     if (country.article === "a") {

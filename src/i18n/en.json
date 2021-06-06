@@ -1,9 +1,6 @@
 {
   "launch": "Which national anthem do you want to play?",
-  "stop": [
-    "Goodbye!",
-    "See you later!"
-  ],
+  "stop": ["Goodbye!", "See you later!"],
   "unsupported": "Sorry, I don't understand this command.",
   "help": {
     "text": "This skill allows you to play the national anthem for different countries. Just say \"Play the national anthem of {{country}}\".",

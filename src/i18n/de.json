@@ -1,9 +1,6 @@
 {
   "launch": "Welche Nationalhymne möchtest du abspielen?",
-  "stop": [
-    "Bis Bald!",
-    "Ciao!"
-  ],
+  "stop": ["Bis Bald!", "Ciao!"],
   "unsupported": "Entschuldigung, diesen Befehl verstehe ich nicht.",
   "help": {
     "text": "Du kannst dir die Nationalhymnen von verschiedenen Ländern vorspielen lassen. Sage einfach \"Spiel die Nationalhymne von {{country}}\".",

@@ -7,7 +7,10 @@ export class CustomErrorHandler implements ErrorHandler {
   }
 
   public handle(handlerInput: HandlerInput, error: Error): Response {
-    console.error("Error handled: ", JSON.stringify(error, Object.getOwnPropertyNames(error)));
+    console.error(
+      "Error handled: ",
+      JSON.stringify(error, Object.getOwnPropertyNames(error))
+    );
 
     return handlerInput.responseBuilder
       .withShouldEndSession(true)

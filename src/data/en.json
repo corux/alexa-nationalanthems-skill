@@ -1,8 +1,6 @@
 {
   "EUROPE": {
-    "adjectives": [
-      "european"
-    ],
+    "adjectives": ["european"],
     "anthem": {
       "name": "Anthem of Europe"
     },
@@ -20,40 +18,30 @@
     "name": "East Germany"
   },
   "BAVARIA": {
-    "adjectives": [
-      "bavarian"
-    ],
+    "adjectives": ["bavarian"],
     "anthem": {
       "name": "Hymn of Bavaria"
     },
     "name": "Bavaria"
   },
   "SCOTLAND": {
-    "adjectives": [
-      "scottish"
-    ],
+    "adjectives": ["scottish"],
     "anthem": {
       "name": "Flower of Scotland"
     },
     "name": "Scotland"
   },
   "SU": {
-    "adjectives": [
-      "soviet"
-    ],
+    "adjectives": ["soviet"],
     "anthem": {
       "name": "State Anthem of the Soviet Union"
     },
-    "altNames": [
-      "USSR"
-    ],
+    "altNames": ["USSR"],
     "longName": "Union of Soviet Socialist Republics",
     "name": "Soviet Union"
   },
   "GRL": {
-    "adjectives": [
-      "greenlandic"
-    ],
+    "adjectives": ["greenlandic"],
     "anthem": {
       "name": "You, Our Ancient Land"
     },

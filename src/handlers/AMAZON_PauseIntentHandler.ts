@@ -1,4 +1,9 @@
-import { BaseRequestHandler, IExtendedHandlerInput, Intents, Request } from "@corux/ask-extensions";
+import {
+  BaseRequestHandler,
+  IExtendedHandlerInput,
+  Intents,
+  Request,
+} from "@corux/ask-extensions";
 import { Response } from "ask-sdk-model";
 
 @Request("PlaybackController.PauseCommandIssued")

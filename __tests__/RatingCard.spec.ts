@@ -19,7 +19,9 @@ describe("Rating Card", () => {
 
       if (i === ratingSessionCount - 1) {
         expect(result.response.card).not.toBeUndefined();
-        expect(result.response.card.title).toBe("Nationalhymnen: Bitte um Bewertung");
+        expect(result.response.card.title).toBe(
+          "Nationalhymnen: Bitte um Bewertung"
+        );
       } else {
         expect(result.response.card).toBeUndefined();
       }

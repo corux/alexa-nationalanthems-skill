@@ -6,7 +6,8 @@ import * as de from "./de.json";
 import * as en from "./en.json";
 
 const dataExtension: { [lang: string]: any } = {
-  de, en,
+  de,
+  en,
 };
 
 export class ExtendedCountryData extends CountryData {

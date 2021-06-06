@@ -12,5 +12,4 @@ describe("AMAZON.HelpIntent", () => {
     expect(result.response.outputSpeech.ssml).toContain("help");
     expect(result.response.shouldEndSession).toBe(false);
   });
-
 });

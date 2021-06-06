@@ -20,7 +20,9 @@ describe("Integration", () => {
     expect(result.response.outputSpeech.ssml).toContain("play.unknown-country");
     expect(result.response.shouldEndSession).toBe(false);
 
-    result = await alexa.intend("PlayAnthemIntent", { country: "United States" });
+    result = await alexa.intend("PlayAnthemIntent", {
+      country: "United States",
+    });
     expect(result.response.outputSpeech.ssml).toContain("play.text");
     expect(result.response.shouldEndSession).toBe(true);
     expect(alexa.audioPlayer().isPlaying()).toBe(true);

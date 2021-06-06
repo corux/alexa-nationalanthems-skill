@@ -18,5 +18,4 @@ describe("AMAZON.StopIntent, AMAZON.CancelIntent", () => {
     expect(result.response.outputSpeech.ssml).toContain("stop");
     expect(result.response.shouldEndSession).toBe(true);
   });
-
 });

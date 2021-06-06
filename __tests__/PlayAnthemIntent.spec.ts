@@ -31,8 +31,12 @@ describe("PlayAnthemIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("play.text");
-    expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/DEU.mp3");
-    expect(result.response.directives[0].audioItem.stream.token).toBe("DEU:0:0");
+    expect(result.response.directives[0].audioItem.stream.url).toContain(
+      "/mp3s-full/DEU.mp3"
+    );
+    expect(result.response.directives[0].audioItem.stream.token).toBe(
+      "DEU:0:0"
+    );
   });
 
   test("Should play anthem from extended dataset", async () => {
@@ -42,7 +46,11 @@ describe("PlayAnthemIntent", () => {
 
     expect(alexa.audioPlayer().isPlaying()).toBe(true);
     expect(result.response.outputSpeech.ssml).toContain("play.text");
-    expect(result.response.directives[0].audioItem.stream.url).toContain("/mp3s-full/EUROPE.mp3");
-    expect(result.response.directives[0].audioItem.stream.token).toBe("EUROPE:0:0");
+    expect(result.response.directives[0].audioItem.stream.url).toContain(
+      "/mp3s-full/EUROPE.mp3"
+    );
+    expect(result.response.directives[0].audioItem.stream.token).toBe(
+      "EUROPE:0:0"
+    );
   });
 });

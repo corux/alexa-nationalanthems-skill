@@ -29,13 +29,16 @@ function getAdjective(adjective: string) {
 const countryOutput: any = {
   name: "COUNTRY",
 };
-countryOutput.values = all.filter((country) => country && country.iso3 && country.name)
+countryOutput.values = all
+  .filter((country) => country && country.iso3 && country.name)
   .map((country) => {
-    let synonyms = [].concat(
-      [country.longName],
-      country.altNames,
-      (country.adjectives || []).map((adj) => getAdjective(adj)),
-    ).filter((n) => !!n);
+    let synonyms = []
+      .concat(
+        [country.longName],
+        country.altNames,
+        (country.adjectives || []).map((adj) => getAdjective(adj))
+      )
+      .filter((n) => !!n);
     synonyms = synonyms
       .filter((n, i) => synonyms.indexOf(n) === i)
       .filter((val) => val.toUpperCase() !== country.name.toUpperCase());
