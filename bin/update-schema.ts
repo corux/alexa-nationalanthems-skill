@@ -49,7 +49,6 @@ countryOutput.values = all.filter((country) => country && country.iso3 && countr
     id: country.iso3,
     name: {
       value: country.name,
-      // tslint:disable-next-line:object-literal-sort-keys
       synonyms: country.synonyms,
     },
   }));
