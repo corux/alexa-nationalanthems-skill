@@ -1,7 +1,7 @@
 import { VirtualAlexa } from "virtual-alexa";
 import { createVirtualAlexa } from "../test-utils/utils";
 
-describe("Rating Card", () => {
+describe.skip("Rating Card", () => {
   let alexa: VirtualAlexa;
   const ratingSessionCount = 4;
   beforeEach(() => {

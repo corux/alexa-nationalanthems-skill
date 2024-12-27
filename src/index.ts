@@ -53,6 +53,6 @@ export const handler = SkillBuilders.custom()
     new LogInterceptor(),
     new LocalizationInterceptor(path.join(__dirname, "i18n/{{lng}}.json"))
   )
-  .addResponseInterceptors(new RatingCardInterceptor(), new LogInterceptor())
+  .addResponseInterceptors(new LogInterceptor())
   .withPersistenceAdapter(dynamodbAdapter)
   .lambda();
