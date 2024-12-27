@@ -12,7 +12,7 @@
     "prettier:fix": "prettier --write .",
     "build": "parcel $PARCEL_CMD src/index.ts --target node --bundle-node-modules",
     "build:dev": "PARCEL_CMD=watch npm run build",
-    "build:prod": "npm run lint && PARCEL_CMD=build npm run build",
+    "build:prod": "npm run prettier:check && PARCEL_CMD=build npm run build",
     "deploy:prod": "ask deploy --force",
     "update-schema": "npm-run-all --parallel update-schema:*",
     "update-schema:de": "ts-node ./bin/update-schema.ts --lang de --file ./models/de-DE.json",
