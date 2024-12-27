@@ -39,7 +39,7 @@
     "@corux/ask-extensions": "2.0.0",
     "@corux/country-data": "2.0.3",
     "@types/jest": "26.0.19",
-    "@types/luxon": "1.25.0",
+    "@types/luxon": "3.4.2",
     "@types/node": "10.14.1",
     "ask-sdk": "2.10.0",
     "aws-sdk": "2.820.0",
